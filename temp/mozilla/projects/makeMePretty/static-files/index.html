@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Make Me Pretty</title>
+    <script src="scripts/modernizr.custom.47927.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/chooser.css">
+    <link rel="stylesheet" href="stylesheets/editor.css">
+    <link rel="stylesheet" href="stylesheets/publish.css">
+    <link rel="stylesheet" href="codemirror2/lib/codemirror.css">
+    <link rel="stylesheet" href="stylesheets/jsbin-codemirror-theme.css">
+
+    <link rel="stylesheet" href="colorpicker/jquery.colorpicker.css">
+    <link rel="stylesheet" href="stylesheets/colorpicker.css">
+    
+    <link href='http://fonts.googleapis.com/css?family=Overlock+SC' rel='stylesheet' type='text/css'>
+    <script type="text/javascript"> 
+	$(document).ready(function() {
+		$('.templates em').hide();
+		$(".templates a").hover(function() {
+		$(this).next("em").animate({opacity: "show", top: "65"}, "slow");
+	}, function() {
+		$(this).next("em").animate({opacity: "hide", top: "65"}, "fast");
+	});
+	});
+	</script>
+  </head>
+  <body>
+    <header>
+      <a href="#"><h1>Make Me <span class="logo">Pretty</span></h1></a>
+      <div class="editor-actions">
+      	<button id="ideas">Ideas</button>
+        <button id="undo">Undo</button>
+        <button id="redo">Redo</button>
+        <button id="publish">Publish</button>
+      </div>
+    </header>
+    <section id="intro" class="out-on-right">
+      <div class="wrapper">
+        <img src="images/lovebomb-person.svg" class="lovebomb-person">
+        <div class="details">
+          <h2>Style a Webpage</h2>
+          <aside>Play around with CSS and learn how to design for the web</aside>
+          <a href="#chooser" class="button">Get Started</a>
+        </div>
+      </div>
+    </section>
+    <section id="chooser" class="out-on-right">
+      <div class="wrapper">
+        <h2>Get Started With:</h2>
+        <ul class="templates">
+          <li><a href="#editor.elements">Stuck in the 90's </a><em>Blech! This webpage is stuck in the 90's! Change the CSS to make the pieces and parts of the page look nice together.</em>
+          <li><a href="#editor.icons">Icons </a><em>Rearrange the icons to follow the metaphor.</em>
+          <li><a href="#editor.typography">Sans Comic </a><em>The Patron of Papyrus and Count Comic Sans really made this page is hard to look at. Can you redesign the text for easy reading?</em>
+          <li><a href="#editor.color">Color Collapse</a><em>This page has too many colors! Choose a color scheme and make it pretty.</em>
+        </ul>
+      </div>
+    </section>
+    <section id="editor" class="out-on-right">
+      <div id="source"></div>
+      <div id="preview-holder">
+        <iframe id="preview" src="templates/blank.html"></iframe>
+      </div>
+    </section>
+    <div class="overlay-outer">
+      <div class="overlay-middle">
+        <div class="overlay-inner">
+          <img src="images/close-button.png" class="close">
+          <img src="images/ajax-loader.gif" class="throbber">
+          <div class="done">
+            <p>Here is the URL for your Pretty Page that anyone can view.</p>
+            <div class="published-url">
+              <a target="_blank" href="http://foo/bar">http://foo/bar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>This app is a <a href="http://hackasaurus.org/">Hackasaurus</a> experiment created by <a href="http://twitter.com/epilepticrabbit">@epilepticrabbit</a> and <a href="http://twitter.com/toolness">@toolness</a> in 2012.</footer>    
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/yepnope.1.0.2-min.js"></script>
+    <script src="codemirror2/lib/codemirror.js"></script>
+    <script src="codemirror2/mode/xml/xml.js"></script>
+    <script src="codemirror2/mode/javascript/javascript.js"></script>
+    <script src="codemirror2/mode/css/css.js"></script>
+    <script src="codemirror2/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="scripts/editor.js"></script>
+    <script src="scripts/publish.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/chooser.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <!-- Positioner Demo Integration -->
+    <script src="templates/positioner-demo-files/positioner.js"></script>
+    <script src="templates/positioner-demo-files/positioner-reflection.js"></script>
+    <script>Positioner.disable();</script>
+    
+    <script src="scripts/jquery-ui-1.8.17.custom.min.js"></script>
+    <script src="colorpicker/jquery.colorpicker.js"></script>
+    <script src="scripts/colorpicker.js"></script>
+  </body>
+</html>

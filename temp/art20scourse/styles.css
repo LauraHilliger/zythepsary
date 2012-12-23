@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+margin-top:20px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+
+a img{
+border:none;
+}
+
+a:link, a:visited{
+color:#0099FF;
+text-decoration:none;
+}
+
+a:hover, a:active{
+color: #CC6600;
+}
+
+nav a:link, nav a:visited{
+font-family: 'Josefin Slab', arial, serif;
+font-size:18px;
+padding:10px;
+float:right;
+color:#000000;
+}
+
+nav a:hover, nav a:active{
+color: #0099FF;
+}
+
+#content{
+width:960px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.introText{
+padding:10px 0px 10px 0px;
+margin-top:5px;
+}
+
+.introText img{
+float:left;
+padding-right:15px;
+padding-bottom:5px;
+}
+
+hr{
+position:relative;
+top:64px;
+display:block;
+margin:5px;
+}
+
+nav{
+float:right;
+}
+
+.headerText{
+font-family: 'Josefin Slab', arial, serif;
+font-size:40px;
+}
+
+.headerText:link, .headerText:visited{
+color:#000000;
+}
+.headerText:hover, .headerText:active{
+color:#0099FF;
+}
+
+h1{ 
+font-family: 'Josefin Sans', arial, serif;
+font-size:18px;
+}
+
+.dipity_embed{
+margin-left:auto;
+margin-right:auto;
+}
+
+/*Accordian styles*/
+.accordion {
+	width: 960px;
+	border-bottom: solid 1px #c4c4c4;
+}
+.accordion h3 {
+	background: #333333;
+	padding: 7px 15px;
+	margin: 0;
+	font: bold 120%/100% Arial, Helvetica, sans-serif;
+	color:#eeeeee;
+	border: solid 1px #c4c4c4;
+	border-bottom: none;
+	cursor: pointer;
+}
+.accordion h3:hover {
+	background-color: #666666;
+}
+.accordion h3.active {
+	background-position: right 5px;
+}
+.accordion p {
+	background: #f7f7f7;
+	margin: 0;
+	padding: 10px 10px 10px;
+}
+
+h4{
+background: #666666;
+	padding: 7px 30px;
+	margin: 0;
+	font: 120%/100% Arial, Helvetica, sans-serif;
+	color:#eeeeee;
+	border: solid 1px #c4c4c4;
+}
+
+/* Drag and Drop*/
+ #draggable01, #draggable02, #draggable03, #draggable04 { 
+width: 220px; 
+height: 195px; 
+ float:left; 
+ position:relative;
+ display:block;
+ z-index:999;
+ }
+ 
+ #draggable01 img,  #draggable02 img,  #draggable03 img,  #draggable04 img{
+ padding:0;
+ border:0;
+ }
+ 
+ #droppable01, #droppable02, #droppable03, #droppable04 { 
+width: 220px; 
+height: 195px; 
+ float:left; 
+ position:relative;
+ display:block;
+ z-index:1;
+ }
+ 
+ .rightAns{
+ background-color:#B8E15F;
+ width: 220px; 
+height: 195px; 
+ float:left; 
+ position:relative;
+ display:block;
+ }
+ 
+ .wrongAns{
+  background-color:#F0B0A9;
+  width: 220px; 
+height: 195px; 
+ float:left; 
+ position:relative;
+ display:block;
+ }
+
+#footer strong, #footer h4{
+position:relative;
+top:8px;
+}
+
+#google_translate_element{
+margin-top:10px;
+}

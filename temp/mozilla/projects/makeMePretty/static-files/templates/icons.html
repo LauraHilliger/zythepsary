@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Principles of Design: Interface Design</title>
+<link rel="stylesheet" href="typography-files/stylesheet.css">
+<!--These two links are for webfonts, find out more about webfonts below!-->
+<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Stint+Ultra+Condensed' rel='stylesheet' type='text/css'>
+<style type="text/css">
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+	margin:25px auto;
+  }
+
+  section {
+	padding:0px;
+  }
+.content{
+	padding:20px;
+	width:960px;
+	-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px; 
+-webkit-box-shadow: 1px 1px 12px 3px #CCC;
+-moz-box-shadow: 1px 1px 12px 3px #CCC;
+box-shadow: 1px 1px 12px 3px #CCC; 
+margin:5px auto;
+}
+#logo{
+	font-family:'Oleo Script', cursive;
+	font-size:50px;
+	    color: #7b257b;
+        text-shadow: 1px 1px 3px #ababab;
+        filter: dropshadow(color=#ababab, offx=1, offy=1);
+		margin:0px;
+  }
+ 
+nav{
+width:50%;
+height:70px;
+}
+
+nav a{
+	font-size:16px;
+	text-decoration:underline;
+	padding:5px;
+}
+nav a:hover{
+	color:#F30D00;
+	text-decoration:underline;
+}
+  
+#masthead{
+	font-size:18px;
+}
+
+#breadcrumbs {
+	text-align:left;
+}
+
+#breadcrumbs a{
+	color: blue;
+	text-decoration:underline;
+}
+
+#breadcrumbs a:hover{
+	color:#800080;
+	text-decoration:underline;
+}
+ 
+#headlines h1{
+	font-size:32px;
+	margin:0px;
+}
+#headlines h2{
+	font-size:24px;
+	margin:0px;
+
+}
+#intro p{
+	/*What happens when you change the line-height to 150%? Use the float and width properties to make columns.*/
+line-height:100%;
+}
+
+#defaultFonts{
+/*Try adjusting these styles to adjust the columns in the lower section of the page*/ 
+ float: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 540px;
+}
+#defaultFonts ul{
+	/*increase the numbers and see what happens. The first number represents the top margin/padding, 2nd is right, third is bottom and the 4th is the left margin/padding*/
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+#defaultFonts ul li{
+	margin:0px;
+}
+
+  #webFonts{
+	font-family:'Stint Ultra Condensed', cursive;
+	font-size:35px;
+	margin-top:30px;
+  }
+  #blechFactor p{
+	  /*Basically, the idea with type is to make it easier to read, not harder. Using all capitalized letters make things hard to read, as does centering large blocks of text. */
+	text-transform:uppercase;
+	text-align:center; 
+	/*the clear:both; style removes float properties from sections or divs*/ 
+	clear:both;
+  }
+  .serif{
+	font-family:serif;  
+  }
+    .monospace{
+	font-family:monospace;  
+  }
+    .cursive{
+	font-family:cursive;  
+  }
+</style>
+
+<div class="content">
+<!--Make this a page about a topic YOU choose and design your text with the reader in mind.-->
+  <header id="logo">
+  <!--A logo communicates the overarching goal of a project. Change the CSS and HTML and make this page YOURS.-->
+Sans Comic
+  
+ <nav>
+ <a href="#">Stuck in the 90s</a>
+ <a href="#">Make a Metaphor</a>
+  <a href="#" class="selected">Sans Comic</a>
+  <a href="#">color</a>
+ </nav>
+  </header>
+  
+  <section id="attribution">
+  	<!--Attribute your sources! Claim this site as your own, and write your name or handle in.-->
+  This content is augmenting the <a href="http://en.wikipedia.org/wiki/Typography" target="_blank">Wikipedia articles on Typography</a></section>
+  <section id="breadcrumbs">
+  <!--Breadcrumbs let your user know where they are in your site. You are currently here:-->
+  <a href="../design_overview.html">Designing for Web</a> > <a href="../index.html"> Make Me Pretty</a> > Interface Design
+  </section>
+  <section id="headlines">
+  <!-- Headlines and Subheads act as visual cues to guide the user through content. Switch out the text on this page and create a written profile for yourself!-->
+  <h1>Choose your favorite topic and change this silly cooking mataphor</h1>
+  <!--Leading is the space between lines of text. Shorter lines and leading make reading easier. Try adjusting the width to make the text easier to read. -->
+  <h2>Check out the comments in the code for tips!</h2>
+  </section>
+  <section id="standardization">
+  <!--A successful interface system uses familiarity to help users understand the actions they can take. For example, a trash bin icon is commonly used to indicate that files placed inside are to be deleted. -->
+  <p>Typography is the art and technique of arranging type in order to make language visible. The arrangement of type involves the selection of typefaces, point size, line length, leading (line spacing), adjusting the spaces between groups of letters (tracking) and adjusting the space between pairs of letters (kerning). Type design is a closely related craft, which some consider distinct and others a part of typography; most typographers do not design typefaces, and some type designers do not consider themselves typographers. In modern times, typography has been put into motion—in film, television and online broadcasts—to add emotion to mass communication.</p>
+
+<p>Typography is performed by typesetters, compositors, typographers, graphic designers, art directors, comic book artists, graffiti artists, clerical workers, and anyone else who arranges type for a product. Until the Digital Age, typography was a specialized occupation. Digitization opened up typography to new generations of visual designers and lay users, and it has been said that "typography is now something everybody does."</p>
+  </section>
+  <section id="logic">
+  <!-- Maybe you don't want to use the standard icons though. Maybe you want to create new icons for people. If you aren't planning on using standards that people will readily understand, consider adding a one or two word tool tip so that people know what your icons mean. -->
+  <ul><li><strong>Sans-serif:</strong> Fonts that do not have decorative markings, or serifs, on their letters. These fonts are often considered easier to read on screens.</li>
+  <li class="serif"><strong>Serif:</strong> Fonts that have decorative markings, or serifs, present on their characters.</li>
+  <li class="monospace"><strong>Monospace:</strong> Fonts in which all characters are equally wide.</li>
+  <li class="cursive"><strong>Cursive:</strong> Fonts that resemble cursive writing. These fonts may have a decorative appearance, but they can be difficult to read at small sizes, so they are generally used sparingly.</li>
+  </ul>
+  <a href="http://en.wikipedia.org/wiki/Web_typography" target="_blank"> Read more about web typography at Wikipedia.</a>
+  </section>
+  <section id="metaphors">
+  <!-- Many websites use metaphors to display content in a more targeted and creative fashion.-->
+  With WebFonts, we're no longer constrained by what a user does or does not have on his or her computer!
+  </section>
+  <section id="blechFactor">
+   <p>Web-safe fonts are fonts likely to be present on a wide range of computer systems, and used by Web content authors to increase the likelihood that content will be displayed in their chosen font. If a visitor to a Web site does not have the specified font, their browser will attempt to select a similar alternative, based on the author-specified fallback fonts and generic families or it will use font substitution defined in the visitor's operating system.</p>
+  </section>
+</div>
+

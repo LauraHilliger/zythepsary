@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<!--         
+
+Colors have a certain effect on us. Some colors make us feel happy, others make us feel hungry. In this project, you'll help make this page pretty by choosing a color scheme and changing the CSS to fit your scheme. There are tons of resources on the Web designed to help you select a nice color scheme. We've included some here in this page. Make this page pretty and replace the text with a topic that interests you. Maybe you want to make a profile page or tell a story? Change this page however you choose!
+
+-->
+<meta charset="utf-8">
+<title>Principles of Design: Color</title>
+<link rel="stylesheet" href="color-files/styles.css">
+<!--These links are for webfonts. Find out more about webfonts in the Sans Comic project!-->
+<link href='http://fonts.googleapis.com/css?family=Maiden+Orange' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Magra:400,700' rel='stylesheet' type='text/css'>
+<style>
+   body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/*This is the default color for text on the page. Depending on the background you choose, you might need to change this to be something more readable.*/
+    color: black;
+	margin:25px auto;
+  }
+
+  section {
+	padding:0px 0px 0px 40px;
+	width:50%;
+  }
+.content{
+	width:960px;
+	-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px; 
+-webkit-box-shadow: 1px 1px 12px 3px #CCC;
+-moz-box-shadow: 1px 1px 12px 3px #CCC;
+box-shadow: 1px 1px 12px 3px #CCC; 
+margin:5px auto;
+/*On it's own, this color isn't so bad (it's the red color that's in the background). Mix it with all those other colors though, and this page becomes hard to look at. Choose a color scheme. Use one of the tools suggested in the Helpful Color Sites and make a note of the six digit number that represents your colors. This number is called a hexadecimal. In CSS it begins with a # followed by a combination of numbers and letters that represent a color. #FFFFFF is white. #000000 is black. Once you've chosen a color scheme and made a note of the hexadecimals you'll need, change the color attributes in the CSS and make this page pretty. Start with a monochromatic color scheme. Not sure what "monochromatic" means? The defintion is somewhere on this page!*/
+background-color:#f30d00;
+}
+#logo{
+	/*If you chose a light color for your background, you'll want to change this color to make the logo easier to read*/
+	    color: #FFFFFF;
+		margin:0px;
+  }
+  #logo h1{
+	  font-family:'Maiden Orange', cursive;
+	font-size:50px;
+	font-weight:normal;
+	margin:40px 40px 0px 40px;
+        
+  }
+ 
+nav{
+font-family:'Magra', sans-serif;
+height:45px;
+/*This color will highlight the navigation of the page. It's a good idea to draw attention towards your navigation. Try using a color that compliments the background color you set above.*/
+background-color:#87e8ff;
+margin-top:35px;
+}
+
+nav a{
+	font-size:18px;
+	/*Be careful to choose text colors that are easy to read.*/
+	color:black;
+	padding:5px 5px 5px 40px;
+	text-decoration:none;
+}
+nav a:hover{
+	text-decoration:underline;
+}
+  
+#masthead{
+	font-family:'Magra', sans-serif;
+	font-size:25px;
+	line-height:50%;
+}
+#navigation ul li{
+float:right;	
+}
+#breadcrumbs {
+	/*Does this color match your color scheme? If not, change it!*/
+	  background-color: #7b257b;
+    font-family: 'Magra',sans-serif;
+    font-size: 14px;
+    margin: 20px 0px 20px 0px;
+    padding: 5px 0px 0px 40px;
+    text-align: left;
+    width: 95%;
+	height:25px;
+}
+
+#breadcrumbs a{
+	color: white;
+	text-decoration:underline;
+}
+
+#breadcrumbs a:hover{
+	color:#800080;
+	text-decoration:underline;
+}
+ 
+ #headlines{
+	  /*Simplicity is key in good design. Perhaps this style doesn't need a background color at all?*/
+	 background-color: #FF3C70;
+	padding:10px 20px 5px 20px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+	width:339px;
+	margin:0px 0px 40px 40px;
+ }
+ 
+#headlines h1{
+	font-family:'Magra', sans-serif;
+	font-size:24px;
+	margin:0px;
+	/*For text, choose a color that contrasts well with the color in the background.*/
+	color:#ffeb00;
+	font-weight:normal;
+}
+#headlines h2{
+	font-family:'Magra', sans-serif;
+	font-size:18px;
+	font-weight:normal;
+    
+}
+#helpfulColor{
+	width:285px;
+	float:right;	
+	font-size:14px;
+	color:white;
+	margin-right:40px;
+    
+}
+#helpfulColor a{
+	color:white;
+	text-decoration:underline;
+}
+#helpfulColor ul{
+	margin:0px 0px 40px 0px;
+	padding:1px 10px 20px 10px;
+	/*This is the color of the boxes on the right.*/
+	background-color:#5E8C57;
+	-moz-border-radius-topleft: 0px;
+-moz-border-radius-topright: 0px;
+-moz-border-radius-bottomright: 8px;
+-moz-border-radius-bottomleft: 8px;
+-webkit-border-radius: 0px 0px 8px 8px;
+border-radius: 0px 0px 8px 8px; 
+}
+#helpfulColor ul li{
+	list-style-type:none;	
+}
+#helpfulColor h1{
+	margin:0px;
+	padding-left:10px;
+	font-family:'Magra', sans-serif;
+	/*Change the text color to match the rest of your color scheme.*/
+	color:#00ffff;
+	/*This is the header of the boxes on the right.*/
+	background-color:#445544;
+	-moz-border-radius-topleft: 8px;
+-moz-border-radius-topright: 8px;
+-moz-border-radius-bottomright: 0px;
+-moz-border-radius-bottomleft: 0px;
+-webkit-border-radius: 8px 8px 0px 0px;
+border-radius: 8px 8px 0px 0px; 
+font-weight:normal;
+}
+#helpfulColor h2{
+font-family:'Magra', sans-serif;
+font-size:18px;
+margin:10px 0px 5px 0px;	
+font-weight:normal;
+}
+
+#association{
+ background-color: #FFFFFF;
+    height: 510px;
+    margin-left: 40px;
+    padding-bottom: 9px;
+    padding-left: 18px;
+    padding-top: 9px;
+    width: 360px;
+	
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    
+}
+
+#association div{
+	width:80px;
+	height:80px;
+	font-size:14px;
+	float:left;
+	margin:10px 20px 10px 0px;
+	padding:10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    
+}
+#association h1{
+margin:0px;
+/*Another color that should match your color scheme.*/
+color:#456223;	
+}
+.red{
+	background-color:#FF0000;
+}
+.orange{
+	background-color:#FF9900;
+}
+.yellow{
+	background-color:#FFFF00
+}
+.green{
+	background-color:#00FF00;
+}
+.blue{
+	background-color:#0000FF;
+}
+.purple{
+	background-color:#9900FF;
+}
+.pink{
+	background-color:#FF66FF;
+}
+.brown{
+	background-color:#8A6C41;
+}
+.gray{
+	background-color:#666666;
+}
+.black{
+	background-color:#000000;
+	color:white;
+}
+.white{
+	background-color:#ffffff;
+}
+.terms h2, .terms p{
+padding-left:10px;	
+}
+.terms h2{
+height:25px;	
+}
+/*Yikes! This next section looks scary, huh? This CSS is designating gradients. You don't have to figure out gradient CSS on your own though! Try out http://www.colorzilla.com/gradient-editor/ and copy and paste code! Another great site for generating CSS is  http://css3generator.com/*/
+.hue h2{
+	background: #ff0000; /* Old browsers */
+background: -moz-linear-gradient(left, #ff0000 0%, #ff0000 15%, #ff8800 15%, #ff8800 27%, #ffe900 27%, #ffe900 42%, #00ff00 42%, #00ff00 56%, #0099ff 56%, #0099ff 71%, #3f00ff 71%, #3f00ff 87%, #9d00ff 87%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ff0000), color-stop(15%,#ff0000), color-stop(15%,#ff8800), color-stop(27%,#ff8800), color-stop(27%,#ffe900), color-stop(42%,#ffe900), color-stop(42%,#00ff00), color-stop(56%,#00ff00), color-stop(56%,#0099ff), color-stop(71%,#0099ff), color-stop(71%,#3f00ff), color-stop(87%,#3f00ff), color-stop(87%,#9d00ff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #ff0000 0%,#ff0000 15%,#ff8800 15%,#ff8800 27%,#ffe900 27%,#ffe900 42%,#00ff00 42%,#00ff00 56%,#0099ff 56%,#0099ff 71%,#3f00ff 71%,#3f00ff 87%,#9d00ff 87%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #ff0000 0%,#ff0000 15%,#ff8800 15%,#ff8800 27%,#ffe900 27%,#ffe900 42%,#00ff00 42%,#00ff00 56%,#0099ff 56%,#0099ff 71%,#3f00ff 71%,#3f00ff 87%,#9d00ff 87%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #ff0000 0%,#ff0000 15%,#ff8800 15%,#ff8800 27%,#ffe900 27%,#ffe900 42%,#00ff00 42%,#00ff00 56%,#0099ff 56%,#0099ff 71%,#3f00ff 71%,#3f00ff 87%,#9d00ff 87%); /* IE10+ */
+background: linear-gradient(left, #ff0000 0%,#ff0000 15%,#ff8800 15%,#ff8800 27%,#ffe900 27%,#ffe900 42%,#00ff00 42%,#00ff00 56%,#0099ff 56%,#0099ff 71%,#3f00ff 71%,#3f00ff 87%,#9d00ff 87%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#9d00ff',GradientType=1 ); /* IE6-9 */	
+}
+.saturation h2{
+background: #0099ff; /* Old browsers */
+background: -moz-linear-gradient(left, #0099ff 0%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#0099ff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #0099ff 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #0099ff 0%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #0099ff 0%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(left, #0099ff 0%,#ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0099ff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+
+}
+.brightness h2{
+	background: #0099ff; /* Old browsers */
+background: -moz-linear-gradient(left, #0099ff 0%, #000000 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#0099ff), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #0099ff 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #0099ff 0%,#000000 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #0099ff 0%,#000000 100%); /* IE10+ */
+background: linear-gradient(left, #0099ff 0%,#000000 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0099ff', endColorstr='#000000',GradientType=1 ); /* IE6-9*/
+}
+.neutral h2{
+	background: #000000; /* Old browsers */
+background: -moz-linear-gradient(left, #000000 0%, #000000 34%, #ffffff 34%, #ffffff 67%, #cccccc 67%, #cccccc 99%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(34%,#000000), color-stop(34%,#ffffff), color-stop(67%,#ffffff), color-stop(67%,#cccccc), color-stop(99%,#cccccc)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #000000 0%,#000000 34%,#ffffff 34%,#ffffff 67%,#cccccc 67%,#cccccc 99%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #000000 0%,#000000 34%,#ffffff 34%,#ffffff 67%,#cccccc 67%,#cccccc 99%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #000000 0%,#000000 34%,#ffffff 34%,#ffffff 67%,#cccccc 67%,#cccccc 99%); /* IE10+ */
+background: linear-gradient(left, #000000 0%,#000000 34%,#ffffff 34%,#ffffff 67%,#cccccc 67%,#cccccc 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#cccccc',GradientType=1 ); /* IE6-9 */
+}
+.chromatic h2{
+	background: #ff0000; /* Old browsers */
+background: -moz-linear-gradient(left, #ff0000 0%, #ff7700 17%, #ffe100 33%, #1dff00 48%, #00c3ff 66%, #4b00fc 83%, #9700fc 99%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ff0000), color-stop(17%,#ff7700), color-stop(33%,#ffe100), color-stop(48%,#1dff00), color-stop(66%,#00c3ff), color-stop(83%,#4b00fc), color-stop(99%,#9700fc)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #ff0000 0%,#ff7700 17%,#ffe100 33%,#1dff00 48%,#00c3ff 66%,#4b00fc 83%,#9700fc 99%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #ff0000 0%,#ff7700 17%,#ffe100 33%,#1dff00 48%,#00c3ff 66%,#4b00fc 83%,#9700fc 99%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #ff0000 0%,#ff7700 17%,#ffe100 33%,#1dff00 48%,#00c3ff 66%,#4b00fc 83%,#9700fc 99%); /* IE10+ */
+background: linear-gradient(left, #ff0000 0%,#ff7700 17%,#ffe100 33%,#1dff00 48%,#00c3ff 66%,#4b00fc 83%,#9700fc 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#9700fc',GradientType=1 ); /* IE6-9*/
+}
+.monochromatic h2{
+	background: #0099ff; /* Old browsers */
+background: -moz-linear-gradient(left, #0099ff 0%, #288acc 19%, #0099ff 19%, #288acc 41%, #0f6499 41%, #0f6499 63%, #66c1ff 63%, #66c1ff 82%, #d8f0ff 82%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#0099ff), color-stop(19%,#288acc), color-stop(19%,#0099ff), color-stop(41%,#288acc), color-stop(41%,#0f6499), color-stop(63%,#0f6499), color-stop(63%,#66c1ff), color-stop(82%,#66c1ff), color-stop(82%,#d8f0ff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #0099ff 0%,#288acc 19%,#0099ff 19%,#288acc 41%,#0f6499 41%,#0f6499 63%,#66c1ff 63%,#66c1ff 82%,#d8f0ff 82%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #0099ff 0%,#288acc 19%,#0099ff 19%,#288acc 41%,#0f6499 41%,#0f6499 63%,#66c1ff 63%,#66c1ff 82%,#d8f0ff 82%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #0099ff 0%,#288acc 19%,#0099ff 19%,#288acc 41%,#0f6499 41%,#0f6499 63%,#66c1ff 63%,#66c1ff 82%,#d8f0ff 82%); /* IE10+ */
+background: linear-gradient(left, #0099ff 0%,#288acc 19%,#0099ff 19%,#288acc 41%,#0f6499 41%,#0f6499 63%,#66c1ff 63%,#66c1ff 82%,#d8f0ff 82%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0099ff', endColorstr='#d8f0ff',GradientType=1 ); /* IE6-9 */
+}
+.warm h2{
+background: #ff9900; /* Old browsers */
+background: -moz-linear-gradient(left, #ff9900 0%, #00bbff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ff9900), color-stop(100%,#00bbff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #ff9900 0%,#00bbff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #ff9900 0%,#00bbff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #ff9900 0%,#00bbff 100%); /* IE10+ */
+background: linear-gradient(left, #ff9900 0%,#00bbff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#00bbff',GradientType=1 ); /* IE6-9*/	
+}
+</style>
+<div class="content">
+  <header id="logo">
+  <!--A logo communicates the overarching goal of a project. Make this page YOURS. Give it a new logo, you might even want to insert an image tag here.-->
+ <h1> Color Collapse</h1>
+   <section id="masthead">
+  	<!--A Masthead gives a project a human element. Claim this site as your own, and write your name or handle in. You can control the look of this type by editing the #masthead style above-->
+    Created by YOU
+  </section>
+ <nav>
+ <a href="#">Stuck in the 90s</a>
+ <a href="#">Make a Metaphor</a>
+  <a href="#" class="selected">Sans Comic</a>
+  <a href="#">Color Collapse</a>
+ </nav>
+ <section id="breadcrumbs">
+  <!--Breadcrumbs let your user know where they are in your site. <strong></strong>-->
+  <a href="../design_overview.html">Designing for Web</a> > <a href="../index.html"> Make Me Pretty</a> > Color Collapse
+  </section>
+  </header>
+  <section id="helpfulColor">
+  <!--Need some help selecting a color scheme? Check out these tools, which will help you choose colors that look great together!-->
+  <h1>Helpful Color Sites</h1>
+<ul><li><h2><a href="http://www.visibone.com/colorlab/original/" target="_blank">Visibone Color Lab</a></h2> will help you see which colors look good together. It also gives you the <a href="http://en.wikipedia.org/wiki/Web_colors#Hex_triplet" target="_blank">hexadecimal</a> number for your css!</li><li>
+  <h2> <a href="http://www.colorblender.com/" target="_blank">Color Blender</a></h2>allows you to set an initial color, and the blender will show you matching colors. </li>
+
+  </ul>
+<h1>Color Terminology</h1>
+<ul class="terms">
+<li class="hue">
+	<h2>Hue</h2>
+    <p>The color part of a color, such as blue.</p> </li>
+<li class="saturation">
+	<h2>Saturation</h2>
+    <p>The intensity of that color.</p></li>
+<li class="brightness">
+	<h2>Brightness</h2>
+    <p>The amount of lightness or darkness</p></li>
+<li class="neutral">
+	<h2>Neutral</h2>
+    <p>Black, white, or gray; also known as nonchromatic hues.</p></li>
+<li class="chromatic">
+	<h2>Chromatic</h2>
+    <p>Not black, white or gray.</p></li>
+<li class="monochromatic">
+	<h2>Monochromatic</h2>
+    <p>Color combinations using tints and shades of a single hue.</p></li>
+    <li class="warm">
+	<h2>Warm vs Cool</h2>
+    <p>Red, orange, yellow are "warm" colors. Blue, indigo and violet are "cool" colors.</p></li>
+</ul>
+</section>
+  <section id="headlines">
+  <!-- Headlines and Subheads act as visual cues to guide the user through content. Edit the text, add images, claim this page as your own.-->
+  <h1>The evil Patron of Papyrus and Count Comic Sans are at it again!</h1>
+  <!--Collapse the colors into a color scheme of your choosing, then change the content, and make this page your own.-->
+  <p>Papyrus and Comic Sans love to annoy the other residents in OpenWebVille. This time, they've decided to delete any semblance of a color scheme.</p>
+  <h2>Help the OpenWebVillians clean up their webpage by choosing a color scheme!</h2>
+  </section>
+  
+ <section id="association">
+<!--Humans associate certain emotions with certain colors. What do you want your users to feel when they look at your site?-->
+<h1>Colors say things:</h1>
+<div class="red">This is important.</div>
+<div class="orange">Love it, hate it.</div>
+<div class="yellow">Be creative, be happy.</div>
+<div class="green">Embrace the natural (without feeling sick).</div>
+<div class="blue">Calm down and stay cool.</div>
+<div class="purple">Mysitical? Royal? Both.</div>
+<div class="pink">Be lighthearted and stimulated.</div>
+<div class="brown">Reliable, stable, earthy and organic.</div>
+<div class="gray">Sometimes it's wise to be inbetween extremes.</div>
+<div class="black">Show strength in the void.</div>
+<div class="white">Embrace the purity of light.</div>
+</section>
+</div>
+
+</section>
+</div>

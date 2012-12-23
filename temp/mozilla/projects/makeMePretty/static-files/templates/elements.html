@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<!--   
+Everyone has an embarrassing moment. For the Web that moment was in the 90s. Back then websites were boxy and ugly - kind of like this page! Wrangle your HTML and CSS style powers to change the content, the colors and the layout so that this webpage doesn't feel like its stuck in the 90's anymore...
+-->
+<meta charset="utf-8">
+<title>Principles of Design: Page Elements</title>
+<link rel="stylesheet" href="elements-files/styles.css">
+<style>
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+    background-image:url(elements-files/bgtile.png);
+    background-repeat:repeat;
+    text-align:center;
+    
+     /*You can make  the background a solid color by using the background attribute. You'll  want to delete the background-image attribute though! Try out some different colors.
+    Replace the URL in the background-image attribute with an image from the web. Search Google Images to find interesting background tiles.
+  The background-repeat attribute tells the background tile to repeat horizontally and vertically.
+    Centering text very rarely looks good. Change the alignment by editing the text-align attribute*/
+}
+section {
+    background: #87E8FF;
+    border:5px solid black;
+    padding:10px;
+     /*Part of the reason this page looks so boxy is because  each section has a background color. Try removing the background  color.
+       The border attribute also contributes to the boxiness of the page.*/ 
+}
+.content {
+    /*Here is another background color you might want to modify*/
+    background:#F30D00;
+    padding:20px;
+    /*These attributes might help this page look a little more modern. Remove the comment and see if this helps your page come out of the 90s
+    margin-top:20px;
+    -webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px; 
+*/
+}
+#logo {
+    font-family: 'Comic Sans MS';
+    font-size:50px;
+    background:#FFEB00;
+    border:5px solid black;
+     /*Blech! Comic Sans really is a 90s font. Try replacing it with Georgia or another font of your choice. Find out more about open web fonts that you can use here > http://www.google.com/webfonts*/
+}
+nav {
+    width:100%;
+margin-left:auto;
+    margin-right:auto;
+      /*Setting margin-left and marin-right to auto will center the element the style is set to. Change or delete these margins to move the navigation around*/
+}
+nav a {
+    font-size:16px;
+    text-decoration:underline;
+    background:#F30D00;
+    padding:5px;
+     /*When padding is used on multiple elements the  underlying grid can get messed up. Check your padding attributes if  things seem out of alignment.*/
+}
+nav a:hover {
+    color:#800080;
+    text-decoration:underline;
+}
+p{
+font-size:12px;   
+/* This style controls all the p tags on the page.*/ 
+}
+#masthead {
+    font-size:18px;
+}
+#breadcrumbs {
+    text-align:left;
+        /*Maybe the breadcrumb text doesn't need to be so big? Try adding a font-size attribute.*/
+}
+#breadcrumbs a {
+    color: blue;
+    text-decoration:underline;
+}
+#breadcrumbs a:hover {
+    color:#800080;
+    text-decoration:underline;
+}
+#headlines h1 {
+    font-size:36px;
+    font-family:Impact;
+       /* Typography is tricky business. You want to create  unity within a page and having too many fonts breaks up unity. Try  deleting this font-family.*/
+}
+#headlines h2 {
+    font-size:24px;
+    font-family:"Times New Roman", Times, serif;
+       /*Another font!? Geez...*/
+}
+#quote {
+    width:300px;
+   
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+       /*Try changing the width of the quote. Try deleting the width completely. What looks best? 
+       This style defines another font-family, this time a serif font. Maybe you want to change this too?*/
+}
+</style>
+<div class="content"> 
+  <!--Experiment with different page elements and make this a page about a topic YOU choose!-->
+  <header id="logo"> 
+    <!--A logo communicates the overarching goal of a project. Make this page YOURS. Give it a new logo, you might even want to insert an image tag here.--> 
+    Stuck in the 90's
+    <nav> <a href="#" class="selected">Stuck in the 90s</a> <a href="#">Make a Metaphor</a> <a href="#">Sans Comic</a> <a href="#">Color Collapse</a> </nav>
+  </header>
+  <section id="masthead"> 
+    <!--A Masthead gives a project a human element. Claim this site as your own, and write your name or handle in. You can control the look of this type by editing the #masthead style above--> 
+    Created by YOU </section>
+  <section id="breadcrumbs"> 
+    <!--Breadcrumbs let your user know where they are in your site. You are currently here:--> 
+    <a href="../design_overview.html">Designing for Web</a> > <a href="../index.html"> Make Me Pretty</a> > Page Elements </section>
+  <section id="headlines"> 
+    <!-- Headlines and Subheads act as visual cues to guide the user through content. Designing is an Evolutionary Process. Use various page elements to draw attention to certain content and create a hierarchy within a page. Edit the text, add images, claim this page as your own.-->
+    <h1>Ahhh the 90's, awesome decade.</h1>
+    <h2>Except back then, the Web wasn't very pretty.</h2>
+    <h3>Everyone was using tables and websites were so boxy. People used a bunch of different fonts. There was flannel everywhere.</h3>
+    <p>Please help this page come out of the 90's. Make it pretty, make it yours! Let's put the past behind us and wash our hair on a regular basis. Grunge is so over!</p>
+  </section>
+  <section id="quote"> 
+    <!-- Pull-quotes, lead-ins and kickers inspire a deeper content dive. They also allow you to voice an opinion or belief using someone else's words. What's your favorite quote? Write it in! --> 
+    &quot;I have found that all ugly things are made by those who strive to make something beautiful, and that all beautiful things are made by those who strive to make something useful.&quot; Oscar Wilde </section>
+  <section id="artwork"> 
+    <!-- A picture is worth a thousand words. Maybe you want to replace this guy with someone or something else? --> 
+    <img src="http://dismagazine.com/uploads/2010/03/Grunge.jpg" width="364px"/> <img src="http://dismagazine.com/uploads/2010/03/Grunge.jpg" width="364px"/> </section>
+</div>

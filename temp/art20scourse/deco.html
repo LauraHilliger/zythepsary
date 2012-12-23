@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Art Deco and de Stijl</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:regular' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"> </script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+<script src="http://dev.jquery.com/view/trunk/plugins/color/jquery.color.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="jquiz.js"></script>
+  
+<script type="text/javascript"> 
+ $(document).ready(function() {
+	$(".accordion h3:first").addClass("active");
+	$(".accordion div:not(:first)").hide();
+
+	$(".accordion h3").click(function(){
+		$(this).next("div").slideToggle("normal")
+		.siblings("div:visible").slideUp("normal");
+		$(this).toggleClass("active");
+		$(this).siblings("h3").removeClass("active");
+	});
+	  $("#draggable01").draggable();
+      $("#droppable01").droppable({
+      drop: function(event, ui) { checkDrop($(this), ui.draggable);}
+    });
+	 $("#draggable02").draggable();
+      $("#droppable02").droppable({
+      drop: function(event, ui) { checkDrop($(this), ui.draggable);}
+    });
+	 $("#draggable03").draggable();
+      $("#droppable03").droppable({
+      drop: function(event, ui) { checkDrop($(this), ui.draggable);}
+    });
+	 $("#draggable04").draggable();
+      $("#droppable04").droppable({
+      drop: function(event, ui) { checkDrop($(this), ui.draggable);}
+    });
+
+	
+});
+
+function checkDrop(drop, drag){
+	var id = drag[0].id.replace("draggable", "droppable");
+	if(drop[0].id == id){
+		$(drop[0]).css("background-color","green");
+		$(drag[0]).offset({top:650});
+		
+		
+	} else {
+		$(drop[0]).css("background-color", "red");
+		$(drag[0]).offset({top:650});
+	}
+}
+	
+	</script>
+<link href="jquiz.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+<hr color="#666666" width="100%" />
+	<div id="content">
+ <a class="headerText" href="overview.html">Art in the 1920's</a>
+    	<nav>
+           
+        	<a href="surrealism.html">Surrealism</a>
+            <a href="deco.html" style="color:#0099FF;">Art Deco &amp; de Stijl</a>
+             <a href="construct.html">Suprematism &amp; Constructivism</a>
+			<a href="dada.html">Dadaism</a></nav>
+            <div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'de',
+    layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+  }, 'google_translate_element');
+}
+</script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+			<div class="introText">
+        <h1 id="headerText">Orientation in Art Deco &amp; de Stijl</h1>
+        <div class="accordion">
+        	<h3>Origin</h3><div><p><img src="images/deco.png" alt="Art Deco and de Stijl" vspace="3"/>After WW1, Art Deco emerged in a society that sought to return to normalcy. The growth of industry during wartime caused the public to put a great amount of faith in machines and new industrial technologies that were emerging. Cubist ideas of spacial organization and geometric imagery, the aesthetics of architecture and the look of machine made objects, inspired designers in the time between the two world wars.</p><p> In an effort to express the modern age as well as decorate our world, artists commingled ideas from previous artistic eras (<a class="zem_slink" title="Cubism" rel="wikipedia" href="http://en.wikipedia.org/wiki/Cubism">Cubism</a>, <a class="zem_slink" title="Bauhaus" rel="wikipedia" href="http://en.wikipedia.org/wiki/Bauhaus">Bauhaus</a> and the Vienna Succession) with native influences (<a class="zem_slink" title="Aztec" rel="wikipedia" href="http://en.wikipedia.org/wiki/Aztec">Aztec</a>, Egyptian) to create Art Deco.</p><p> During this time De Stijl was also emerging. Stemming from similar ideas of the inevitably of human progress, De Stijl artists believed they were living in a new age, an age when machines would streamline human processes, and that a balance between individual and universal values would be struck. A step further from Art Deco, De Stijl sought to create a Utopian society represented through art.
+        </p></div>
+      		
+                <h3>Period</h3>
+                <div><p>Art Deco 1920 through the 1930s, De Stijl 1917 through the early 1930s</p></div>
+                
+                 <h3>Aesthetic Characteristics</h3>
+                <div><p>Art Deco is characterized by streamlined, geometric shapes and was focused mainly in <a class="zem_slink" title="Decorative arts" rel="wikipedia" href="http://en.wikipedia.org/wiki/Decorative_arts">decorative arts</a>. The style was most often used in architecture, furniture and objects as opposed to graphics and paintings. The forms were derived from nature, were extremely simple and inherently aerodynamic, making them perfect for use in industrial design. Art Deco has bold, steep curves, bright colors and was, at the time, extremely modern.</p><p>
+
+De Stijl sought universal laws of equilibrium and harmony for art which could then be a prototype for a new social order. It used an abstract geometric style. In 1917 <a class="zem_slink" title="Theo van Doesburg" rel="wikipedia" href="http://en.wikipedia.org/wiki/Theo_van_Doesburg">Theo van Doesburg</a> saw works by <a class="zem_slink" title="Piet Mondrian" rel="wikipedia" href="http://en.wikipedia.org/wiki/Piet_Mondrian">Mondrian</a> at an exposition and found his ideal style, a complete abstraction of reality. Soon after, he started the magazine De Stijl and the movement was born. Major contributors advocated the absorption of pure art by applied art and the expression of pure reality.</p></div>
+                
+                <h3>Influential Artists - Art Deco</h3>
+                	
+              		 <div class="artists">
+                		<h4>Max Le Verrier</h4>
+                    	<p><img src="http://www.maxleverrier.com/english/images/photo-MaxLeVerrier-08.jpg" width='92'/><em>Clarté</em>Max <a class="zem_slink" title="Urbain Le Verrier" rel="wikipedia" href="http://en.wikipedia.org/wiki/Urbain_Le_Verrier">Le Verrier</a> started a series of dancers and gymnasts trying to capture the slim figure of a female in motion. The woman with a bowl reestablishes the idea of a goddess of light. Simplified hair, sleek physique, smooth lines exemplify the Art Deco movement.</p>
+                         <p></p>
+                        <p></p>
+                        <p></p>
+                         <p></p>
+                        <p></p>
+                        <p></p>
+                        <h4>William van Alen</h4>
+                    	<p><a href="http://commons.wikipedia.org/wiki/File:Chrysler_building-_top.jpg"><img title="New Yorker Chrysler Building, oberer Gebäudete..." src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Chrysler_building-_top.jpg/300px-Chrysler_building-_top.jpg" alt="New Yorker Chrysler Building, oberer Gebäudete..." width='92' /></a>The <em><a class="zem_slink" title="Chrysler Building" rel="geolocation" href="http://maps.google.com/maps?ll=40.7517,-73.9753&amp;spn=0.01,0.01&amp;q=40.7517,-73.9753%20%28Chrysler%20Building%29&amp;t=h">Chrysler Building</a></em>  has a stainless steel spire and diminishing fan shapes. The building is one of the best examples of Art Deco in architecture.</p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <h4>Schulz Neudamm</h4>
+                    	<p><a href="http://en.wikipedia.org/wiki/File:Metropolis_poster.jpeg"><img title="Film poster for Metropolis" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/94/Metropolis_poster.jpeg/300px-Metropolis_poster.jpeg" alt="Film poster for Metropolis" width='92'/></a><em>Metropolis</em> The Art Deco idea of optimism for progress and machinery is mixed with the fear of conformity (ie being replaced by robots) in this famous poster.</p>
+                        <p></p>
+                         <p></p>
+                        <p></p>
+                        <p></p>
+                         <p></p>
+                        <p></p>
+                        <p></p>
+                         <p></p>
+                          <p></p>
+              		 </div>
+ 		
+        	<h3>Influential Artists - de Stijl</h3>
+                	
+              		 <div class="artists">
+                		<h4>Georges Vantongerloo</h4>
+                    	<p><img src="http://www.moma.org/collection_images/resized/108/w500h420/CRI_63108.jpg" width='192' /><em>Construction in the Sphere</em> consists of four small sculptures where the artist gives into <a class="zem_slink" title="Geometric abstraction" rel="wikipedia" href="http://en.wikipedia.org/wiki/Geometric_abstraction">geometric abstraction</a>. In these works the human form is reduced to spheres, cubes and pyramids. One sculpture suggests the human form in movement, but all recognizable forms are reduced.</p>
+                         <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                         <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <h4>Piet Mondrian</h4>
+                    	<p><a href="http://en.wikipedia.org/wiki/File:Mondrian_Composition_II_in_Red%2C_Blue%2C_and_Yellow.jpg"><img title="One of his best known works, a product of his ..." src="http://upload.wikimedia.org/wikipedia/en/thumb/f/fe/Mondrian_Composition_II_in_Red%2C_Blue%2C_and_Yellow.jpg/300px-Mondrian_Composition_II_in_Red%2C_Blue%2C_and_Yellow.jpg" alt="One of his best known works, a product of his ..." width='192'/></a> <em>Composition (Blue, Red, Yellow)</em> The right angel in this work takes on great importance because the Mondrian's philosophy is based on two ideas the platonic forms and <a class="zem_slink" title="Yin and yang" rel="wikipedia" href="http://en.wikipedia.org/wiki/Yin_and_yang">yin-yang</a>; underlined order, pure forms, this idea led to the development of &quot;<a class="zem_slink" title="De Stijl" rel="wikipedia" href="http://en.wikipedia.org/wiki/De_Stijl">neoplasticism</a>&quot;, &quot;pure plastic art&quot;. Movement is observed because the lines don’t go all the way to the edges. He wanted to create <a class="zem_slink" title="Dynamic equilibrium" rel="wikipedia" href="http://en.wikipedia.org/wiki/Dynamic_equilibrium">dynamic equilibrium</a> and dynamic harmony. He felt yin-yang was too soft. Pure geometry/ platonic clarity, colors have certain weight. It uses very simple means but there are variations to a particular idea such as reductive extraction, primary colors, squares, and lines. Mondrian lived his life how he painted, his apartment and belongings were completely geometric and he was obsessive compulsive. Mondrian believed nature is a fake copy of the true idea. </p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <h4>Gerrit Rietveld</h4>
+                    	<p><a href="http://commons.wikipedia.org/wiki/File:RietveldSchroederhuis.jpg"><img title="The Rietveld Schröder House—the only building ..." src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/RietveldSchroederhuis.jpg/300px-RietveldSchroederhuis.jpg" alt="The Rietveld Schröder House—the only building ..." width='192' /></a> <em>Schröder House</em> Rietvald defined his creation as anti-cubic, it releases <a class="zem_slink" title="Function space" rel="wikipedia" href="http://en.wikipedia.org/wiki/Function_space">functional space</a> from the center instead of defining it within a single closed cube. Rietveld designed Schröder House to be an ever changing design. Partitions slide so that rooms are divided only by the physical objects within, certain walls and railings appear to be free floating and large windows break up the cubic units. The planes seem to be movable, and the house has been considered a 3d representation of the carefully construction geometry found in De Stijl works.</p>
+                        <p></p>
+                         <p></p>
+                          <p></p>
+              		 </div>
+                <h3>Results</h3>
+                <div><p>Art Deco helped streamline designs for cars, trains, ships, planes and buildings, and De Stijl promoted the integration of art in life, a notion that the Bauhaus adopted unilaterally.</p></div>
+                
+                
+                
+                <h3>Test Your Art Deco/de Stijl Knowledge</h3>
+                <div style="background-color:#f7f7f7;"><ol id="jquiz">
+    <li>
+		<p>Which period sought to create Utopia through art?</p>
+    <ul>
+        <li>Art Deco</li>
+        <li class="correct">de Stijl</li>
+    </ul>
+    <div class="explanation hidden correct">
+		<p>Good job! Art Deco was extremely modern, but it was de Stijl that sought to create real world change through art.</p>
+	</div>
+	<div class="explanation hidden wrong">
+		<p>Oops, you might want to read the Origins again!</p>
+	</div>
+    </li>
+    <li>
+		<p>Which artist showed both optimism and fear in one of his most famous pieces?</p>
+    <ul>
+		<li>Piet Mondrian</li>
+        <li class="correct">Schulz Neudamm</li>
+		<li>Georges Vantongerloo</li>
+      </ul>  
+         <div class="explanation hidden correct">
+		<p>Well done! The poster for Metropolis showed optimism for machines, but fear of conformity.</p>
+	</div>
+	<div class="explanation hidden wrong">
+		<p>Oops, you might want to take a look at the Influential Artists section again.</p>
+	</div>
+    </li>
+    <li>
+		<p>Which of these words DOES NOT describe the aesthetic characteristics of Art Deco or de Stijl?</p>
+    <ul>
+		<li>streamlined</li>
+        <li>aerodynamic</li>
+		<li>abstraction</li>
+		<li>modern</li>
+		<li class="correct">random</li>
+        
+    </ul>
+     <div class="explanation hidden correct">
+		<p>Super! Pieces from both styles were very carefully created, never randomly!</p>
+	</div>
+	<div class="explanation hidden wrong">
+		<p>Uh oh, that's incorrect. Perhaps you'd like to review the course again?</p>
+	</div>
+    </li>
+
+</ol>
+
+<div id="jquizremarks">
+	<p id="jquiztotal"></p>
+</div>
+</div>
+                <h3>Think you know Art in the 1920's? Take the test!</h3>
+                <div><p>Match the images with the keyword boxes by dropping the image underneath the keywords.</p>
+                <p id="droppable01">anti art, rebellion against conventional thought and sought to bring absurdity into all aspects of existence. DuChamp, Schwitters and Man Ray were influential. Chance associations and found object art.</p>
+					 <p id="droppable02">dream art, interested in dreams as the art of uncovering the unconscious, automatic drawing and chance techniques, representational objects. Paul Klee and Max Ernst were notables. New tools to visualize the unconscious.</p>
+                     <p id="droppable03">political art, geometric abstract art, not about a feeling, but of a sensation,  tectonics, texture, and construction, elemental shapes and color to create form. Malevich, Lissinsky and Rodchencko art defined the movement.</p>
+                     <p id="droppable04">Faith in Machines, designs for cars, trains, ships, planes and buildings, integration of art in life. Georges Vantongerloo, Piet Mondrian and Gerrit Rietveld were important artists. Universal laws of equilibrium and harmony for art, streamlined, geometric shapes. Utopian society created through art.</p>
+                      <p id="draggable02"><img src="images/surreal.png" alt="Surrealism" /></p>
+                      <p id="draggable04"><img src="images/deco.png" alt="Art Deco and de Stijl" /></p>
+                     <p id="draggable01"><img src="images/dada.png" alt="Dadaism" /></p>
+                    
+					
+                     
+					 <p id="draggable03"><img src="images/construct.png" alt="Suprematism and Constructivism" /></p>
+                     
+					
+			</div></div>
+            <a href="surrealism.html" style="float:right;">Next</a>
+                <a href="construct.html" style="float:left;">Previous</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Get Your Navigator Badge Here!</title>
+<link rel="stylesheet" href="../main-page.css">
+<style>
+p {
+  clear: both;
+}
+
+#challenge input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px dotted gray;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+#supergirl {
+  float: right;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid gray;
+  color: gray;
+}
+
+#win {
+  text-align: center;
+}
+
+#badge {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+#win input {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: large;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+#win input#submit {
+  width: 30%;
+  cursor: pointer;
+}
+
+#win input#submit:hover {
+  color: white;
+  background: darkgreen;
+}
+
+#win input#email {
+  width: 50%;
+}
+</style>
+<script src="../jquery.min.js"></script>
+<script src="bugs.js"></script>
+<script src="../main-page.js"></script>
+<script src="quickbadge.js"></script>
+<script src="http://beta.openbadges.org/issuer.js"></script>
+<script>
+$(window).ready(function() {
+  $("#paster-field, #linker-field, #massive-paster-field").val('');
+  $("#massive").val($("#massive").text());
+  window.location.hash = "";
+  
+  var bugDisplay = BugDisplay(bugs);
+
+  setInterval(function() {
+    bugDisplay.update();
+  }, 100);
+});
+</script>
+
+<!-- For development, try loading the issuer API from the dev server. If 
+     it fails, we'll just use the non-development issuer API from the
+     script tag above. -->
+<script src="http://localhost:8888/issuer.js"></script>
+
+<!-- The help bar at the top of the page. -->
+
+<div class="help">
+  <span class="not-done">There <span class="singular">is</span><span class="plural">are</span> <span class="remaining"></span> challenge<span class="plural">s</span> left on this page.</span>
+  <span class="done">Yay, you finished all the challenges! Now you have a navigator badge.</span>
+</div>
+
+<!-- Achievements awarded to users when they fix bugs. -->
+
+<div class="achievements">
+  <div id="address-bar-hacker" class="achievement">
+    <h3>Achievement Unlocked</h3>
+    <p>Address Bar Hacker</p>
+  </div>
+  <div id="selecter" class="achievement">
+    <h3>Achievement Unlocked</h3>
+    <p>Selectin’ Maniac</p>
+  </div>
+  <div id="paster" class="achievement">
+    <h3>Achievement Unlocked</h3>
+    <p>Pastin’ Fool</p>
+  </div>
+  <div id="massive-paster" class="achievement">
+    <h3>Achievement Unlocked</h3>
+    <p>Massive Paster</p>
+  </div>
+  <div id="linker" class="achievement">
+    <h3>Achievement Unlocked</h3>
+    <p>Linker</p>
+  </div>  
+</div>
+
+<!-- Main page. -->
+<div id="challenge">
+<h1>Get Your Navigator Badge Here!</h1>
+
+<p>Do you have what it takes to surf the web like the pros? Let’s find out!</p>
+
+<p>First, change your address bar so its URL ends with <code id="secret-hash">#icanhack</code> and press enter.</p>
+
+<p id="select-me"><em>Now select this text.</em></p>
+
+<p>Then copy and paste it in here: <input type="text" id="paster-field"></p>
+
+<div id="massive-challenge">
+<p>Now select everything in the text field below, copy it, and paste it in the empty field after it:</p>
+
+<textarea id="massive" readonly>Lorem ipsum lol sit amizzle, consectetuer cool.
+
+Boom shackalack funky fresh, crackalackin.  Lorem ipsum lol sit amizzle, consectetuer cool.
+
+  Boom shackalack funky fresh, crackalackin.Lorem ipsum lol sit amizzle, consectetuer cool.
+
+  Boom shackalack funky fresh, crackalackin.Lorem ipsum lol sit amizzle, consectetuer cool.
+
+  Boom shackalack funky fresh, crackalackin.Lorem ipsum lol sit amizzle, consectetuer cool.
+
+  Boom shackalack funky fresh, crackalackin.Lorem ipsum lol sit amizzle, consectetuer cool.
+
+  Boom shackalack funky fresh, crackalackin.Lorem ipsum lol sit amizzle, consectetuer cool.
+
+  Boom shackalack funky fresh, crackalackin.Lorem ipsum lol sit amizzle, consectetuer cool.
+
+  Boom shackalack funky fresh, crackalackin.Lorem ipsum lol sit amizzle, consectetuer cool.</textarea>
+
+<textarea id="massive-paster-field"></textarea>
+</div>
+
+<p><img src="http://hackasaurus.org/images/goggles/supergirl.png" id="supergirl">Finally, copy the URL of the picture on the right and paste it here: <input type="text" id="linker-field"></p>
+</div>
+
+<div id="win" style="display: none">
+  <img src="http://toolness.github.com/hackasaurus-parable/navigator-badge/navigator-badge.png" id="badge">
+  <p>Congratulations! <span class="instructions">If you'd like to send this badge to your backpack, just fill out the form below.</span></p>
+  <form>
+    <input type="text" id="email" placeholder="E-mail Address">
+    <input type="submit" value="Send To Backpack »" id="submit">
+  </form>
+  <img src="ajax-loader.gif" id="throbber" style="display: none">
+</div>

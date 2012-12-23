@@ -1,0 +1,91 @@
+<!DOCTYPE html><!-- =========================================================================
+
+You learned how to you use CC licensed images, video and sound;  now it is time for you to create your own unique masterpiece, choose an attribution and share it with the world of the Open Web !
+
+
+============================================================================ --><!--
+Let's get started.
+
+1) READ THROUGH THE COMMENTS. This is a comment. Everything inside of this tag for HTML or '/*' for CSS, is not processed as code, but instead is just text comments about the code. For this project, the comments will give you instructions, hints and guides to completing the project, so skim down through the comments to get an understanding of what you are being asked to do.
+
+2) GET ORIENTED IN THE CODE. HTML is made up of tags that look like this <p> </p>. The tags tell you something about the information contained between them. Click on the tags in the code on this side of the editor to get a description of what each tag is for.
+
+--><html><!--
+You might notice some words on this page (like <body> and <h1>) which are inside of angle brackets and colored blue.
+
+These words are called tags. Tags help you to structure your page. For example, let's say that you want to make a paragraph. You will put a tag at the exact point you want the paragraph to start and another tag where you want the paragraph to stop. The most important thing to remember is that tags (with a few exceptions, like <img>) come in pairs - so you almost always need to have an opening and closing tag.
+--><head>
+<meta charset="utf-8">
+<title>Open Webville Masterpiece</title>
+</head>
+ 
+  <!--The <body> tag below contains the actual content of your webpage. Everything a visitor sees will be written inside this tag. 
+-->
+
+<body>
+  
+  <!--
+Below this comment is a heading. The <h1> tag stands for header - and everything inside the <h1> tag becomes a big header on the preview to the right. <h1> opens the tag, and </h1> closes it. Everything in between is the heading.  Edit the title below to fit your masterpiece.
+-->
+    <h1>Make Your Own Open Webville Masterpiece</h1>
+ <div class="masterpiece"> 
+ <!-- This is the section to add your photo, video or audio masterpiece. Use what you have learned so far in the other projects about how to embed media to replace the images below with your creation. --> 
+  <img src="static/lille.png"/>
+  <img src="static/city.png"/>
+ </div>
+
+  
+   <!-- It is time to show off your creation.  Start by choosing the license you want to share it under and then depending on wether it is an image, song or video add it within the <div> tag below.
+You can use the resources found here to choose the right license;
+  http://creativecommons.org/choose >
+-->
+  
+
+  
+  <!--
+The <p> tag below stands for paragraph and is one of the most commonly used elements in HTML. We use it to write exactly what you would expect: paragraphs of text. Try adding a description to your creation. Just remember to have both opening and closing paragraph tags like.
+-->
+  
+  <p>Add a description to your creation</p>
+<style>
+/*
+You've played with the text, now try tinkering with the look and feel of your page. To do so we will use CSS, which stands for Cascading Style Sheets, and everything within the <style> tags is CSS. You can change values below to significantly change how your page looks. Look for HTML tags above to change the style of that element. For example  if you want to change the background-color of the entire <body> of the document, to say blue, look within the body styling below. 
+*/
+  @font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), url(http://themes.googleusercontent.com/static/fonts/lobster/v5/NIaFDq6p6eLpSvtV2DTNDQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+
+      body {
+      margin-left:auto;
+      margin-right:auto;
+      width:800px;
+      font-family:'Lobster'; 
+      background-color: #D1EBE7;
+      }
+   
+  
+/* the next bit of CSS styles tags with class="masterpiece". The '.' refers to class */
+      .masterpiece{
+      width:500px;
+      margin-left: auto;
+      margin-right: auto;
+      }
+  
+     p{
+	     width:100%;
+     }
+      h1{
+	  font-size:36px;
+	  text-align: center;
+      }
+      
+
+    </style>
+
+
+</body></html><!-- ==========================================================================
+Your Open Web masterpiece is now complete - hit the publish button and share it with the world. And don't forget you learned some pretty awesome stuff in all of this webmaking: you can now work with text in HTML including the <p> tag, you can use images and videos, and you can start to understand and edit CSS.
+============================================================================ -->

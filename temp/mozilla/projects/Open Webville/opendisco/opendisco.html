@@ -1,0 +1,144 @@
+<!DOCTYPE html><!-- =========================================================================
+What  a great day you had so far in Open Webville. You visited the Art  Gallery and then watched a movie at the Cinema. It is time for some  dancing! Welcome to Open Webville's very own disco. Rumor has it that  you are an incredible DJ, can you play the next song?  And don't forget  to credit the creator and fill in the guidebook with tips so the rest of  the citizens of Open Webville can take the decks too!
+============================================================================ --><!--
+Let's get started.
+
+1) READ THROUGH THE COMMENTS. This is a comment. Everything inside of this tag for HTML or '/*' for CSS, is not processed as code, but instead is just text comments about the code. For this project, the comments will give you instructions, hints and guides to completing the project, so skim down through the comments to get an understanding of what you are being asked to do.
+
+2) GET ORIENTED IN THE CODE. HTML is made up of tags that look like this <p> </p>. The tags tell you something about the information contained between them. Click on the tags in the code on this side of the editor to get a description of what each tag is for.
+
+--><html><head>
+<meta charset="utf-8">
+
+<title>Open Webville Disco</title>
+</head>
+
+<body>
+<!--
+The <audio> tag is used to specify media resources for audio in HTML5. It works like the <img> tag that you learned about in the Open Webville Gallery project, in that you need to provide a src URL that points to the audio file. Try swapping out the song below with a song of your choice by replacing the URL. Make sure that your src URL ends in a file format like .mp3
+
+If you don't know where to find a song that's openly licensed or in the public domain look in the following places:
+ 1. Start by checking out dig cc mixter http://dig.ccmixter.org/
+ 2. Look at the record labels under CC licenses: http://creativecommons.org/record-labels
+ 3.  Vimeo has free CC-licensed tracks in addition to tracks that you can pay for:http://vimeo.com/musicstore.
+ 4. Soundcloud has mostly full-length, new electronic music.soundcloud.com/creativecommons
+
+-->
+
+  <audio>
+      <source>
+    </audio>
+  
+ 
+<div class="disco"> 
+<div class="lille">
+<!--There's plenty of space on the dance floor for other dancers! Search for animated gifs and add new image tags after Madam Lille.-->
+	<img src="static/lille.gif"/>
+
+	
+</div>
+ <!--
+Great  job on adding your song to the Discoteque! It is time to add  full attribution to the  original  author(s) to the best of your ability with the information you do have. 
+
+To add the attribution we will use the <p> tag below, which stands for paragraph and is one of the most commonly used elements in HTML. We use it to write exactly what you would expect: paragraphs of text. Try editing the text. Just remember to have both opening and closing paragraph tags like this. You can add the credits for your song in between the <p> tags.
+-->
+  
+<p> 
+
+  <!--
+Notice that there is attribution given to the creator of the song, right under the disco floor.  You can click on "You Rascal You" to see the song as posted in the profile of the creator. This works because of a special tag: <a> which is used for hyperlinks. It requires the href attribute to define the URL. Try switching it to the song of your choice. Similarly you need to link to the type of CC license that this song is under.
+
+Follow the example below to add attribution to the creators of the work that is playing at the Open Webville Disco.
+-->
+  
+<a href="http://ccmixter.org/people/morgantj/profile">"You Rascal You (TJMorgan_Remix).mp3"</a> © 2012 , by morgantj used under a <a href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution Non Commercial License</a>
+</p>
+
+<!--
+Adding a song to the Discoteque should be as easy as 1, 2, 3! Let's  use this opportunity to fill in the guidebook to show the rest of the Open Webville Citizens how to use music under a Creative Commons License. To do so we  will use an ordered list; writing  <ol> tells us that you are  creating a list, and <li> tells  us both the line number as well  as what are the items in that list.  Think of each <li> as the 1,  2, 3, etc. of your list. Add some  answers to the questions in this list  by replacing the text between the  <li> tags below. You can use  these resources to fill in the guidebook; http://openattribute.com/ & http://wiki.creativecommons.org/FAQ, 
+-->
+
+  <section id="guidebook">
+    <h1>Open Webville Guidebook</h1>
+     <ol>
+      <li>What is a CC licensed song?</li>
+      <li>Where can you find a CC licensed song?</li>
+      <li>How do you give attribution to a creator?</li>
+    </ol>
+  </section>
+</div>
+<style>
+/*
+CSS is used to define the look and feel of a website -- for example what color the background and the text should be. We will learn more about CSS in more advanced projects like Stuck in the 90's, but for now try moving Madame Lille around by changing the values in ... 
+*/
+  @font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), url(http://themes.googleusercontent.com/https://webpagemaker-dev.allizom.org/sd/disco/fonts/lobster/v5/NIaFDq6p6eLpSvtV2DTNDQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+a:link, a:visited{
+color:white;
+	text-decoration: underline;
+}
+a:hover{
+	color:yellow;
+	text-decoration: none;
+}
+      body {
+      margin-left:auto;
+      margin-right:auto;
+      width:800px;
+      font-family:'Lobster'; 
+      background-color: black;
+      }
+      
+      .disco{
+	  background-image: url(static/webville_disco.gif);
+      background-repeat: no-repeat;
+      min-height: 1350px;
+      border:1px solid black;
+      width:782px;
+      background-color:#FCFAD7;
+      }
+      .lille{
+	      position: relative;
+	      left:120px;
+	      
+      }
+     .disco p{
+	   width:610px;
+	      margin-left:auto;
+	      margin-right:auto;
+	      position: relative;
+	      top:585px;
+	      font-family:Arial, Helvetica, sans-serif;
+	      font-size: 10px;
+	      color:white;
+
+	     
+     }
+     
+      ul, ol{
+	  width: 720px;    
+      }     
+     
+      #guidebook{
+	  position: absolute;
+      top: 635px;
+      font-size: 21px;
+      }
+      
+      #guidebook h1{
+	  font-size:36px;
+	  text-align: center;
+      }
+      
+
+    </style>
+
+
+
+</body></html><!-- ========================================================================
+Congrats! You've brought the beat to the Discotheque and also you created a guidebook for the Open Webville Citizens showing them how to use Creative Commons Licensed music! Not to mention that you learned some HTML along the way, like using the <audio>, <p> and <a> tags. Way to go Webmaker!
+============================================================================-->

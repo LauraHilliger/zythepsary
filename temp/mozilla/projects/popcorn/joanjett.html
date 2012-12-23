@@ -1,0 +1,1131 @@
+<html><head>
+		<meta charset="UTF-8">
+		<!-- Set your own title here -->
+		<title>Popcorn.js Pop!</title>
+		<!--
+		The base tag makes all relative URLs point to Mozillas server where
+		all the extra scripts and images are hosted.
+
+		If you want to add any of your own files, either remove the base tag
+		and make sure all the scripts refer to the right absolute URLs, or
+		set your own references to be absolute URLs on your server.
+		-->
+		<!--
+		<base href="http://mozillapopcorn.org/maker/layouts/pop/"/>
+		-->
+		<script src="file:///Macintosh HD/Users/Laura/Sites/butter/external/popcorn-js/popcorn.js" type="text/javascript" charset="utf-8"></script>
+		<script src="file:///Macintosh HD/Users/Laura/Sites/butter/external/popcorn-js/modules/player/popcorn.player.js" type="text/javascript" charset="utf-8"></script>
+		
+		
+		
+		<script type="text/javascript" src="../../../popcornMissions/plugins/popcorn.pop.js"></script>
+  	<script type="text/javascript" src="../../../popcornMissions/plugins/popcorn.words.js"></script>
+  	
+  	<script data-butter="project-data" type="application/json"></script>
+
+    
+		<link rel="stylesheet" href="file:///Macintosh HD/Users/Laura/Sites/butter/css/butter.ui.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<style type="text/css">
+		body {
+			background: none repeat scroll 0 0 #FFFFFF;
+			color: #333333;
+			font-family: Helvetica,Arial,sans-serif;
+			font-size: 12px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.clearfix {
+			display: block;
+		}
+
+		/*
+			begin custom styles for Popcorn/Seriously
+		*/
+
+		#scale-buttons {
+			position: fixed;
+			right: 35px;
+			background-color: #eee;
+			padding: 20px;
+			z-index: 1000;
+		}
+
+		#video-container {
+			position: relative;
+			width: 768px;
+			margin: 1em auto;
+		}
+
+		#video-container .vjs-big-play-button,
+		#video-container .vjs-controls,
+		#video-container .vjs-styles-check {
+			z-index: 202;
+		}
+
+		#video-container .vjs-spinner {
+			z-index: 201;
+		}
+
+		/* disable full screen button */
+		#video-container .vjs-fullscreen-control {
+			display: none;
+		}
+		#video-container .vjs-volume-control {
+			right: 10px;
+		}
+		#video-container .vjs-time-control {
+			right: 65px;
+		}
+		#video-container .vjs-progress-control {
+			right: 140px;
+		}
+
+		#video-container .popcorn-words {
+			z-index: 250;
+		}
+
+		#video-container video {
+			display: block;
+			width: 100%;
+		}
+
+		#video-container {
+			font-size: 20px;
+			line-height: normal;
+		}
+
+		#video-container > div {
+			line-height: normal;
+		}
+
+		#pop-container > div {
+			/* default position */
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		</style>
+	<script data-butter-exlude="true" type="text/javascript" src="https://browserid.org/include.js"></script><script src="../../../popcornMissions/plugins/popcorn.pop.js"></script><script src="../../../popcornMissions/plugins/popcorn.words.js"></script><style type="text/css">/**
+ * Highlight style classes
+ * .a background color
+ * .b underline
+ * .c underline + font color
+ */
+ 
+@media screen{
+em.diigoHighlight {
+	text-align:inherit;
+	text-decoration: inherit;
+	line-height:inherit;
+	font:inherit;
+	color:inherit;
+	display:inline;
+	position:relative;
+}
+em.diigoHighlight.a_style.mouseOvered {
+	background-color: #ffc62a !important;
+}	
+
+em.diigoHighlight.b_style.mouseOvered, em.diigoHighlight.c_style.mouseOvered {
+	border-bottom: solid 2px #ffc62a;
+}
+	
+em.diigoHighlight.c_style {
+	color: #000099;
+}
+em.diigoHighlight.c_style.mouseOvered {
+	color: #ffc62a;
+}	
+
+em.diigoHighlight.a_style.yellow {
+	background-color: #FF9;
+}
+
+em.diigoHighlight.b_style.yellow, em.diigoHighlight.c_style.yellow {
+	border-bottom: solid 2px #FF9;
+}
+	
+img.diigoHighlight.yellow {/*image highlight*/
+	cursor: pointer; 
+	outline:2px solid #FF9;
+}
+	
+em.diigoHighlight.a_style.blue {
+	background-color: #ABD5FF;
+}
+
+em.diigoHighlight.b_style.blue, em.diigoHighlight.c_style.blue {
+	border-bottom: solid 2px #ABD5FF;
+}
+	
+img.diigoHighlight.blue {/*image highlight*/
+	cursor: pointer; 
+	outline:2px solid #ABD5FF;
+}
+	
+	
+em.diigoHighlight.a_style.green {
+	background-color: #B2E57E;
+}
+
+em.diigoHighlight.b_style.green, em.diigoHighlight.c_style.green {
+	border-bottom: solid 2px #B2E57E;
+}
+
+img.diigoHighlight.green {/*image highlight*/
+	cursor: pointer; 
+	outline:2px solid #B2E57E;
+}	
+	
+	
+em.diigoHighlight.a_style.pink {
+	background-color: #ffcccc;
+}
+
+em.diigoHighlight.b_style.pink, em.diigoHighlight.c_style.pink {
+	border-bottom: solid 2px #ffcccc;
+}
+	
+img.diigoHighlight.pink {/*image highlight*/
+	cursor: pointer; 
+	outline:2px solid #ffcccc;
+}	
+	
+img.diigoHighlight.mouseOvered {
+	cursor: pointer; 
+	outline:2px solid #ffc62a;
+}	
+	
+
+div.diigotb-inline-cloud{
+	position:fixed !important;
+	width:440px !important;
+	height:370px !important;
+	left:0;top:0;
+	background-color:#fef5c7 !important;
+	z-index:9999999999 !important;
+	display:none;
+	-moz-border-radius:15px !important;
+}
+/*  capture image */
+
+.diigotb-body #diigotb-upload-cover{
+	cursor:crosshair!important;
+	z-index:1999999!important;
+	position:fixed!important;
+	left:0!important;
+	top:31px;
+}
+	
+.diigotb-body #diigotb-upload-tip{
+    color: #fff!important;
+    padding:2px 4px!important;
+    position:fixed!important;
+    z-index:11000001!important;
+}
+	
+.diigotb-body #diigotb-upload-select{
+	position:fixed!important;
+	z-index:1000001;
+}
+	
+.diigotb-body #diigotb-upload-resizer{
+	z-index:11000002!important;
+	position:fixed!important;
+	cursor:move!important;
+	border:1px dashed black!important;
+}
+	
+.diigotb-body #currentColor{
+  background-color: #fff!important;
+  width: 37px!important;
+  height: 37px!important;
+  padding: 1px!important;
+  border: 1px solid #2e68e6!important;
+  float: left!important;
+  margin: 0 5px 0 0!important;
+}
+	
+.diigotb-body #currentColor div{
+  width: 37px!important;
+  height: 37px!important;	
+  margin:0!important;
+}
+.diigotb-body .selectPanel{
+	margin-top:5px!important;
+}
+	
+.diigotb-body .colorCell{
+  float: left!important;
+  margin: 0 1px 1px 0!important;
+  border: 1px solid #5f92ff!important;
+  width: 18px!important;
+  height: 18px!important;
+}
+	
+.diigotb-body .colorCell:hover{
+  border: 1px solid #FF9900!important;
+}
+.diigotb-body .colorCell.actived{
+  border: 1px solid #FF9900!important;
+}	
+	
+.diigotb-body .colorCell div{
+  width: 18px!important;
+  height: 18px!important;
+  cursor:pointer!important;
+  margin:0!important;
+}
+
+.diigotb-body .capture-black{background-color:#000!important;}
+.diigotb-body .capture-white{background-color:#fff!important;}
+.diigotb-body .capture-gray{background-color:#808080!important;}
+.diigotb-body .capture-light-gray{background-color:#c0c0c0!important;}
+
+.diigotb-body .capture-red{background-color:#ff0000!important;}
+.diigotb-body .capture-cyan{background-color:#00ffff!important;}
+.diigotb-body .capture-orange{background-color:#ff9900!important;}
+.diigotb-body .capture-blue{background-color:#0000ff!important;}
+
+.diigotb-body .capture-yellow{background-color:#ffff00!important;}
+.diigotb-body .capture-purple{background-color:#9900ff!important;}
+.diigotb-body .capture-green{background-color:#00ff00!important;}
+.diigotb-body .capture-pink{background-color:#ff00ff!important;}
+	
+.diigotb-body #diigotb-colorpanel{
+	background:transparent url(chrome://diigotb/skin/ann-bar-palette-bg-left.png) no-repeat scroll left center!important;
+	display:block;
+	height:55px!important;
+	position:fixed!important;
+	width:180px!important;
+	z-index:11000022!important;
+	margin:0!important;
+}
+	
+.diigotb-body .diigotb-cbg{
+	background:transparent url(chrome://diigotb/skin/ann-bar-palette-bg-right.png) no-repeat scroll right top!important;
+	height:55px!important;
+	line-height:55px!important;
+	padding-left:6px!important;
+	width:180px!important;
+	margin:0!important;
+}
+
+	
+.diigotb-body #currentArrow{
+	background:transparent url(chrome://diigotb/skin/ann-bar-palette-arrow.png) no-repeat scroll 0 0!important;
+	height:6px!important;
+	left:0;
+	position:relative!important;
+	top:-5px;
+	width:7px!important;
+	margin:0!important;
+}
+	
+.diigotb-body #currentArrow._istop{
+	background:transparent url(chrome://diigotb/skin/ann-bar-palette-arrow-down.png) no-repeat scroll 0 0!important;
+	top:51px!important;
+}
+	
+	
+.diigotb-body #diigotb-text-area{
+	position:fixed!important;
+	z-index:11000010!important;
+}
+	
+.diigotb-body .diigotb-text-input{
+	font: 18px/22px Helvetica,Arial,sans-serif!important;
+	border:0px solid #5f92ff!important;
+	z-index:11000011!important;
+}	
+	
+.diigotb-body #diigotb-editpanel{
+	background:transparent url(chrome://diigotb/skin/ann-bar-bg-right.png) no-repeat scroll right center!important;
+	height:35px!important;
+	position: fixed!important;
+	z-index:11000022!important;
+	margin:0!important;
+}
+	
+	
+.diigotb-body .diigotb-btn div{
+	cursor:pointer!important;
+	width:18px!important;
+	height:18px!important;
+	margin:2px!important;
+}
+.diigotb-body .diigotb-btn{
+	width:23px!important;
+	height:23px!important;
+}
+		
+	
+.diigotb-body #diigotb-editpanel .diigotb-bg{
+	background:transparent url(chrome://diigotb/skin/ann-bar-bg-left.png) repeat-x scroll left center!important;
+	height:35px!important;
+	padding-left:6px!important;
+	line-height:35px!important;
+	margin:0!important;
+}
+	
+		
+.diigotb-body div.diigotb-tip{
+	-moz-border-radius:4px 4px 4px 4px;
+	background-color:#f1f2f7;
+	border:1px solid #767676;
+	color:black;
+	display:none;
+	-moz-box-shadow:5px 5px 5px -5px #767676;
+	font:12px Arial,Helvetica,sans-serif;
+	margin:0 !important;
+	padding:3px 6px !important;
+	position:absolute;
+	z-index:2147483647;
+}
+	
+.diigotb-body #diigotb-editpanel div.diigotb-btn{
+	padding:0px!important;
+	display:inline-table!important;
+	margin-bottom:0 !important;
+	margin-left:0 !important;
+	margin-right:0 !important;
+	margin-top:5px;
+}
+	
+	
+.diigotb-body #diigotb-editpanel div.diigotb-sep img{
+	padding:0!important;
+	margin:0!important;
+}
+	
+.diigotb-body #diigotb-editpanel div.diigotb-sep{
+	padding:4px 0!important;
+	display:inline-table!important;
+	margin:0!important;
+	line-height:0 !important;
+}	
+	
+.diigotb-body #diigotb-editpanel div.diigotb-btn.enabled:hover{
+	background: transparent url('chrome://diigotb/skin/ann-bar-opt-current.png') no-repeat!important;
+}
+	
+.diigotb-body #diigotb-editpanel #diigotb-undo.enabled div{
+	background: transparent url('chrome://diigotb/skin/ann-bar-opt-undo.png') no-repeat center center!important;
+}
+	
+.diigotb-body #diigotb-editpanel div.diigotb-btn.actived{
+	background: transparent url('chrome://diigotb/skin/ann-bar-opt-current.png') no-repeat!important;
+}
+	
+.diigotb-image-border{
+	border:1px solid #666 !important;
+}
+	
+#diigotb-imagepanel{
+	height:22px!important;
+	position: absolute!important;
+	z-index:11000022!important;
+	margin:0!important;
+}
+
+#diigotb-imagepanel .diigotb-btn{
+	cursor:pointer!important;
+	width:20px!important;
+	height:20px!important;
+	margin:2px!important;
+	float:left !important;
+	background:transparent url(chrome://diigotb/skin/save-image-action-icons.png) no-repeat scroll!important;
+}	
+	
+	
+#diigotb-imagepanel #diigotb-quick-save{
+	background-position:0 0!important;
+}
+		
+#diigotb-imagepanel.processing #diigotb-quick-save{
+	background-position:0 -20px!important;
+	cursor:default!important;
+}
+
+		
+#diigotb-imagepanel.needpremium #diigotb-quick-save{
+	background-position:0 -20px!important;
+	cursor:default!important;
+}	
+
+#diigotb-imagepanel.hassaved #diigotb-quick-save{
+	background-position: -60px 0!important;
+	cursor: pointer !important;
+}
+
+.diigotb-imagetip{
+	background:transparent url(chrome://diigotb/skin/notice-bar-bg-right.png) no-repeat scroll right center !important;
+	height:21px !important;
+	margin:0 !important;
+	position:absolute !important;
+	z-index:11000022 !important;
+	width:106px;
+}
+	
+.diigotb-imagebg{
+	background:transparent url(chrome://diigotb/skin/notice-bar-bg-left.png) repeat-x scroll left center !important;
+	height:21px !important;
+	margin:0 !important;
+	padding-left:6px !important;
+	width:90px;
+}
+	
+.diigotb-imagetip-text{
+	padding-left:20px!important;
+	font:11px/13px Helvetica,Arial,sans-serif!important;
+	color:white!important;
+	line-height:20px!important;
+	float:left;
+}
+	
+.diigotb-imagetip.processing .diigotb-imagetip-text{
+	background:transparent url(chrome://diigotb/skin/processing-fb.gif) no-repeat scroll left center !important;
+}
+	
+.diigotb-imagetip.hassaved .diigotb-imagetip-text{
+	background:transparent url(chrome://diigotb/skin/icon-done.png) no-repeat scroll left center !important;
+}
+	
+.diigotb-border{
+	position: absolute!important;
+	z-index:11000000!important;
+	margin:0!important;
+	background-color: #4b8cdc!important;
+}
+.diigotb-left{
+	width:1px!important;
+}
+.diigotb-right{
+	width:1px!important;
+}
+.diigotb-top{
+	height:1px!important;
+}
+.diigotb-bottom{
+	height:1px!important;
+}
+
+.diigotb-body #diigotb-rect div{
+	background: transparent url('chrome://diigotb/skin/ann-bar-opt-rectangle.png') no-repeat center center!important;
+}	
+.diigotb-body #diigotb-round div{
+	background: transparent url('chrome://diigotb/skin/ann-bar-opt-ellipse.png') no-repeat center center!important;
+}
+.diigotb-body #diigotb-text div{
+	background: transparent url('chrome://diigotb/skin/ann-bar-opt-font.png') no-repeat center center!important;
+}
+	
+.diigotb-body #diigotb-arrow div{
+	background: transparent url('chrome://diigotb/skin/ann-bar-opt-arrow.png') no-repeat center center!important;
+}
+	
+.diigotb-body .diigotb-sep{
+	background: transparent url('chrome://diigotb/skin/ann-bar-bg-separator.png') no-repeat center center!important;
+}
+	
+.diigotb-body #diigotb-undo div{
+	background: transparent url('chrome://diigotb/skin/ann-bar-opt-undo-disabled.png') no-repeat center center!important;
+}
+	
+.diigotb-body #diigotb-capture-save div{
+	background: transparent url('chrome://diigotb/skin/ann-bar-opt-quickly-save.png') no-repeat center center!important;
+}
+	
+	
+	
+.diigotb-body #diigotb-upload-resizer div {
+  position: absolute!important;
+  width: 9px!important;
+  height: 9px!important;
+  /*background-color: white;*/
+  z-index:11000002!important;
+  margin:0px!important;
+  background:transparent url(chrome://diigotb/skin/spot.png) no-repeat scroll left center!important;
+}
+
+.diigotb-body #diigotb-upload-resizer div.gleft {
+  left: -9px!important;
+}
+
+.diigotb-body #diigotb-upload-resizer div.gtop {
+  top: -9px!important;
+}
+
+.diigotb-body #diigotb-upload-resizer div.gright {
+  right: -9px!important;
+}
+
+.diigotb-body #diigotb-upload-resizer div.gbottom {
+  bottom: -9px!important;
+}
+
+.diigotb-body #diigotb-upload-resizer div.ghor {
+  margin-left: auto!important;
+  margin-right: auto!important;
+  left: 0px!important;
+  right: 0px!important;
+}
+
+.diigotb-body #diigotb-upload-resizer div.gver {
+  margin-top: auto!important;
+  margin-bottom: auto!important;
+  top: 0px!important;
+  bottom: 0px!important;
+}
+	
+.diigotb-body{
+	padding-top: 31px!important;
+}
+	
+.diigotb-body #diigotb-topbar{
+  background: url(chrome://diigotb/skin/topbar-bg.png) left top repeat-x!important;
+  border-bottom: 1px solid #999!important;
+  color: #555!important;
+  font: 12px/18px Helvetica,Arial,sans-serif!important;
+  height: 30px!important;
+  line-height: 30px!important;
+  position: fixed!important;
+  left: 0!important;
+  top: 0!important;
+  text-align:center!important;
+  z-index:1999999!important;
+}
+
+.diigotb-body #diigotb-msg img{
+  margin:0 5px 0 0!important;
+  vertical-align: middle!important;
+}
+	
+.diigotb-body #diigotb-msg{
+	color:#333!important;
+}
+
+.diigotb-body #diigotb-msg a{
+  color: #0044cc!important;
+  text-decoration: none!important;
+}
+
+.diigotb-body #diigotb-msg a:hover{
+  text-decoration: underline!important;
+}
+
+.diigotb-body #diigotb-escLink{
+  display: block!important;
+  float: right!important;
+  margin: 5px 5px 0 0!important;
+  text-decoration: none!important;
+  width: 50px!important;
+  cursor:pointer!important;
+}
+
+.diigotb-body #diigotb-escLink:hover{
+  text-decoration: underline!important;
+}
+
+.diigotb-body #diigotb-escLink span{
+  background: url(chrome://diigotb/skin/esc-right.png) right top no-repeat!important;
+  display: block!important;
+  padding-right: 9px!important;
+}
+
+.diigotb-body #diigotb-escLink span strong{
+  background: url(chrome://diigotb/skin/esc-left.png) left top no-repeat!important;
+  display: block!important;
+  color: #fff!important;
+  font-weight: 700!important;
+  line-height: 20px!important;
+  text-indent:7px!important;
+}
+	
+	
+
+/*highlight label*/
+.diigoHighlight .diigoHighlightLabel sup {
+	font:normal normal normal 8px/8px "lucida grande",tahoma,verdana,arial,sans-serif;
+	text-decoration:none;
+	background-color:inherit;
+	cursor:default;
+}
+	
+body.diigoHiPen.yellow{
+	cursor:url(chrome://diigotb/skin/highlighter-orange.cur), text !important
+}
+	
+body.diigoHiPen.blue{
+	cursor:url(chrome://diigotb/skin/highlighter-blue.cur), text !important
+}
+
+body.diigoHiPen.green{
+	cursor:url(chrome://diigotb/skin/highlighter-green.cur), text !important
+}	
+	
+body.diigoHiPen.pink{
+	cursor:url(chrome://diigotb/skin/highlighter-pink.cur), text !important
+}
+em.diigoHighlight.type_0.commented {	
+	padding-left:30px;
+}
+	
+/*float note*/
+div.diigoHighlight.type_2 {
+	position:absolute;
+	width:29px;
+	height:36px;
+	text-align:center;
+	background:transparent url('chrome://diigotb/skin/float_icon.png') no-repeat 50% 50%;
+	z-index:9996;
+}
+div.diigoHighlight.type_2.mouseOvered {
+	position:absolute;
+	width:37px;
+	height:31px;
+	text-align:center;
+	background:transparent url('chrome://diigotb/skin/float_icon.png') no-repeat;
+	z-index:9996;
+}	
+div.diigoHighlight.type_2 span {
+	color:#000;
+	font:bold 13px Arial, Helvetica, sans-serif;
+	cursor: default;
+	line-height: 37px;
+	text-shadow: #fff 0 1px 0;
+}
+/*
+* html div.diigoHighlight.type_2{
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale, src="http://www.diigo.com/javascripts/webtoolbar/images/float_icon.png");
+	overflow:hidden;
+	background:none;
+}
+*/
+	
+
+div.diigoIcon.commented.TextIcon.diigoEdit{
+	background-repeat:no-repeat !important;
+	background-position:right !important;
+}
+
+	
+div.diigoIcon.commented.ImageIcon.diigoEdit{
+	background-repeat:no-repeat !important;
+	background-position:right !important;
+}
+
+
+/*mouse over effect*/
+/*
+.diigoHighlight.id_190e5778b533dc0fa1b1660653a4f6f5 {outline: 2px dotted green !important;}
+*/
+div.diigoIcon{
+	cursor:pointer !important;
+	margin: 0pt; 
+	padding: 0px 0px 0px 0px;
+	position: absolute;
+	display:none;
+	width: 24px !important; 
+	z-index:999999;
+	height: 23px !important;
+	background: transparent url('chrome://diigotb/skin/edit-highlight.png') no-repeat left;
+}
+
+div.diigoIcon span{
+	color:#000000;
+	display:block;
+	font-family:Helvetica,Arial,sans-serif;
+	font-size:13px;
+	font-weight:700;
+	line-height:18px;
+	text-align:center;
+	text-shadow:0 1px 1px #FFFFFF;
+}
+
+div.diigoIcon.commented.ImageIcon{
+	display:block !important;
+	background-color: transparent !important;
+}
+	
+div.diigoIcon:hover{
+	background-color: transparent !important;
+	background-repeat:no-repeat !important;
+	background-position:right !important;
+}
+	
+div.diigoIcon.commented.TextIcon{
+	display:block !important;
+	left:0;
+	bottom:0;
+}
+	
+div.diigoIcon.commented.public{
+	background: #FFFFFF url('chrome://diigotb/skin/public-annotation.png') no-repeat left;
+}
+
+div.diigoIcon.commented.private{
+	background: #FFFFFF url('chrome://diigotb/skin/private-annotation.png') no-repeat left;
+}
+	
+div.diigoIcon.commented.group{
+	background: #FFFFFF url('chrome://diigotb/skin/group-annotation.png') no-repeat left;
+}
+	
+/*Clip video*/
+div.diigoClipVideo{
+	float:left;
+	height:16px;
+	padding:0 16px 0 6px;
+	background:#f5f5f5 url(chrome://diigotb/skin/toolbar-clip-bg.gif) no-repeat right 0;
+	border:1px solid #ccc;
+	border-bottom-width:0;
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+	z-index:999;
+	position:absolute;
+}
+
+div.diigoClipVideo.clipped {
+  background-position: right -32px; left: 717px; top: 135px;
+}
+
+	div.diigoClipVideo span{
+		font-weight:bold;
+		font-size:10px;
+		line-height:16px;
+		text-decoration:underline;
+		color:#03f;
+		cursor:pointer;
+		margin-right:6px
+	}
+	div.diigoClipVideo span:hover,div.diigoClipVideo span:active{
+		color:#00f
+	}
+	/*.diigolet input{
+		font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+		font-size:9px;
+	}*/
+	
+/*-----------notice msg--------------*/
+.diigotb-notice-img  {
+	float:left!important;
+	height:16px!important;
+	width:16px!important;
+	margin-top:6px!important;
+	margin-right:3px!important;
+}
+.success .diigotb-notice-img{
+	background:url("chrome://diigotb/skin/notice-icons.png") no-repeat scroll 0 0 transparent!important;
+}
+.failed .diigotb-notice-img{
+	background:url("chrome://diigotb/skin/notice-icons.png") no-repeat scroll -16px 0 transparent!important;
+}
+.info .diigotb-notice-img{
+	background:url("chrome://diigotb/skin/notice-icons.png") no-repeat scroll -32px 0 transparent!important;
+}
+.process .diigotb-notice-img{
+	background:url("chrome://diigotb/skin/processing.gif") no-repeat scroll left 0 transparent!important;
+}	
+	
+.diigotb-notice-msg-rt  {
+	background:url("chrome://diigotb/skin/notice-bar-2-bg-left.png") no-repeat scroll left bottom transparent!important;
+	line-height:28px!important;
+	padding-left:10px!important;
+	height:30px!important;
+}
+.failed .diigotb-notice-msg-rt  {
+	background:url("chrome://diigotb/skin/notice-bar-2-bg-left.png") no-repeat scroll left top transparent!important;
+}
+	
+.diigotb-notice-close{
+	float:right!important;
+	height:16px!important;
+	width:16px!important;
+	margin-left:20px!important;
+	margin-top:6px!important;
+	cursor:pointer;
+	background:url("chrome://diigotb/skin/notice-icons.png") no-repeat scroll -48px 0 transparent!important;
+}
+
+.diigotb-notice-close:hover{
+	background-position: -63px 0!important;
+}
+	
+.diigotb-notice-msg  {
+	background:url("chrome://diigotb/skin/notice-bar-2-bg-right.png") no-repeat scroll right bottom transparent!important;
+	float:right!important;
+	height:30px!important;
+	padding:0 11px 0 0!important;
+	border: none!important;
+	margin:0!important;
+	position:fixed!important;
+	font:12px/14px Helvetica,Arial,sans-serif!important;
+	z-index:100000!important;
+}
+.diigotb-notice-msg a {
+	color:#0044cc!important; 
+	text-decoration:underline!important;
+}
+	
+.failed.diigotb-notice-msg  {
+	background:url("chrome://diigotb/skin/notice-bar-2-bg-right.png") no-repeat scroll right top transparent!important;
+}
+	
+}
+
+
+@media print{
+em.diigoHighlight.a, em.diigoHighlight.b, em.diigoHighlight.c {
+	border-bottom:0.5pt dashed Black;
+}
+
+
+/*image highlight*/
+/*no inline comments*/
+img.diigoHighlight {
+	border:0.5pt dashed Black
+}
+
+/*float note*/
+div.diigoHighlight.type_2 {
+	display:none
+}
+div.diigoHighlight.type_2 span {
+	display:none
+}
+}</style><style id="diigo-activeHighlight" type="text/css">dummyRuleForDigg{}</style><script src="file:///Macintosh HD/Users/Laura/Sites/butter/external/popcorn-js/players/youtube/popcorn.youtube.js"></script><style type="text/css">@font-face { font-family: 'Varela Round'; font-style: normal; font-weight: normal; src: local('Varela Round'), local('VarelaRound-Regular'), url('http://themes.googleusercontent.com/static/fonts/varelaround/v1/APH4jr0uSos5wiut5cpjrqRDOzjiPcYnFooOUGCOsRk.woff') format('woff');}
+.popcorn-pop { background-color: black; border-radius: 12px; color: black; padding: 4px 9px; font-family: 'Varela Round', sans-serif; font-size: 16px; }
+.popcorn-pop > div { background-color: white; border-radius: 8px; padding: 4px; position: relative; }
+.popcorn-pop .image { clip-path: url("#popcorn-pop-clip-path"); }
+.popcorn-pop .icon { position: absolute; z-index: 2; top: -50%;}
+.popcorn-pop .icon + div { padding-left: 12px; }
+#popcorn-pop-svg { display:none; }</style><link href="http://fonts.googleapis.com/css?family=Varela+Round:&amp;subset=latin" rel="stylesheet"><script async src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script></head><body class="butter-header-spacing">
+		<div id="scale-buttons">
+			<button id="smaller">-</button>
+			<button id="actual-size">1x</button>
+			<button id="bigger">+</button>
+		</div>
+		<div id="video-container" class="video-js-box">
+			<div style="" id="video"><object style="visibility: visible;" data="//www.youtube.com/e/M3T_xeoGES8?&amp;enablejsapi=1&amp;playerapiid=video1334331550013&amp;version=3" data-youtube-player="//www.youtube.com/e/M3T_xeoGES8?&amp;enablejsapi=1&amp;playerapiid=video1334331550013&amp;version=3" id="video1334331550013" type="application/x-shockwave-flash" height="315" width="560"><param value="transparent" name="wmode"><param value="always" name="allowScriptAccess"><param value="playerapiid=video1334331550013" name="flashvars"></object></div>
+			<div id="pop-container"><div class="popcorn-pop" style="width: 200px; top: 30%; position: absolute; left: 30%; visibility: visible; display: none;"><img style="width: 60px; left: -44px;" src="../../../popcornMissions/images/thumbsdown.png" class="icon"><div><span>Someone really should have clipped this video better</span></div></div><div class="popcorn-pop" style="width: 200px; top: 45%; position: absolute; left: 10%; visibility: visible; display: none;"><img style="width: 60px; left: -44px;" src="../../../popcornMissions/images/music.png" class="icon"><div><span>Yeah, that's the song I came to hear!</span></div></div><div class="popcorn-pop" style="width: 200px; top: 30%; position: absolute; left: 50%; visibility: visible; display: none;"><img style="width: 60px; left: -44px;" src="../../../popcornMissions/images/error.png" class="icon"><div><span>I have this jacket. It'll never go out of style (for those of us with the balls to wear it).</span></div></div><div class="popcorn-pop" style="width: 110px; top: 15%; position: absolute; left: 7%; visibility: visible; display: none;"><img style="width: 60px; left: -44px;" src="../../../popcornMissions/images/skull.png" class="icon"><div><span>yeah, you have to be punk rock to wear that jacket.</span></div></div><div class="popcorn-pop" style="width: 200px; top: 10%; position: absolute; left: 40%; visibility: visible; display: none;"><img style="width: 60px; left: -44px; top: -6px;" src="../../../popcornMissions/images/money.png" class="icon"><div><span>That's a different leather jacket, wtf Joan?</span></div></div><div class="popcorn-pop" style="width: 200px; top: 30%; position: absolute; left: 30%; display: none;"><img style="width: 60px; left: -44px;" src="../../../popcornMissions/images/thumbsdown.png" class="icon"><div><span>Someone really should have clipped this video better</span></div></div><div class="popcorn-pop" style="width: 200px; top: 45%; position: absolute; left: 10%; display: none;"><img style="width: 60px; left: -44px;" src="../../../popcornMissions/images/music.png" class="icon"><div><span>Yeah, that's the song I came to hear!</span></div></div><div class="popcorn-pop" style="width: 200px; top: 30%; position: absolute; left: 50%; display: none;"><img style="width: 60px; left: -44px;" src="../../../popcornMissions/images/error.png" class="icon"><div><span>I have this jacket. It'll never go out of style (for those of us with the balls to wear it).</span></div></div><div class="popcorn-pop" style="width: 110px; top: 15%; position: absolute; left: 7%; display: none;"><img style="width: 60px; left: -44px;" src="../../../popcornMissions/images/skull.png" class="icon"><div><span>yeah, you have to be punk rock to wear that jacket.</span></div></div><div class="popcorn-pop" style="width: 200px; top: 10%; position: absolute; left: 40%; visibility: visible; display: none;"><img style="width: 60px; left: -44px;" src="../../../popcornMissions/images/money.png" class="icon"><div><span>That's a different leather jacket, wtf Joan?</span></div></div><div class="popcorn-pop" style="width: 400px; top: 68%; position: absolute; left: 7%; display: none;"><img style="width: 60px; left: -44px;" src="../../../popcornMissions/images/thumbsup.png" class="icon"><div><span>I know, it looks lame, the clapping thing. But really, these people are badasses.</span></div></div><div class="popcorn-pop" style="width: 130px; font-size: 14px; top: 15%; position: absolute; left: 7%; visibility: visible; display: none;"><img style="width: 60px; left: -44px; top: 28px;" src="../../../popcornMissions/images/eye.png" class="icon"><div><span>This guy constantly borrowed Joan's eyeliner. She found it very annoying.</span></div></div><div class="popcorn-pop" style="width: 190px; top: 15%; position: absolute; left: 45%; display: none;"><img style="width: 60px; left: -44px;" src="../../../popcornMissions/images/heart.png" class="icon"><div><span>"Where we can be alone," is a euphemism for "Where we can grope each other"</span></div></div><div class="popcorn-pop" style="top: 10%; position: absolute; left: 7%; visibility: visible; display: none;"><img style="width: 60px; left: -44px; top: -16px;" src="../../../popcornMissions/images/brokenheart.png" class="icon"><div><span>She's using him.</span></div></div><div class="popcorn-pop" style="width: 200px; font-size: 12px; top: 5%; position: absolute; left: 7%; visibility: visible; display: none;"><img style="width: 60px; left: -44px; top: -2px;" src="../../../popcornMissions/images/info.png" class="icon"><div><span>It's not about dancing, it's about sex. Rock and Roll Sex. And drugs probably too.</span></div></div><div class="popcorn-pop" style="top: 50%; position: absolute; left: 40%; visibility: visible; display: none;"><img style="width: 60px; left: -44px; top: -16px;" src="../../../popcornMissions/images/women.png" class="icon"><div><span>Not that Joan does drugs...</span></div></div><div class="popcorn-pop" style="top: 65%; position: absolute; left: 55%; visibility: visible; display: none;"><img style="width: 60px; left: -44px; top: -16px;" src="../../../popcornMissions/images/time.png" class="icon"><div><span>anymore.</span></div></div><div class="popcorn-pop" style="width: 150px; font-size: 14px; top: 15%; position: absolute; left: 50%; visibility: visible; display: none;"><img style="width: 60px; left: -44px; top: 46px;" src="../../../popcornMissions/images/virus.png" class="icon"><div><span>this guy does though. He's been sniffing glue since this video came out. It's a wonder he didn't Ramone it up and die twenty years ago.</span></div></div><div class="popcorn-pop" style="top: 65%; position: absolute; left: 35%; visibility: visible; display: none;"><img style="width: 60px; left: -44px; top: -16px;" src="../../../popcornMissions/images/star.png" class="icon"><div><span>Repetition is good for learning.</span></div></div><div class="popcorn-pop" style="top: 70%; position: absolute; left: 10%; display: none;"><img style="width: 60px; left: -44px;" src="../../../popcornMissions/images/star.png" class="icon"><div><span>What does she love? How much does the jukebox cost?</span></div></div></div>
+		</div>
+	
+
+    
+	
+
+<div id="butter-modal-container"></div><div style="visibility: hidden; font-family: Varela Round;">I have no responsibilities here whatsoever</div><audio style="display: none;" preload="true" id="popcorn-pop-sound-0" src="sounds/mouthpop.ogg"></audio><audio style="display: none;" preload="true" id="popcorn-pop-sound-1" src="sounds/mouthpop.ogg"></audio><script type="text/javascript">(function(){
+var popcorn = Popcorn.smart( '#video', 'http://www.youtube.com/watch?v=M3T_xeoGES8', {} );
+popcorn.pop({
+start:'5.16',
+end:'6.16',
+text:'Someone really should have clipped this video better',
+link:'undefined',
+classes:'undefined',
+style:'width:200px;',
+align:'undefined',
+top:'30%',
+left:'30%',
+bottom:'undefined',
+right:'undefined',
+target:'pop-container'});
+popcorn.pop({
+start:'16.51',
+end:'20.81',
+text:'Yeah, that\'s the song I came to hear!',
+link:'undefined',
+classes:'undefined',
+style:'width:200px;',
+align:'undefined',
+top:'45%',
+left:'10%',
+bottom:'undefined',
+right:'undefined',
+target:'pop-container'});
+popcorn.pop({
+start:'36.92',
+end:'39.64',
+text:'I have this jacket. It\'ll never go out of style (for those of us with the balls to wear it).',
+link:'undefined',
+classes:'undefined',
+style:'width:200px;',
+align:'undefined',
+top:'30%',
+left:'50%',
+bottom:'undefined',
+right:'undefined',
+target:'pop-container'});
+popcorn.pop({
+start:'41.19',
+end:'43.39',
+text:'yeah, you have to be punk rock to wear that jacket.',
+link:'undefined',
+classes:'undefined',
+style:'width:110px;',
+align:'undefined',
+top:'15%',
+left:'7%',
+bottom:'undefined',
+right:'undefined',
+target:'pop-container'});
+popcorn.pop({
+start:'53.04',
+end:'54.04',
+text:'undefined',
+link:'undefined',
+classes:'undefined',
+style:'undefined',
+align:'undefined',
+top:'undefined',
+left:'undefined',
+bottom:'undefined',
+right:'undefined',
+target:'pop-container'});
+popcorn.pop({
+start:'53.04',
+end:'54.04',
+text:'That\'s a different leather jacket, wtf Joan?',
+link:'undefined',
+classes:'undefined',
+style:'width:200px;',
+align:'undefined',
+top:'10%',
+left:'40%',
+bottom:'undefined',
+right:'undefined',
+target:'pop-container'});
+popcorn.pop({
+start:'68.59',
+end:'71.37',
+text:'I know, it looks lame, the clapping thing. But really, these people are badasses.',
+link:'undefined',
+classes:'undefined',
+style:'width:400px;',
+align:'undefined',
+top:'68%',
+left:'7%',
+bottom:'undefined',
+right:'undefined',
+target:'pop-container'});
+popcorn.pop({
+start:'89.49',
+end:'91.78999999999999',
+text:'This guy constantly borrowed Joan\'s eyeliner. She found it very annoying.',
+link:'undefined',
+classes:'undefined',
+style:'width:130px;font-size:14px;',
+align:'undefined',
+top:'15%',
+left:'7%',
+bottom:'undefined',
+right:'undefined',
+target:'pop-container'});
+popcorn.pop({
+start:'95.15',
+end:'97.87',
+text:'\"Where we can be alone,\" is a euphemism for \"Where we can grope each other\"',
+link:'undefined',
+classes:'undefined',
+style:'width:190px;',
+align:'undefined',
+top:'15%',
+left:'45%',
+bottom:'undefined',
+right:'undefined',
+target:'pop-container'});
+popcorn.pop({
+start:'107.94',
+end:'108.94',
+text:'She\'s using him.',
+link:'undefined',
+classes:'undefined',
+style:'undefined',
+align:'',
+top:'10%',
+left:'7%',
+bottom:'undefined',
+right:'undefined',
+target:'pop-container'});
+popcorn.pop({
+start:'117.36',
+end:'120.11',
+text:'It\'s not about dancing, it\'s about sex. Rock and Roll Sex. And drugs probably too.',
+link:'undefined',
+classes:'undefined',
+style:'width:200px;font-size:12px;',
+align:'undefined',
+top:'5%',
+left:'7%',
+bottom:'undefined',
+right:'undefined',
+target:'pop-container'});
+popcorn.pop({
+start:'124.65',
+end:'125.65',
+text:'Not that Joan does drugs...',
+link:'undefined',
+classes:'undefined',
+style:'undefined',
+align:'undefined',
+top:'50%',
+left:'40%',
+bottom:'undefined',
+right:'undefined',
+target:'pop-container'});
+popcorn.pop({
+start:'128.13',
+end:'129.13',
+text:'anymore.',
+link:'undefined',
+classes:'undefined',
+style:'undefined',
+align:'undefined',
+top:'65%',
+left:'55%',
+bottom:'undefined',
+right:'undefined',
+target:'pop-container'});
+popcorn.pop({
+start:'130.82',
+end:'131.82',
+text:'this guy does though. He\'s been sniffing glue since this video came out. It\'s a wonder he didn\'t Ramone it up and die twenty years ago.',
+link:'undefined',
+classes:'undefined',
+style:'width:150px;font-size:14px;',
+align:'undefined',
+top:'15%',
+left:'50%',
+bottom:'undefined',
+right:'undefined',
+target:'pop-container'});
+popcorn.pop({
+start:'173.33',
+end:'174.33',
+text:'Repetition is good for learning.',
+link:'undefined',
+classes:'undefined',
+style:'undefined',
+align:'undefined',
+top:'65%',
+left:'35%',
+bottom:'undefined',
+right:'undefined',
+target:'pop-container'});
+popcorn.pop({
+start:'180.14',
+end:'183.67999999999998',
+text:'What does she love? How much does the jukebox cost?',
+link:'undefined',
+classes:'undefined',
+style:'undefined',
+align:'undefined',
+top:'70%',
+left:'10%',
+bottom:'undefined',
+right:'undefined',
+target:'pop-container'});
+
+ return popcorn;
+}());</script></body></html>

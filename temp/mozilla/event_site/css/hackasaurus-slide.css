@@ -1,0 +1,259 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Presentation Themes */
+
+
+/* Web Fonts used below */
+
+@import url('http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light&subset=latin');
+@import url('http://fonts.googleapis.com/css?family=Vollkorn:regular,italic,bold,bolditalic&subset=latin');
+@import url('http://fonts.googleapis.com/css?family=Neucha&subset=latin');
+@import url('http://fonts.googleapis.com/css?family=Neuton&subset=latin');
+@import url('http://fonts.googleapis.com/css?family=Arvo:regular,italic,bold,bolditalic&subset=latin');
+@import url('http://fonts.googleapis.com/css?family=Molengo&subset=latin');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin');
+@import url('http://fonts.googleapis.com/css?family=Raleway:100');
+@import url('http://fonts.googleapis.com/css?family=Cabin:400,700,500');
+
+@font-face {
+    font-family: 'MetaWebPro-Book';
+    src: url('http://www.mozilla.org/img/fonts/MetaWebPro-Book.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'MetaWebPro-Bold';
+    src: url('http://www.mozilla.org/img/fonts/MetaWebPro-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: "TrashHandRegular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("http://hackasaurus.org/fonts/TrashHand-webfont.eot?#iefix") format("embedded-opentype"), url("http://hackasaurus.org/fonts/TrashHand-webfont.woff") format("woff"), url("http://hackasaurus.org/fonts/TrashHand-webfont.ttf") format("truetype"), url("http://hackasaurus.org/fonts/TrashHand-webfont.svg#TrashHandRegular") format("svg");
+}
+
+
+/*  Hackasaurus 1  */
+	
+.theme05 .slide {
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-weight: 600;
+	color: black;
+	border: 2px solid hsl(0,0%,40%);
+	
+	border-top-right-radius: 60px;
+	-moz-border-radius-topright: 60px;
+	-webkit-border-top-right-radius: 60px;
+	-O-border-top-right-radius: 60px;
+
+	background: url("../../../images/hackasaurus2.jpg");
+	background-position: top right;
+	background-size: cover;
+}
+
+.theme05 .slide h1 { font-weight: 800; width: 80%; }
+.theme05 .slide h2 { font-weight: 700; width: 80%; }
+.theme05 .slide h3 { font-weight: 700; width: 80%; }
+.theme05 .slide h4 { font-weight: 700; width: 80%; }
+
+.theme05 .highlight {	/* use in <div> tags to make a highlighted block */
+	background-color: hsla(0,0%,99%,0.4);
+}
+	
+.theme05 .autoslide img {
+	margin-top: 30px;
+}
+
+
+
+/*  Hackasaurus 2  */
+	
+.theme06 .slide {
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-weight: 600;
+	color: black;
+	border: 2px solid hsl(0,0%,40%);
+	
+	border-top-right-radius: 60px;
+	-moz-border-radius-topright: 60px;
+	-webkit-border-top-right-radius: 60px;
+	-O-border-top-right-radius: 60px;
+
+	background: url("../../../images/hackasaurus.png");
+	background-position: top right;
+	
+}
+
+.theme06 .slide h1 { font-weight: 800; }
+.theme06 .slide h2 { font-weight: 700; }
+.theme06 .slide h3 { font-weight: 700; }
+.theme06 .slide h4 { font-weight: 700; }
+
+.theme06 .highlight {	/* use in <div> tags to make a highlighted block */
+	background-color: hsla(0,0%,99%,0.4);
+}
+	
+.theme06 .autoslide img {
+	margin-top: 30px;
+}
+
+
+/*  Hackasaurus 3 
+	
+.theme07 .slide {
+		font-family: Molengo, Helvetica, sans-serif;
+	font-weight: 300;
+	color: black;
+	border: 2px solid hsl(0,0%,40%);	
+	border-top-right-radius: 60px;
+	-moz-border-radius-topright: 60px;
+	-webkit-border-top-right-radius: 60px;
+	-O-border-top-right-radius: 60px;
+
+	background-image: url('../images/supergirl200.png'),-webkit-linear-gradient(top,#FFEF8D,#FFFFFF);
+	background-image: url('../images/supergirl200.png'),   -moz-linear-gradient(top,#FFEF8D,#FFFFFF);
+	background-image: url('../images/supergirl200.png'),    -ms-linear-gradient(top,#FFEF8D,#FFFFFF);
+	background-image: url('../images/supergirl200.png'),     -o-linear-gradient(top,#FFEF8D,#FFFFFF);
+	background-image: url('../images/supergirl200.png'),        linear-gradient(top,#FFEF8D,#FFFFFF);	
+	
+	background-position: top right;
+	background-repeat: no-repeat; 
+	
+}
+
+.theme07 .autoslide img {
+	margin-top: 120px;
+}
+
+
+.theme07 .slide h1 { font-weight: 300; width: 80%;}
+.theme07 .slide h2 { font-weight: 300; width: 80%;}
+.theme07 .slide h3 { font-weight: 300; width: 80%;}
+.theme07 .slide h4 { font-weight: 300; width: 80%;}
+
+.theme07 .slide .highlight h1 { font-weight: 300; width: 95%;}
+.theme07 .slide .highlight h2 { font-weight: 300; width: 100%;}
+.theme07 .slide .highlight h3 { font-weight: 300; width: 100%;}
+.theme07 .slide .highlight h4 { font-weight: 300; width: 100%;}
+
+
+
+.theme07 .highlight {      use in <div> tags to make a highlighted block
+	background-color: hsla(0,0%,99%,0.4);
+	
+	border-top-left-radius: 30px;
+	-moz-border-radius-topleft: 30px;
+	-webkit-border-top-left-radius: 30px;
+	-O-border-top-left-radius: 30px;
+	
+	border-bottom-right-radius: 30px;
+	-moz-border-radius-bottomright: 30px;
+	-webkit-border-bottom-right-radius: 30px;
+	-O-border-bottom-right-radius: 30px;
+
+} */
+
+/*  Hackasaurus March 2012 */
+a#mozilla {
+    background-image: url("../images/mozilla_tab.png");
+	background-repeat:no-repeat;
+    display: block;
+    height: 49px;
+    outline-color: -moz-use-text-color;
+    outline-style: none;
+    outline-width: medium;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    left: 10px;
+    text-indent: -3000px;
+    top: -1px;
+    white-space: nowrap;
+    width: 118px;
+}
+
+.theme07 ul li{
+	list-style-type:none;	
+	height:150px;
+}
+
+.theme07 ul li h3 p{
+	text-align:left;
+	padding-left:250px;
+}
+
+.theme07 ul li img{
+float:left;	
+padding-bottom:10px;
+}
+	
+.theme07 .slide {
+		font-family: Molengo, Helvetica, sans-serif;
+	font-weight: normal;
+	color: black;
+	border: 1px solid #3399FF;	
+	border-top-right-radius: 40px;
+	-moz-border-radius-topright: 40px;
+	-webkit-border-top-right-radius: 40px;
+	-O-border-top-right-radius: 40px;
+
+	
+	background: rgb(5,171,224); /* Old browsers */
+
+background-image: url('../images/hackasaurus/hackgirl.png') , url('../images/dottedLine.png') , -moz-linear-gradient(top,  rgba(5,171,224,1) 0%, rgba(135,224,253,1) 43%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+
+background-image: url('../images/hackasaurus/hackgirl.png') , url('../images/dottedLine.png') , -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(5,171,224,1)), color-stop(43%,rgba(135,224,253,1)), color-stop(80%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+
+background-image: url('../images/hackasaurus/hackgirl.png') , url('../images/dottedLine.png') , -webkit-linear-gradient(top,  rgba(5,171,224,1) 0%,rgba(135,224,253,1) 43%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+
+background-image: url('../images/hackasaurus/hackgirl.png') , url('../images/dottedLine.png') , -o-linear-gradient(top,  rgba(5,171,224,1) 0%,rgba(135,224,253,1) 43%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+
+background-image: url('../images/hackasaurus/hackgirl.png') , url('../images/dottedLine.png') , -ms-linear-gradient(top,  rgba(5,171,224,1) 0%,rgba(135,224,253,1) 43%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 100%); /* IE10+ */
+
+background-image: url('../images/hackasaurus/hackgirl.png') , url('../images/dottedLine.png') , linear-gradient(top,  rgba(5,171,224,1) 0%,rgba(135,224,253,1) 43%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+
+	background-position: 100% 0%, 50% 100%;
+	background-repeat: no-repeat; 
+
+	
+}
+
+.theme07 .slide strong{
+	font-weight:900;	
+}
+
+.theme07 .autoslide img {
+	margin-top: 120px;
+}
+
+
+.theme07 .slide h1 { font-family:'TrashHandRegular'; font-weight:normal; font-style:normal; padding-top:20px;}
+.theme07 .slide h2 { font-family:'TrashHandRegular'; font-weight:normal; font-style:normal; padding-top:20px;}
+.theme07 .slide h3 { font-weight: 300; width: 80%; padding-top:20px;}
+.theme07 .slide h4 { font-weight: 300; width: 80%;}
+
+.theme07 .slide .highlight h1 {width: 95%;}
+.theme07 .slide .highlight h2 { font-weight: 300; width: 100%;}
+.theme07 .slide .highlight h3 { font-weight: 300; width: 100%;}
+.theme07 .slide .highlight h4 { font-weight: 300; width: 100%;}
+
+
+
+.theme07 .highlight {     /* use in <div> tags to make a highlighted block */
+	background-color: hsla(0,0%,99%,0.4);
+	
+	border-top-left-radius: 30px;
+	-moz-border-radius-topleft: 30px;
+	-webkit-border-top-left-radius: 30px;
+	-O-border-top-left-radius: 30px;
+	
+	border-bottom-right-radius: 30px;
+	-moz-border-radius-bottomright: 30px;
+	-webkit-border-bottom-right-radius: 30px;
+	-O-border-bottom-right-radius: 30px;
+
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv = "Content-Type" content = "text/html; charset=utf-8"/>
+        <meta charset="utf-8">
+        <meta name = "viewport" content = "user-scalable=no"/> 
+        
+        <title>Popcorn</title>  <!-- Sets the title of your presentation on the browser tab -->
+        
+        <script src="http://slides.netfools.com/js/LAB.min.js"></script>
+        <script>
+             $LAB
+            .script("http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js").wait()
+            .script("http://slides.netfools.com/js/sylvester.js")
+            .script("http://slides.netfools.com/js/jquery.animtrans.js").wait()        
+            .script("http://slides.netfools.com/js/purecssmatrix.js").wait()
+            .script("http://slides.netfools.com/js/md5.js")
+            .script("http://slides.netfools.com/js/jquery-impromptu.3.1.min.js")
+            .script("http://slides.netfools.com/js/jquery.zoomooz.js")
+            .script("http://slides.netfools.com/js/jquery.doubletap.js")
+            .script("http://slides.netfools.com/js/jquery.touchwipe.min.js")
+            .script("http://slides.netfools.com/js/slide.control.1.2.js");
+        </script>
+       
+        <link rel="stylesheet" href="http://slides.netfools.com/style/zoomooz.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="http://slides.netfools.com/style/jqi.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="http://slides.netfools.com/style/slide-style.css" type="text/css" media="screen">
+      
+        
+        
+        <style type="text/css">
+        
+              /* **************    CSS Classes that define slide background colors    **************** */
+            .no-fade  { background-image: none; } /* The no-fade class disables the background fade effect */
+                
+                     </style>
+        
+    <link href="css/popcorn-slide.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <noscript><h2>You really need to have Javascript enabled.</h2></noscript>
+        
+        <div id="container" class="themePop"> <!-- Set default theme by changing the class  
+                                                  Press keys 1 through 0 to change theme  
+                                                  Themes are defined in slide-themes.css   -->
+                    
+            <!--*****************************************************************************************
+            *
+            *   To create a new slide make a <div> and give it the slide class and a color class.
+            *
+            *   Examples: 
+            *
+            *         <div class="slide green" >  ..some slide content... </div>
+            *  
+            *       <div class="slide red no-fade>  ...content... </div>
+            *  
+            *       <div class="slide blue break>  ...content... </div>
+            *
+            *   Only colors defined as classes above will work, but you can define your own.
+            *
+            *   The no-fade class disables the background color fade effect.
+            *                        
+            *******************************************************************************************-->
+         
+             
+                <!-- You can make "autosets" of slides from PDFs of presentations.
+                 
+                    To specify a slide autoset, put a set of images files into a
+                    web accessible directory. Name them something like name-01 ... name-XX,
+                    create a div with:  class = "autoset"
+                    id            = a unique name for the set of slides
+                    data-source    = the location of the slides on the web
+                    data-prefix    = the slide name prefix
+                    data-type    = the file type
+                    data-count    = the number of slides in the set
+                    
+                    You can have more than one autoset, and you can freely intermix regular 
+                    slides and autosets.
+                    
+                    To create a directory of slides from a pdf (on a Mac)
+                    1 - Open the pdf in Preview and choose File > Print
+                    2 - Click on the PDF button (at the bottom) and choose Print to iPhoto
+                    3 - Open iPhoto and select the album containing your slides
+                    4 - Choose File > Export and change the File Name dropdown to "Sequential" 
+                -->
+                
+                
+                <!--  Uncomment this example and edit to suit.   Move it anywhere in the sequence
+                        
+                <div class="autoset" id="set01" 
+                    data-source    ="./small" 
+                    data-prefix = "slide-"
+                    data-type    = ".jpg"
+                    data-count    = "60"    
+                ></div>
+                     
+                -->
+         
+         
+               <!--**************************  A Slide   ******************************-->
+        
+                <div class="slide themePop" >
+                <a id="mozilla" href="http://www.mozilla.org/">Mozilla</a>
+                    <div class='slideBody'>
+                         <div class='autoBox centerText highlight'>
+                         <img src="images/popcorn/poplogo.png"/>
+                            <br>
+                            <h1>Make your video work like the web</h1>
+                            <br>
+                        </div>
+                    </div> 
+                </div>
+                 
+                 <!--**************************  A Slide   ******************************-->
+                
+                 <div class="slide themePop" >
+				<a id="mozilla" href="http://www.mozilla.org/">Mozilla</a>
+                    <div class='slideBody'>
+                         <div class='autoBox centerText highlight'>
+                            <img src="images/popcorn/popcornjs-logo.jpg"/>
+                          <h3> A javascript library to mesh video with the web.</h3>
+                        </div>
+                    </div> 
+                </div>
+                 <!--**************************  A Slide   ******************************-->
+        
+                <div class="slide themePop" >
+				<a id="mozilla" href="http://www.mozilla.org/">Mozilla</a>
+                    <div class='slideBody'>
+                         <div class='autoBox centerText highlight'>
+                            <img src="http://mozillapopcorn.org/wp-content/uploads/2011/11/icon_ppcrn_maker-150x150.png"/>
+                            <h1>Popcorn Maker</h1>
+                            <h3>Make Popcorn, no code necessary.</h3>
+                            <br>
+                        </div>
+                    </div> 
+                </div>
+                
+                   <!--**************************  A Slide   ******************************-->
+                 
+    
+    
+                <div class="slide themePop" >
+                <a id="mozilla" href="http://www.mozilla.org/">Mozilla</a>
+                    <div class='slideBody centerIt'>
+                    <h3>The Web</h3>
+                    <br>
+                    <h3>=</h3>
+                    <div class="popFloat"><h3>HTML</h3>
+                    <p>Hypertext Markup Language</p>
+                    </div>
+                    <div class="popFloat"><h3>JS</h3>
+                    <p>Javascript</p>
+                    </div>
+                    <div class="popFloat"><h3>CSS</h3>
+                    <p>Cascading Style Sheets</p>
+                    </div>
+                    <h3>+</h3>
+                    <h3>people and content</h3>
+                          </div>   
+                </div>
+                
+                
+                 <!--**************************  A Slide   ******************************-->
+                   <div class="slide themePop" style="background-color:white;" >
+                <a id="mozilla" href="http://www.mozilla.org/">Mozilla</a>
+                    <div class='centerIt' style="margin-top:20px;color:#000;">
+                    <h3>The Web</h3>
+                    <br>
+                    <h3>=</h3>
+                    <div class="popFloat"><h3>HTML</h3>
+                    <p>Structure</p><br/>
+                    <p><img src="images/popcorn/structure.png"/></p>
+                    </div>
+                    <div class="popFloat"><h3>JS</h3>
+                    <p>Function</p><br/>
+                    <p><img src="images/popcorn/function.png"/></p>
+                    </div>
+                    <div class="popFloat"><h3>CSS</h3>
+                    <p>Style</p><br/>
+                    <p><img src="images/popcorn/style.png"/></p>
+                    </div>
+                      </div>    
+                </div>
+                
+                
+                 <!--**************************  A Slide   ******************************-->
+                   <div class="slide themePop" >
+                <a id="mozilla" href="http://www.mozilla.org/">Mozilla</a>
+                    <div class='autoBox centerText highlight'>
+                            <img src="images/popcorn/popcornjs-logo.jpg"/>
+                          <h2 style="color:yellow;"> Javascript library...</h2>
+                        </div>
+                    
+                             
+                </div>
+                
+                
+                 <!--**************************  A Slide   ******************************-->
+                 
+    
+    
+                <div class="slide themePop" >
+                <a id="mozilla" href="http://www.mozilla.org/">Mozilla</a>
+                
+                    <div class='autoBox centerText highlight'>
+                            <img src="images/popcorn/popcornjs-logo.jpg"/>
+                          <h2 style="color:yellow;">At x time, <br/><span style="color:#FFCC00;">
+do y thing </span><br/><span style="color:#F60;">
+until z time</span></h2>
+                        </div>
+                </div>
+                
+                
+    
+                <!--**************************  A Slide   ******************************-->
+        
+                <div class="slide themePop" >
+                <a id="mozilla" href="http://www.mozilla.org/">Mozilla</a>
+                    <div class='slideBody autoBox highlight'>
+                     <img src="images/popcorn/popcornjs-logo.jpg"/>
+                        <h2 style="color:#FFCC00;font-size:40px; text-align:center">change the style<br/>
+add content<br/>
+give a choice<br/>
+get data<br/>
+send data<br/>
+make a phone call<br/>
+queue a 3d model</h2>
+                    </div>
+                </div>
+    
+                                
+            
+                
+                 <!--**************************  A Slide   ******************************-->
+        
+                <div class="slide themePop" >
+                <a id="mozilla" href="http://www.mozilla.org/">Mozilla</a>
+                    <div class='slideBody autoBox highlight'>
+                        <img src="images/popcorn/youtube_screen.jpg"/>
+                        <p>Believe it or not, until about 2009, the web didn’t do video. There were plugins like Flash and Real, but they were proprietary and disconnected from the rest of the page, and the content lived in a black box.</p>
+                    </div>
+                </div>
+                        
+                
+                 <!--**************************  A Slide   ******************************-->
+                    <div class="slide themePop" >
+                <a id="mozilla" href="http://www.mozilla.org/">Mozilla</a>
+                    <div class="centerIt" style="margin-top:10px;">
+                    
+                    <h2>Template</h2>
+                    <p>HTML + CSS</p>
+                 
+                   <h2>Popcorn Maker</h2>
+                    <p>Javascript-O-Matic</p>
+                   
+                  <h2>Finished Product</h2>
+                    <p>HTML + CSS + JS</p>
+               
+                  
+                          </div>   
+                </div>
+                 
+                 <!--**************************  A Slide   ******************************-->
+        
+                <div class="slide themePop" >
+                <a id="mozilla" href="http://www.mozilla.org/">Mozilla</a>
+                    <div class='slideBody autoBox highlight'>
+                        <img src="images/popcorn/popmaker_screen.jpg" width="97%"/>
+                        
+                    </div>
+                </div>
+                
+                 <!--**************************  A Slide   ******************************-->
+        
+                <div class="slide themePop" >
+                <a id="mozilla" href="http://www.mozilla.org/">Mozilla</a>
+                    <div class='slideBody autoBox highlight'>
+                        <h1>Weave <span style="color:#FFcc00;">the web</span> into the story.</h1>
+                    </div>
+                </div>
+        </div> <!-- end of slide #container -->
+    </body>
+</html>

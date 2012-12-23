@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Mozilla Events Mock-up</title>
+<link href="//www.mozilla.org/tabzilla/media/css/tabzilla.css" rel="stylesheet" />
+<style>
+@font-face {
+  font-family: 'BebasRegular';
+  src: url('../../../event_site/slidey/fonts/BEBAS___-webfont.eot');
+  src: url('../../../event_site/slidey/fonts/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+url('../../../event_site/slidey/fonts/BEBAS___-webfont.woff') format('woff'),
+url('../../../event_site/slidey/fonts/BEBAS___-webfont.ttf') format('truetype'),
+url('../../../event_site/slidey/fonts/BEBAS___-webfont.svg#BebasRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  background: black;
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  color: white;
+  font-family: Georgia, serif;
+}
+
+div#body {
+  border-top: 2px solid #fff;
+  height: 100%;
+  background: url(../../../event_site/slidey/kitchentable.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: inset 0 0 4em black;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header {
+  padding-left: 10px;
+}
+
+header img#moz-logo {
+  height: 12px;
+  margin-bottom: -10px;
+}
+
+header h1 {
+  font-family: 'BebasRegular';
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+header ul#nav {
+  display: inline-block;
+  position: relative;
+  top: -70px;
+  left: 150px;
+  list-style-type: none;
+  padding: 0px;
+}
+
+header ul#nav li {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 11px;
+  display: inline-block;
+  text-transform: uppercase;
+  border-left: 2px solid rgba(0, 0, 0, 0.75);
+  padding-left: 4px;
+}
+
+header ul#nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+header ul#nav li a:hover {
+  text-decoration: underline;
+}
+
+header ul#nav li:first-child {
+  border-left: none;
+  padding-left: 0px;
+}
+
+div#content {
+  padding: 0px 10px 0px 10px;
+  margin-top: 33%;
+  background: rgba(0, 0, 0, 0.5);
+  
+}
+
+div#content div.column {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 33%;
+  vertical-align: top;
+  padding: 0px 10px 0px 10px;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+div#content div.column h2 {
+  font-family: 'BebasRegular';
+  font-size: 23px;
+  margin: 15px 0px 0px 0px;
+  padding: 0px;
+}
+
+div#content div.column h3 {
+  font-style: italic;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  color: gray;
+}
+</style>
+<div id="body">
+  <header>
+    <a href="http://www.mozilla.org/" id="tabzilla">mozilla</a>
+    <img src="../../../event_site/slidey/mozilla-logo.svg" id="moz-logo">
+    <h1>Events</h1>
+    <ul id="nav">
+      <li><a href="#">Participate</a></li>
+      <li><a href="#">Host</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </header>
+  <div id="content"><div class="column">
+      <h2>Learn With Friends</h2>
+      <h3>&nbsp;</h3>
+      <p>Explore hacking and remixing the Web in a fun and informal setting</p>
+    </div><div class="column">
+      <h2>Create Your Own</h2>
+      <h3>Make your own event</h3>
+      <p>Running a kitchen table meet up can be fun and simple. Here are all the tools you need.</p>
+    </div><div class="column">
+      <h2>Find An Event</h2>
+      <h3>In your community</h3>
+    </div></div>
+</div>
+<script src="//www.mozilla.org/tabzilla/media/js/tabzilla.js"></script>
+<script src="../../../event_site/slidey/jquery.min.js"></script>

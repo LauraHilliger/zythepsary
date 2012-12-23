@@ -1,0 +1,124 @@
+<!DOCTYPE html><!-- =========================================================================
+One  of the most popular spots in Open Webville is the Cinema! Madame  Lille  wants to bring to the citizens of her town some new screenings from the  Web. Can you help her find a good clip from Le Web? It can be anything you want – a music clip, a film trailer or even a minecraft video. Just  remember to give attribution to the creator. Oh oui, and you will have  to show the rest of the Open Webville how to upload their own clips by filling the guidebook section of the page so  they don't have to watch the same screening forever! That would be a "domage"!
+============================================================================ --><!--
+Let's get started.
+
+1) READ THROUGH THE COMMENTS. This is a comment. Everything inside of this tag for HTML or '/*' for CSS, is not processed as code, but instead is just text comments about the code. For this project, the comments will give you instructions, hints and guides to completing the project, so skim down through the comments to get an understanding of what you are being asked to do.
+
+2) GET ORIENTED IN THE CODE. HTML is made up of tags that look like this <p> </p>. The tags tell you something about the information contained between them. Click on the tags in the code on this side of the editor to get a description of what each tag is for.
+
+--><html><head>
+<meta charset="utf-8">
+
+<title>Open Webville Cinema</title>
+</head>
+
+<body>
+<div class="cinema"> 
+ <!--
+First let's unpack the code below. The <iframe> tag builds a container into your page where you can pull content from another webpage. In this case, you are pulling in video content. To change the video, you need to replace the src value (a URL) with the URL pointing to your new video. 
+
+You can find videos across the Web, but a good place to start is on YouTube or you can look at Creative Commons http://creativecommons.org/videos/a-shared-culture. When pulling a video from YouTube, make sure to grab the embed url and use a video that is under a cc licence.
+
+Note: before you change the video, watch this one to learn a little more about copyright, copyleft, attributing and using existing work.
+-->
+    <iframe allowfullscreen="no" class="video" frameborder="0" height="360" src="http://www.youtube.com/embed/1DKm96Ftfko" width="640"></iframe>
+    
+    <!-- 
+The citizens of Open Webville will be forever grateful that you have brought to them a new screening! It is time to let them know who made this wonderful piece of video. In this section we will learn how to add  full attrbution to the  original  author(s) to the best of your ability with the information you do have. 
+
+You can investigate best practices giving accredation to video creators here for  http://wiki.creativecommons.org/Marking/Creators#Video and here http://wiki.creativecommons.org/Marking/Users#Crediting_in_Video
+
+-->
+    
+    <div class="attribution">
+  <!-- 
+To add the attribution we will use the <p> tag below, which stands for paragraph and is one of the most commonly used elements in HTML. We use it to write exactly what you would expect: paragraphs of text. Try editing the text. Just remember to have both opening and closing paragraph tags like this <p> </p>. You can add the credits for your video in between the <p> tags.
+
+Notice that you can click on "A Shared Culture" to see the original work. This works because of a special tag: <a> which is used for hyperlinks. It requires the href attribute to define the URL. Try switching it to the work that youa are screening and even add an extra link to the creator's page. Similarly you need to link to the type of CC license that this song is under.
+
+Follow the example below to add attribution to the creators of the video showing at the Open Webville Cinema.
+-->    
+    --&gt;
+      <p><a href="http://creativecommons.org/videos/a-shared-culture">A Shared Culture</a> by Jesse Dylan is licensed under a <a href="http://creativecommons.org/licenses/by-nc/3.0/"> Creative Commons Attribution-Noncommercial-Share Alike(CC BY-NC-SA) </a> license.</p>
+    </div>
+
+
+--&gt;
+    <section id="guidebook">
+    <h1>Open Webville Guidebook</h1>
+    <ol>
+      <li>How did you see people including credits for the video notification?</li>
+      <li>What are the best videos out there about CC/CC licenses?</li>
+      <li>Which video platforms enable CC licensing support?</li>
+      <li> What are the differences between platforms and which one do you prefer?</li>
+    </ol>
+  </section>
+</div>
+<style>
+/*
+This section will be removed in the final project
+*/
+  @font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), url(http://themes.googleusercontent.com/https://webpagemaker-dev.allizom.org/sd/cinema/fonts/lobster/v5/NIaFDq6p6eLpSvtV2DTNDQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+
+      body {
+      margin-left:auto;
+      margin-right:auto;
+      width:800px;
+      font-family:'Lobster'; 
+      background-color: black;
+      }
+      
+      .video{
+	  left: 84px;
+	  position: relative;
+	  top: 216px;
+	      
+      }
+      
+      .attribution{
+	      width:610px;
+	      margin-left:auto;
+	      margin-right:auto;
+	      position: relative;
+	      top:193px;
+	      font-family:Arial, Helvetica, sans-serif;
+	      font-size: 10px;
+      }
+      
+      .cinema{
+	  background-image: url(static/webville_cinema.png);
+      background-repeat: no-repeat;
+      min-height: 1264px;
+      border: 1px solid black;
+      background-color:#FCFAD7;
+      }
+     
+      ul, ol{
+	  width: 720px;    
+      }     
+     
+      #guidebook{
+	  position: absolute;
+      top: 740px;
+      font-size: 21px;
+      }
+      
+      #guidebook h1{
+	  font-size:36px;
+	  text-align: center;
+      }
+      
+
+    </style>
+
+
+
+</body></html><!-- ========================================================================
+Congrats! You've helped Madame Lille bring a new screening to Open Webville and also you created a guidebook for the Open Webville Citizens showing them how to use Creative Commons Licensed videos! Not to mention that you learned some HTML along the way, like using the <iframe>, <p> and <li> tags. Way to go Webmaker!
+============================================================================-->

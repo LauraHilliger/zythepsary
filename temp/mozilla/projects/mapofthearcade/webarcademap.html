@@ -1,0 +1,75 @@
+<!--
+                       ``........----        `            ``                                      
+                ...` ``.--.  `.++++++:`      ```      .`````-:/+/:-...`  .`                         
+    .:/++///////:://::-.`./.  .++:-.``.      .//+/-.-:////+/++++++++++++++++++/+/+/:.`              
+  .:----/+++++++++/.   ::..   `-           `/+:`//++++++++++++++++++++++++++++::-./-.               
+        -++++++++++/-./+++:`           `.:`.:::/++++++++++++++++++++++++++/++:-`  -:                
+        :++++++++:-/+++:. .`             -+++//+++///++//++++++++/:://///:://///`                   
+      `/+++++++++///:-`                -//-``..-::-:-/+-.:::////////::::::/:-:-` ``                 
+      `/++++++++++/-                   `:----`  ``.-://:-:::::::://////////:- ```.`                 
+       .-//+/--..:                    `::::::::-:----:::-:::::::/:::::://////-                      
+        `.++.    ``                  -::::::::::::::.-//:--.``.:////--::::::-``                     
+          .:--:.  ```               `::::::::::::::::..::-.     :/-`  .-::.   `                     
+              `:` `.-.`              -:::::::::::::::::-.`      `:`     ..-   ``                    
+                 `/////:-.            .-..`.-:::::::::::-         `    `.`  `.  `                   
+                 :////////-.`               `:::::::::-`                .- .::`` ````               
+                 :////////////:              .:::::::-                   ```` `    `-:-````         
+                  :///////////`              `::::::::  `                       ``-` . `            
+                   `-////////-               .::::::-` --                    `.:///:-/.             
+                    .//////-`                 -::::-`  -                    ://///////:.            
+                    `/////:                    :::-`                       `//:--::///:`            
+                    `///:.                                                  `     -:-.      .       
+                     ./:                                                           `    ````        
+                      ::                                                                `           
+                       ``                                                                           
+
+Not all the locations on the Web Arcade map have a name and certain things look broken! Uh-Oh! Your goal in this project is to activate the map and even add your own flair to it. Get familiar with the syntax behind HTML by closing any open tags <> </> or fixing broken links that are missing a ” or two “”. Upon activating the map you reveal certain links that show you new projects. 
+-->
+
+<link href="http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" type="text/css">
+<link href="arcademap_styles.css" rel="stylesheet" type="text/css" />
+<style>
+ body {
+	 /*Try changing this CSS Property to a different color. Maybe blue?*/
+    background-color: black;
+	/*This is the CSS property that controls text color. This funny combination of letters and numbers is called a hexadecimal. In CSS it begins with a # followed by a combination of numbers (0 to 9) and letters (A through F) that represent a color. #FFFFFF is white. #000000 is black. Play with this number and give the text a different color. Try #ffbbff!*/ 
+    color: #ffffff;
+    padding-top: 1em;
+  }
+  </style>
+<div class="content">
+  <section id="logo">
+    <p>Map of the Arcade</p>
+  </section>
+  <section id="notes">
+    <p>Change the background</p>
+    <p>Fix the image links</p>
+    <p>Close the open tags with<span class="red"> /></span> 
+  </section>
+  <section id="island01">
+  <img class="forest" src="http://zythepsary.com/mozilla/projects/mapofthearcade/images/forest1.png"> 
+  <img class="mountains" src="http://zythepsary.com/mozilla/projects/mapofthearcade/images/mountain1.png"> 
+  <!--The src attribute in this img tag is missing double quotes! Enclose the web URL with double quotes and reveal a map location.-->
+  <img class="tower" src=http://fc00.deviantart.net/fs71/f/2012/106/4/1/matcharollcmmssn_by_qtmarkcrusader-d4wg7hj.gif/> 
+  <!--This img tag is broken too! Can you fix it?-->
+  <img class="tower02" src=http://fc06.deviantart.net/fs70/f/2010/301/4/e/minecraft_pig_by_demanter-d31ljlg.jpg" width="50px"/>
+  <h3><!--Oops! This h3 tag doesn't close properly-->
+  Rescue Tower/h3>
+  </section>
+  <section id="island02">
+  <img class="forest" src="http://zythepsary.com/mozilla/projects/mapofthearcade/images/forest1.png"/> 
+  <img class="forest2" src="http://zythepsary.com/mozilla/projects/mapofthearcade/images/forest2.png"/> 
+  <img class="mountains" src="http://zythepsary.com/mozilla/projects/mapofthearcade/images/mountain2.png"/> 
+  <img src="http://i1.kym-cdn.com/entries/icons/original/000/004/599/kittyloaf2.gif" width="100px"/>
+  <!--Name the location by adding text between the opening and closing h3 tag!-->
+  <h3 class="kitty"></h3>
+  <h3 class="famous">
+  <!--Something is wrong with this h3 tag!-->
+  Internet Famous/h3> 
+  <img class="famous" src="http://spacemonkeypants.com/img/goggles10.jpg" width="100px"/>
+  <h3 class="rainbow">Triple Rainbow</h3>
+  <!--Close the img tag-->
+  <img class="rainbow" src="http://zythepsary.com//mozilla/projects/mapofthearcade/images/rainbows.png"
+  </section>
+</div>

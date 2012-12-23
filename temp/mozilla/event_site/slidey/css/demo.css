@@ -1,0 +1,76 @@
+@import url('reset.css');
+body{
+	background-image:url(../../images/mockup_photo.jpg);
+	background-repeat:no-repeat;
+	font-family: Arial, sans-serif;
+	font-size:14px;
+}
+a{
+	color:#ffff99;
+	text-decoration:none;
+}
+
+.container {
+ position: relative;
+    top: 165px;
+    width: 100%;
+    z-index: 100;
+}
+
+h1{
+	font-family:Arial, sans-serif;;
+	font-weight:bold;
+	margin:0px 0 0px 0px;
+	font-size:36px;
+	color:#333;
+	text-transform:uppercase;
+	line-height:90%;
+}
+.more{
+position:relative;
+width:1022px;
+left:0px;	
+}
+
+.more h2{
+   color: #333333;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    left: 40px;
+    position: relative;
+    top: 29px;
+	text-transform:uppercase;
+}
+
+.more ul{
+	text-transform:uppercase;
+	font-size:13px;
+	padding:10px 0px 10px 0px;
+	height:12px;
+	clear:both;
+	width:335px;
+	margin:10px 0 0 auto;
+	color:#000;
+	padding-left:368px;
+}
+.more ul li{
+	float:left;
+	margin:0px 2px;
+}
+.more ul li.selected a,
+.more ul li.selected a:hover{
+	background:#666;
+	color:#fff;
+	text-shadow:none;
+}
+.more ul li a{
+	color:#333;
+	background:#FFFF99;
+	padding:3px 6px;
+}
+.more ul li a:hover{
+	background:#333;
+	color:#fff;
+	text-shadow:none;
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Event Checklists</title>
+<link href="styles_checklists.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+<script src="http://dev.jquery.com/view/trunk/plugins/color/jquery.color.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<script src="../../SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+<link href="../../SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+ $(document).ready(function() {
+	$(".accordion h2:first").addClass("active");
+	$(".accordion div:not(:first)").hide();
+
+	$(".accordion h2").click(function(){
+		$(this).next("div").slideToggle("slow")
+		.siblings("div:visible").slideUp("slow");
+		$(this).toggleClass("active");
+		$(this).siblings("h2").removeClass("active");
+	});
+});
+</script>
+</head>
+
+<body id="container">
+<div class="header">
+    	<a class="mozilla-tab" href="http://www.mozilla.org"></a>
+   	  <h1>Event Checklists</h1>
+</div>
+
+  <div id="TabbedPanels1" class="TabbedPanels">
+<ul class="TabbedPanelsTabGroup">
+      <li class="TabbedPanelsTab" tabindex="0">Planning an Event</li>
+      <li class="TabbedPanelsTab" tabindex="0">Designing the Strategy</li>
+      <li class="TabbedPanelsTab" tabindex="0">How to Promote</li>
+      <li class="TabbedPanelsTab" tabindex="0">Event Logistics</li>
+      <li class="TabbedPanelsTab" tabindex="0">I.T.</li>
+    </ul>
+    <div class="TabbedPanelsContentGroup">
+    <!-- CONTENT 01 -->
+      <div class="TabbedPanelsContent">
+      	<div id="formContainer">
+    	<div class="white">
+      <h2><input type="checkbox" /> Choose your Key Issue</h2>
+        <p>What issues are you passionate about? What themes will  your participants enjoy? Finding a theme for the event will help you  create design challenges and an agenda that makes sense. <strong>Here are some examples:</strong> 
+      <ul><li><em>Key Issue = Environment</em><br/>
+
+    At one hackjam,
+<strong>Hacking Citizen Science on Earth Day</strong>, participants collected data about their carbon footprint, compiled that info into websites in a virtual online world, and linked their websites to an interactive game website that the New York Hall of Science had set up for the event.</li>
+
+    <li><em>Key Issue = Business</em><br/>
+
+    At  an <strong>Entrepreneurship 101 Jam</strong>, teen designers used the Hackasaurus tools to set up websites for their budding inventions and businesses.</li></ul></p>
+    </div>
+    <div id="blue">
+	<div class="blue">
+	  <h2><input type="checkbox" />
+	  Set your learning objectives</h2>
+      <p>Determine what you want participants to learn and/or make  at your event. Setting goals helps participants and organizers alike  prepare for the event. Here are some sample learning objectives [link to Hacktivity Kit Samples] that you may wish to borrow or put in your own words.</p>
+        </p>
+    </div>
+    </div>
+     <div class="white">
+       <h2><input type="checkbox" /> Write or record a description</h2>
+       <p>Take a first stab at a title and short description of  your event. The description will change as you solidify your  agenda/learning plan, but having a first draft will help you define your  strategy. <strong>Here are some examples:</strong> </p>
+       <ul>
+         <li><a href="http://www.andrea-zellner.com/archives/854"><strong><em>http://www.andrea-zellner.com/archives/854</em></strong></a></li>
+         <li><strong></strong><a href="https://mojodundee-eorg.eventbrite.com/"><strong><em><u>https://mojodundee-eorg.eventbrite.com/</u></em></strong></a>    </li>
+       </ul>
+     </div>
+     <div id="blueBottom">
+	<div class="blue">
+	  <h2><input type="checkbox" />
+	  Find people to work with</h2>
+      <p>Planning and facilitating an event does not need to be a solo affair. Ask your friends and colleagues to help! Find volunteers* by posting to local directories or in nearby places, like a local coffee shop. Someone out there will help you, find them!</p>
+<p style="font-size:10px;">*Mozilla already has a wide range of supporters. If you're having trouble finding people, try sending a tweet to @mozilla</p>
+        </p>
+    </div>
+    </div>
+</div></div>
+ <!-- CONTENT 02 -->
+      
+      <div class="TabbedPanelsContent">
+      <div id="formContainer">
+      
+      <div class="accordion">
+                <h2>Meetups</h2>
+                <div class="white"><h3><input type="checkbox" /> Think about what you want to talk about. </h3>
+        <ul><li>Why are you meeting these folks?</li>
+			<li>What's are you hoping to get out of the meetup? And what do you hope attendees will get?</li>
+   			<li>What's next? Where do you want this to lead? Future meetups? Organizing a hackjam later on? Getting them to go and do events on their own?</li>
+   		</ul>  </div>
+                <h2>Learning Lab</h2>
+                <div class="white"><h3><input type="checkbox" /> Create the Ice Breaker</h3> <p>The Ice Breaker Activity is a way to get people to participate in the  event and work collectively to make something by the end of the day. While they make, they learn the concepts you're (strategically!) putting forth in your platform. Change the Hackasaurus Ice Breaker Activity "Hack the Robot Dance" to fit with your objectives and theme.</p>
+
+	  <h3><input type="checkbox" /> Plan the Instruction Activity</h3> <p>The instruction activity is the &quot;learning lab&quot; part of the event. This is the activity that introduces more targeted skills or concepts to your participants. As an example, the Hackasaurus "Try on Your XRay Goggles" module will show participants how to use the XRay goggles to hack a webpage. Look at the example activity. Hack it to fit with your key issue/theme.</p>
+    
+       <h3><input type="checkbox" /> Create the Design Challenge</h3>
+       <p>You will introduce  participants to an organic, interactive design process for webmaking. Participants will discuss what it means to have an open web and create fictional identities and web assets (websites, content, imagery, etc.) to participate. Hack the design challenge to fit with your key issue.</p></p>
+                
+                </div>
+                <h2 id="blueBottom">Hackjam</h2>
+                <div class="white"><h3><input type="checkbox" /> Group Briefing</h3> <p>Determine what you will show on Day 1 when all the participants and facilitators meet for a group briefing. You might show demos, common templates and plugins, and prepare to discuss them. If needed, a quick crash-course on software or programming languages should be provided. Each project or participant presents his/her vision for the hack jam.</p>
+
+	  <h3><input type="checkbox" /> Role Assignment</h3> <p>The group breaks into the small teams and determine how they’ll work together. Some might use napkin-sketches to quickly test ideas and interfaces. Some might already have code prepared. Some might address shared problems and team up. This is where facilitators can be especially helpful ensuring each team makes the most out of the time together.</p>
+    
+       <h3><input type="checkbox" /> Writing Code</h3>
+       <p>A third through Day 1, projects should be writing code and creating the broad strokes of their experience. Day 1 ends with a group recap of where each project stands and would like to achieve the next day.</p>
+       
+        <h3><input type="checkbox" /> Sprinting</h3>
+       <p>Day 2 opens with a quick welcome, and teams go to work on their project. The remainder of the day is a <strong>sprint to the finish</strong>, always with the expectation that teams will &quot;ship&quot; a final project at a presentation and party.</p>
+        <h3><input type="checkbox" /> Presentation and Party</h3>
+       <p>A screening and party is held in the evening of Day 2 to demo final projects, collect feedback, and to celebrate all the hard work. Before leaving, participants should decide on next steps for their projects. Examples include: continue hacking at an upcoming event, fold outcomes into an existing project, or publish results from the hack jam. Decisions on next steps are shared with the group and key stakeholders.</p>
+</div>
+                <div class="white"><p>&nbsp;</p></div>
+		</div>
+            </div>
+</div>
+
+<!-- CONTENT 03 -->
+      <div class="TabbedPanelsContent">
+      <div id="formContainer">
+   
+    <div class="white">
+      <h2><input type="checkbox" /> Create Talking Points</h2>
+        <p>You and your core planning team will want to speak publicly about the event. It is important to communicate your message using consistent language. <strong>Craft 5-10 sentences or ideas that help you to explain the focus, structure and goals of your event.</strong> Here are some sample talking points to use [link] — feel free to borrow or put in your own words. Once you have your 5 - 10 talking points, share them with your peers and get feedback.</p>
+    </div>
+    <div id="blue">
+	<div class="blue">
+	  <h2><input type="checkbox" /> Leverage Social Media </h2>
+      <ul class="subCheck"><li><h3><input type="checkbox" /> Set up a Site</h3><p>You will share your planning process and ideas widely. Create a page for your event. You can use wordpress.com, blogger.com, tumblr.com to create a free page.</p></li>
+      <li><h3><input type="checkbox" /> Get Creative</h3><p>Show the world what you are up to with consistent posts to social media sites including: Facebook, Twitter, Flickr, YouTube/ Vimeo  and blogs. Get creative and make your own buzz in these spaces.</p></li>
+      <li><h3><input type="checkbox" /> Define a Hashtag</h3><p>Create a hashtag for the event. Throughout the event  have the constituents  and your staff tweet and post on social networks.</p></li>
+      </ul>
+    </div>
+    </div>
+    <div class="white">
+       <h2><input type="checkbox" /> Craft a News Release</h2>
+        <p><strong>A news release is usually a one-page document describing your event</strong>, your organization and anything noteworthy that you might want to    communicate. This document should be carefully written as reporters will refer to it when writing their stories. Be sure to include links to websites and other resources connected to your event. Finally, remember to <strong>include clear contact information</strong> so that members of the media know who to follow up with.</p>
+     </div>
+     <div id="blueBottom">
+	<div class="blue">
+	  <h2><input type="checkbox" /> Beef Up Your Contacts</h2>
+      <p>Send out the news release at least a week before the event. Notify <a href="https://twitter.com/#!/mozilla">Mozilla</a> as well as mainstream media outlets in your  community —  newspapers, TV and radio — think about other outlets and  organizations  that potentially could spread the word about your hackjam.  This might  be parent groups, techie meet-ups, bloggers, podcasters, tweeters, etc.  If any these contacts follow up with you, remember to be  honest.  <strong>Relying on your talking points will help guide you through the conversation</strong> or email. To be ready for the sorts of questions they’ll likely ask, see our list of Frequently Asked Questions. Show your teams efforts, copy and paste at least three tweets, blogposts or articles that you, your team, or the public wrote about your event. </p><p>&nbsp;</p>
+    </div>
+    </div>
+     </div>
+    </div>
+<!-- CONTENT 04 -->
+      <div class="TabbedPanelsContent">
+      <div id="formContainer">
+   
+    <div class="white">
+      <h2><input type="checkbox" /> Rent/Borrow Your Digs</h2>
+        <p>Ideally, the meeting space offers both a large room where the group can meet as a whole, as well as &quot;break-out&quot; spaces, where smaller sets of participants can have discussions and collaborate.
+        <strong>In particular, an optimal venue for a participatory event has:</strong>
+        	<ul><li><input type="checkbox" />
+        	    <strong>Capacity</strong> to seat all participants in a circle in the main meeting area</li>
+            <li><input type="checkbox" />Ideally 1 <strong>breakout space/room</strong> per 15 participants&nbsp;</li>
+            <li><input type="checkbox" />Wireless <strong>internet</strong>, or an ethernet jack where a wireless router can be connected.</li>
+			<li><input type="checkbox" />No fixed-in-place <strong>furniture</strong>; collaborative events go better when participants face each other without any furniture between them</li>
+            </ul>
+            <p><strong>Other considerations include:</strong></p>
+            <ul><li><input type="checkbox" />
+              <strong>Cost</strong>: If you're lucky, you can find a free or cheap place.</li>
+            <li><input type="checkbox" />
+              <strong>Catering</strong>: All that cognitive collaborative work making will make people hungry!</li>
+            <li><input type="checkbox" />Confirm <strong>hours of access</strong>, and verify that you can be in 1 hour before event start time and stay up to 1 hour after event closing time</li>
+            <li><input type="checkbox" />Ask about any <strong>potential conflicts</strong> within the space. If other people/orgs will be using space and overhearing proceedings, make sure to explore potential noise and resource conflicts (e.g. limited bathrooms or a slow internet connection for the facility)</li></ul></p>
+    </div>
+    <div id="blue">
+	<div class="blue">
+	  <h2><input type="checkbox" /> Setup</h2>
+        <p>Make every attempt humanly possible to define the space as interactive. People want to have fun and interact with you and each other. Move chairs into a circle. Set up design centers or stations so people can easily move about within the space. Break up the space as much as possible. 
+        </p>
+    </div>
+    </div>
+     <div class="white">
+       <h2><input type="checkbox" /> Gather Materials</h2>
+        <p>You'll most likely need some computers for your event (though it does depend on your theme and learning objectives - you can have a tech event without hardware ;) <strong>For group sessions and other brainstorming collaboration, the following are strongly recommended:</strong>
+	<ul><li><input type="checkbox" />&quot;Post-it&quot; notes, in multiple colors and sizes</li> 
+		<li><input type="checkbox" />Flip-chart pads, with &quot;Post-it&quot; sticky backing if the budget permits</li>
+        <li><input type="checkbox" />Colored markers and pens</li> 
+     	<li><input type="checkbox" />Easels with clips to hold up flip-charts</li>
+    	<li><input type="checkbox" />Masking tape</li></ul></p>
+        <p>&nbsp;</p>
+    </div>
+</div></div>
+<!-- CONTENT 05 -->
+      <div class="TabbedPanelsContent">
+      <div id="formContainer">
+   
+    <div class="white">
+      <h2><input type="checkbox" /> Know Who Your Tech Contact is</h2>
+        <p>There's likely someone at the meeting space that takes care of that building/office/restaurant's wifi/Internet. Find out who that person is, and talk to them about your event. Make sure that the space will have a stable enough Internet connection for the number of participants expected. If you have to set up your own wifi and/or power, see <a href="https://gist.github.com/1346886">this awesome checklist</a> from David Wolever. </p>
+        </div>
+    <div id="blue">
+	<div class="blue">
+	   <h2><input type="checkbox" /> Providing Hardware</h2>
+        <p>Have laptops or PCs available for participants or teams of participants. If you don't have the means to provide hardware, make sure participants know to bring their own! If you do have a space with computers, install the most up-to-date version of Firefox, Chrome or Safari
+on the computers.</p>
+    </div>
+    </div>
+     <div class="white">
+       <h2><input type="checkbox" /> Install Bookmarklets</h2>
+        <p>If you're using Hackasaurus curriculum, check that the Goggles bookmarklet can be installed and works
+in your setup. If possible, pre-install the bookmarklet on all the computers to save time during the event.</p>
+    </div>
+    <div id="blue">
+	<div class="blue">
+	   <h2><input type="checkbox" /> Projector</h2>
+        <p>Set up a projector to a computer so that you can demo things on a screen that everyone can see and participants can share their work.</p>
+    </div>
+    </div>
+    <div class="white"> 
+      <h2><input type="checkbox" /> USB Backups (to deal with firewalls)</h2>
+<p>You can run Firefox and the Hackasaurus Goggles off of a USB stick too: http://portableapps.com/apps/internet/firefox_portable
+Check that this works on the computers though, as some places have firewalls that restrict the use of external devices.</p>
+    </div>
+</div></div>
+
+<script type="text/javascript">
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+var CollapsiblePanel1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1");
+</script>
+</body>
+</html>

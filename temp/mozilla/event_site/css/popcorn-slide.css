@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Presentation Themes */
+
+
+/* Web Fonts used below */
+
+@import url('http://fonts.googleapis.com/css?family=Raleway:100');
+@import url('http://fonts.googleapis.com/css?family=Cabin:400,700,500');
+
+
+/*  Popcorn March 2012 */
+a#mozilla {
+    background-image: url("../images/mozilla_tab.png");
+	background-repeat:no-repeat;
+    display: block;
+    height: 49px;
+    outline-color: -moz-use-text-color;
+    outline-style: none;
+    outline-width: medium;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    left: 10px;
+    text-indent: -3000px;
+    top: -1px;
+    white-space: nowrap;
+    width: 118px;
+}
+
+.slide.left {
+    -moz-transform: translate(-145px, 0pt);
+}
+
+.themePop ul li{
+	list-style-type:none;	
+	height:150px;
+}
+
+.themePop ul li h3 p{
+	text-align:left;
+	padding-left:250px;
+}
+
+.themePop ul li img{
+float:left;	
+padding-bottom:10px;
+}
+	
+.themePop .slide {
+		font-family: 'Cabin', Helvetica, sans-serif;
+	font-weight: normal;
+	color: white;
+	background-color:#000;
+
+	
+}
+
+.themePop .slide strong{
+	font-weight:900;	
+}
+
+.themePop .autoslide img {
+	margin-top: 120px;
+}
+
+
+.themePop .slide h1 { font-family:'Raleway'; font-size:120px; color:white; font-weight:normal; font-style:normal; padding-top:20px;}
+.themePop .slide h2 { font-family:'Raleway'; font-size:80px; color:white; font-weight:normal; font-style:normal; padding-top:20px;}
+.themePop .slide h3 { font-family:'Cabin';font-weight: 400; padding-top:20px;}
+.themePop .slide h4 { font-weight: 300; width: 80%;}
+
+.themePop .slide .highlight h1 {width: 95%;}
+.themePop .slide .highlight h2 { font-weight: 300; width: 100%;}
+.themePop .slide .highlight h3 { font-weight: 300; width: 96%;}
+.themePop .slide .highlight h4 { font-weight: 300; width: 100%;}
+
+
+
+.themePop .highlight {     /* use in <div> tags to make a highlighted block */
+	background-color: #000;
+
+}
+
+.popFloat{
+float:left;
+width:30%;
+padding:15px;	
+}
+.popFloat p{
+margin-left:33px;	
+}
+
+.centerIt{
+    text-align: center;	
+}
+
+.centerIt h3{
+font-size:75px;	
+width:100%;
+}
+.centerIt h2{
+font-size:30px;	
+}
+

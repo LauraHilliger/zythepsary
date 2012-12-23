@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Designing For Web</title>
+    <script src="scripts/modernizr.custom.47927.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/chooser.css">
+    <link rel="stylesheet" href="stylesheets/editor.css">
+    <link rel="stylesheet" href="stylesheets/publish.css">
+    <link rel="stylesheet" href="codemirror2/lib/codemirror.css">
+    <link rel="stylesheet" href="stylesheets/jsbin-codemirror-theme.css">
+
+    <link rel="stylesheet" href="colorpicker/jquery.colorpicker.css">
+    <link rel="stylesheet" href="stylesheets/colorpicker.css">
+    
+    <link href='http://fonts.googleapis.com/css?family=Overlock+SC' rel='stylesheet' type='text/css'>
+    <script type="text/javascript"> 
+	$(document).ready(function() {
+		$('.templates em').hide();
+		$(".templates a").hover(function() {
+		$(this).next("em").animate({opacity: "show", top: "65"}, "slow");
+	}, function() {
+		$(this).next("em").animate({opacity: "hide", top: "65"}, "fast");
+	});
+	});
+	</script>
+  </head>
+  <body>
+    <header>
+      <a href="#"><h1>Designing <span class="logo">for Web</span></h1></a>
+      <div class="editor-actions">
+        <button id="undo">Undo</button>
+        <button id="redo">Redo</button>
+        <button id="publish">Publish</button>
+      </div>
+    </header>
+    <section id="intro" class="out-on-right">
+      <div class="wrapper">
+        <img src="images/lovebomb-person.svg" class="lovebomb-person">
+        <div class="details">
+          <h2>Designing for the Web</h2>
+          <aside>Designing for the web is an evolutionary design process. You'll continually update and change content and structure to make your webpage better. </aside>
+          <a href="#chooser" class="button">Get Started</a>
+        </div>
+      </div>
+    </section>
+    <section id="chooser" class="out-on-right">
+      <div class="wrapper">
+        <h2>Get Started With:</h2>
+        <ul class="templates">
+          <li><a href="#editor.paperPlan">Paper Plan </a><em>It's really important to have a plan when designing for the web. This  plan will help you work efficiently and allow you to reach the people you're trying to reach.</em>
+          <li><a href="index.html">Make Me Pretty </a><em>Learn about principles of design and make beautiful designs for use online or offline.</em>
+          <li><a href="#editor.allAboutImages">All About Images </a><em> Learn about computer supported formats because after all what would the web be like without awesome imagery?</em>
+        </ul>
+      </div>
+    </section>
+    <section id="editor" class="out-on-right">
+      <div id="source"></div>
+      <div id="preview-holder">
+        <iframe id="preview" src="templates/blank.html"></iframe>
+      </div>
+    </section>
+    <div class="overlay-outer">
+      <div class="overlay-middle">
+        <div class="overlay-inner">
+          <img src="images/close-button.png" class="close">
+          <img src="images/ajax-loader.gif" class="throbber">
+          <div class="done">
+            <p>Here is the URL for your Pretty Page that anyone can view.</p>
+            <div class="published-url">
+              <a target="_blank" href="http://foo/bar">http://foo/bar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>This app is a <a href="http://hackasaurus.org/">Hackasaurus</a> experiment created by <a href="http://twitter.com/epilepticrabbit">@epilepticrabbit</a> and <a href="http://twitter.com/toolness">@toolness</a> in 2012.</footer>    
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/yepnope.1.0.2-min.js"></script>
+    <script src="codemirror2/lib/codemirror.js"></script>
+    <script src="codemirror2/mode/xml/xml.js"></script>
+    <script src="codemirror2/mode/javascript/javascript.js"></script>
+    <script src="codemirror2/mode/css/css.js"></script>
+    <script src="codemirror2/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="scripts/editor.js"></script>
+    <script src="scripts/publish.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/chooser.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <!-- Positioner Demo Integration -->
+    <script src="templates/positioner-demo-files/positioner.js"></script>
+    <script src="templates/positioner-demo-files/positioner-reflection.js"></script>
+    <script>Positioner.disable();</script>
+    
+    <script src="scripts/jquery-ui-1.8.17.custom.min.js"></script>
+    <script src="colorpicker/jquery.colorpicker.js"></script>
+    <script src="scripts/colorpicker.js"></script>
+  </body>
+</html>

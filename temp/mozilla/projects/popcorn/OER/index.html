@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>OER and Popcorn</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<style>
+body{
+
+}
+.content{
+width:956px;
+height:600px;
+margin-left:auto;
+margin-right:auto;
+background-image:url(bookshelf.jpg);
+background-repeat:no-repeat;	
+}
+.book{
+	width:75px;
+	height:233px;
+	background-image:url(book_sm.png);
+	background-position:center;
+	float:left;
+	position:relative;
+	top:83px;
+	left:38px;
+}
+.book em{
+opacity:0;	
+}
+.bookRO{
+	width:87px;
+	height:242px;
+	background-position:center;
+	background-image:url(book_lg.png);
+	float:left;
+	position:relative;
+	top:83px;
+	left:38px;
+}
+.bookRO em{
+	opacity:1;
+color:white;
+width:70px;	
+position:relative;
+top:50px;
+left:15px;
+}
+</style>
+<script type="text/javascript"> 
+ $(document).ready(function() {
+	$(".book").hover(function () {
+    	$(this).toggleClass("bookRO");
+	});
+	$(".book").click(function(){
+		top.location.href='http://192.168.2.114/~Eckart/oer/WebContent/'	
+	});
+ });
+</script>
+</head>
+
+<body>
+<div class="content">
+<div class="book"><em>Anfanger 1</em></div>
+<div class="book"><em>Anfanger 2</em></div>
+<div class="book"><em>Anfanger 3</em></div>
+<div class="book"><em>Fortgeschritten 1</em></div>
+<div class="book"><em>Fortgeschritten 2</em></div>
+<div class="book"><em>Experten 1</em></div>
+<div class="book"><em>Experten 2</em></div>
+<div class="book"><em>Experten 3</em></div>
+</div>
+</body>
+</html>

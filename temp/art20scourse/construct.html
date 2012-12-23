@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Suprematism and Constructivism</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:regular' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"> </script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+<script src="http://dev.jquery.com/view/trunk/plugins/color/jquery.color.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="jquiz.js"></script>
+  
+<script type="text/javascript"> 
+ $(document).ready(function() {
+	$(".accordion h3:first").addClass("active");
+	$(".accordion div:not(:first)").hide();
+
+	$(".accordion h3").click(function(){
+		$(this).next("div").slideToggle("normal")
+		.siblings("div:visible").slideUp("normal");
+		$(this).toggleClass("active");
+		$(this).siblings("h3").removeClass("active");
+	});
+	  $("#draggable01").draggable();
+      $("#droppable01").droppable({
+      drop: function(event, ui) { checkDrop($(this), ui.draggable);}
+    });
+	 $("#draggable02").draggable();
+      $("#droppable02").droppable({
+      drop: function(event, ui) { checkDrop($(this), ui.draggable);}
+    });
+	 $("#draggable03").draggable();
+      $("#droppable03").droppable({
+      drop: function(event, ui) { checkDrop($(this), ui.draggable);}
+    });
+	 $("#draggable04").draggable();
+      $("#droppable04").droppable({
+      drop: function(event, ui) { checkDrop($(this), ui.draggable);}
+    });
+
+	
+});
+
+function checkDrop(drop, drag){
+	var id = drag[0].id.replace("draggable", "droppable");
+	if(drop[0].id == id){
+		$(drop[0]).css("background-color","green");
+		$(drag[0]).offset({top:650});
+		
+		
+	} else {
+		$(drop[0]).css("background-color", "red");
+		$(drag[0]).offset({top:650});
+	}
+}
+	
+	</script>
+<link href="jquiz.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<hr color="#666666" width="100%" />
+	<div id="content">
+ <a class="headerText" href="overview.html">Art in the 1920's</a>
+    	<nav>
+           
+        	<a href="surrealism.html">Surrealism</a>
+            <a href="deco.html">Art Deco &amp; de Stijl</a>
+             <a href="construct.html" style="color:#0099FF;">Suprematism &amp; Constructivism</a>
+			<a href="dada.html">Dadaism</a></nav>
+            <div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'de',
+    layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+  }, 'google_translate_element');
+}
+</script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+			<div class="introText">
+        <h1 id="headerText">Orientation in Suprematism &amp; Constructivism</h1>
+        <div class="accordion">
+        	<h3>Origin</h3><div><p><img src="images/construct.png" alt="Suprematism and Constructivism" vspace="3"/>While the <a class="zem_slink" title="Dada" rel="wikipedia" href="http://en.wikipedia.org/wiki/Dada">Dadaists</a> were busy being pessimistic and cynical due to the historical situation of the time, other avant-garde artists were using art as a method to create change towards Utopian ideals. After the Russian Revolution, Russian artists absorbed Cubism and Futurism to coin a term called <a title="Cubo-Futurism" href="http://www.bigfunarts.com/index.php?option=com_content&view=article&id=86:a-series-of-isms&catid=61:a-series-of-isms&Itemid=82">Cubo-Futurism</a>.</p><p> A short time later, <a class="zem_slink" title="Kazimir Malevich" rel="wikipedia" href="http://en.wikipedia.org/wiki/Kazimir_Malevich">Kazimir Malevich</a>, a Russian avant-garde, was the pioneer of <a class="zem_slink" title="Geometric abstraction" rel="wikipedia" href="http://en.wikipedia.org/wiki/Geometric_abstraction">geometric abstract art</a>. He used abstraction, and non-objective geometric patterns in a style and artistic movement he called <a class="zem_slink" title="Suprematism" rel="wikipedia" href="http://en.wikipedia.org/wiki/Suprematism">Suprematism</a>. Suprematism is not about a feeling, but of a sensation. </p><p><a class="zem_slink" title="Constructivism (art)" rel="wikipedia" href="http://en.wikipedia.org/wiki/Constructivism_%28art%29">Constructivism</a> emerged when a series of artists rejected the idea of &quot;art for art's sake&quot; and began devoting themselves to the practical arts of industrial design and other visual communications. Constructivism called on artists to stop producing useless things and to use art for industry and social causes. It had three main principles: tectonics, texture, and construction. Happening during the time of the Russian Revolution, Constuctivism called for order and organization to be restored.
+        </p></div>
+      		
+                <h3>Period</h3>
+                <div><p>1917 to 1922 in Russia</p></div>
+                
+                 <h3>Aesthetic Characteristics</h3>
+                <div><p>Suprematism uses elemental shapes and color to create form. These concrete elements constructed together created expressive qualities arising not from a pictorial image but from pure content and arrangement. Abstraction became based on sensation and this movement is abstract. This is abstract. Reductive simplicity, moving towards complete abstraction. </p>
+                <p>
+Constructivism took the abstraction of Supremacism one step further and created an, as Lissitzky said “interchange station between painting and architecture.” Supremacist design elements were transformed into political statements through choice of color and three dimensional illusions that receded and preceded the picture plane.</p></div>
+                
+                <h3>Influential Artists</h3>
+                	
+              		 <div class="artists">
+                		<h4>Kazimir Malevich</h4>
+                    	<p><a title='Kazimir Malevich [Public domain], via Wikimedia Commons' href='http://commons.wikimedia.org/wiki/File:Kazimir_Malevich_-_'Suprematist_Composition',_1916.jpg'><img width='192' alt='Kazimir Malevich - &#039;Suprematist Composition&#039;, 1916' src='http://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Kazimir_Malevich_-_%27Suprematist_Composition%27%2C_1916.jpg/240px-Kazimir_Malevich_-_%27Suprematist_Composition%27%2C_1916.jpg'/></a> <em>Supremacist Compositions</em> Here abstraction is based on the reductive simplicity, moving towards complete abstraction creating a sense of sensation. He use entirely non representation art forms (squares) and space, with radical visionary values. There is an absolute rejection of materialism and the objective world. Malevich abstract art replaced the familiar world of naturalism, everyday objects, and events, to form an aesthetic blueprint for a utopian world and for superior forms of personal expression, evoking a sense of sublime boundlessness. Here he goes deeper until he comes to pure emptiness, pure being.  His interest is in spirituality.</p>
+                         <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                         <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <h4>El Lissitsky</h4>
+                    	<p><a href="http://en.wikipedia.org/wiki/File:Artwork_by_El_Lissitzky_1919.jpg"><img title="&quot;Beat the Whites with the Red Wedge&quot;..." src="http://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Artwork_by_El_Lissitzky_1919.jpg/300px-Artwork_by_El_Lissitzky_1919.jpg" alt="&quot;Beat the Whites with the Red Wedge&quot;..." width='192' /></a><em>Beat the Whites with the Red Wedge</em> The political piece shows the red wedge (a symbol of the <a class="zem_slink" title="Bolshevik" rel="wikipedia" href="http://en.wikipedia.org/wiki/Bolshevik">Bolshevik</a> Army) slashing through the &quot;white&quot; forces that were in power. The text dynamically floats around the image, reinforcing movement of the cause. A student of Malevich, Lissitsky was perhaps the most prolific Constructivist. His work transformed Supremacism into the political statements <a class="zem_slink" title="Constructivism (art)" rel="wikipedia" href="http://en.wikipedia.org/wiki/Constructivism_%28art%29">Constructivism</a> became known for. He believed that the <a class="zem_slink" title="Russian Revolution (1917)" rel="wikipedia" href="http://en.wikipedia.org/wiki/Russian_Revolution_%281917%29">Russian Revolution</a> would create a new world order in which technology, art, social engineering and communism would provide for society and its needs.</p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <h4>Aleksandr Rodchencko</h4>
+                    	<p><a href="http://commons.wikimedia.org/wiki/File:Spatial_construction_n12.JPG" target="_blank"><img src="http://upload.wikimedia.org/wikipedia/commons/9/9d/Spatial_construction_n12.JPG" width='192' /></a><em>Spacial Construction #12 </em>Rodchencko, a <a class="zem_slink" title="Abstract art" rel="wikipedia" href="http://en.wikipedia.org/wiki/Abstract_art">non-objective artist</a>, constructed things using new material, drawing in space. Space is as important as elements in a constructivist work. The piece was created out of a single piece of plywood, transforming a single plane into a three dimensional object representative of orbits. Rodchencko was interested in lines writing in 1921 <blockquote>&quot;in the line a new worldview became clear: to build in essence, and not depict (objectify or non-objectify); build new, expedient, constructive structures in life, and not from life and outside of life.&quot;</blockquote></p>
+                        <p></p>
+              		 </div>
+
+                <h3>Results</h3>
+                <div><p>By 1922 the political situation and tolerance became hostile and overtook the artists abilities to work an the advancement of the styles. Both styles had, however, a lasting effect in the art world, particularly in graphic design.</p></div>
+                
+                  <h3>Create Constructivism</h3>
+                <div><p>Create a Constructivist Art piece:
+                <ul><strong>Materials</strong>
+                	<li>
+                    	colored paper
+                    </li>
+                    <li>
+                    	glue
+                    </li>
+                    <li>
+                    	piece of canvas
+                    </li>
+                    <li>
+                    	scissors
+                    </li>
+                    <li>
+                    	protractor
+                    </li>
+                </ul>
+              <ol> 
+              	<li>
+                Lay the piece of canvas out on the floor
+                </li>
+                <li>
+               Use the scissors to cut out triangles, rectangles and other geometric shapes.
+                </li>
+                <li>
+               Assign meanings to each color of paper. 
+                </li>
+                <li>
+                Spend time thinking about an arrangement of form and color that creates an overarching meaning.
+                </li>
+                <li>
+                	Glue the geometric shapes to the canvas.
+                </li>
+              </ol> 
+                </p></div>
+                
+                <h3>Test Your Suprematism/Constructivism Knowledge</h3>
+                <div style="background-color:#f7f7f7;"><ol id="jquiz">
+    <li>
+		<p>Suprematism was founded in Mongolia by Kazimir Malevich.</p>
+    <ul>
+        <li>True</li>
+        <li class="correct">False</li>
+    </ul>
+    <div class="explanation hidden correct">
+		<p>Good job! THough Suprematism was started by Malevich, he was Russian, not Mongolian!</p>
+	</div>
+	<div class="explanation hidden wrong">
+		<p>Oops, you might want to read the Origins again!</p>
+	</div>
+    </li>
+    <li>
+		<p>Which artist used space as a canvas?</p>
+    <ul>
+		<li>Kazimir Malevich</li>
+        <li class="correct">Aleksander Rodchencko</li>
+		<li>El Lissitzsky</li>
+      </ul>  
+         <div class="explanation hidden correct">
+		<p>Well done! Aleksander Rodchencko made many 3 dimensional sculptures which he said was &quot; drawing in space&quot;.</p>
+	</div>
+	<div class="explanation hidden wrong">
+		<p>Oops, you might want to take a look at the Influential Artists section again.</p>
+	</div>
+    </li>
+    <li>
+		<p>Which of these words best describes the aesthetic characteristics of Suprematism and Constuctivism?</p>
+    <ul>
+		<li>expressionistic</li>
+        <li>realistic</li>
+		<li>dreamy</li>
+		<li>colorful</li>
+		<li class="correct">pure abstraction</li>
+        
+    </ul>
+     <div class="explanation hidden correct">
+		<p>Super! Elemental simplicity and pure color forms led these styles to pure abstraction.</p>
+	</div>
+	<div class="explanation hidden wrong">
+		<p>Uh oh, that's incorrect. Perhaps you'd like to review the course again?</p>
+	</div>
+    </li>
+
+</ol>
+
+<div id="jquizremarks">
+	<p id="jquiztotal"></p>
+</div>
+</div>
+                <h3>Think you know Art in the 1920's? Take the test!</h3>
+                <div><p>Match the images with the keyword boxes by dropping the image underneath the keywords.</p>
+                <p id="droppable01">anti art, rebellion against conventional thought and sought to bring absurdity into all aspects of existence. DuChamp, Schwitters and Man Ray were influential. Chance associations and found object art.</p>
+					 <p id="droppable02">dream art, interested in dreams as the art of uncovering the unconscious, automatic drawing and chance techniques, representational objects. Paul Klee and Max Ernst were notables. New tools to visualize the unconscious.</p>
+                     <p id="droppable03">political art, geometric abstract art, not about a feeling, but of a sensation,  tectonics, texture, and construction, elemental shapes and color to create form. Malevich, Lissinsky and Rodchencko art defined the movement.</p>
+                     <p id="droppable04">Faith in Machines, designs for cars, trains, ships, planes and buildings, integration of art in life. Georges Vantongerloo, Piet Mondrian and Gerrit Rietveld were important artists. Universal laws of equilibrium and harmony for art, streamlined, geometric shapes. Utopian society created through art.</p>
+                      <p id="draggable02"><img src="images/surreal.png" alt="Surrealism" /></p>
+                      <p id="draggable04"><img src="images/deco.png" alt="Art Deco and de Stijl" /></p>
+                     <p id="draggable01"><img src="images/dada.png" alt="Dadaism" /></p>
+                    
+					
+                     
+					 <p id="draggable03"><img src="images/construct.png" alt="Suprematism and Constructivism" /></p>
+                     
+					
+			</div></div>
+            <a href="deco.html" style="float:right;">Next</a>
+             <a href="dada.html" style="float:left;">Previous</a>
+	</div>
+</body>
+</html>

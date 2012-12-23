@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Dadaism</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:regular' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"> </script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+<script src="http://dev.jquery.com/view/trunk/plugins/color/jquery.color.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="jquiz.js"></script>
+  
+<script type="text/javascript"> 
+ $(document).ready(function() {
+	$(".accordion h3:first").addClass("active");
+	$(".accordion div:not(:first)").hide();
+
+	$(".accordion h3").click(function(){
+		$(this).next("div").slideToggle("normal")
+		.siblings("div:visible").slideUp("normal");
+		$(this).toggleClass("active");
+		$(this).siblings("h3").removeClass("active");
+	});
+	  $("#draggable01").draggable();
+      $("#droppable01").droppable({
+      drop: function(event, ui) { checkDrop($(this), ui.draggable);}
+    });
+	 $("#draggable02").draggable();
+      $("#droppable02").droppable({
+      drop: function(event, ui) { checkDrop($(this), ui.draggable);}
+    });
+	 $("#draggable03").draggable();
+      $("#droppable03").droppable({
+      drop: function(event, ui) { checkDrop($(this), ui.draggable);}
+    });
+	 $("#draggable04").draggable();
+      $("#droppable04").droppable({
+      drop: function(event, ui) { checkDrop($(this), ui.draggable);}
+    });
+
+	
+});
+
+function checkDrop(drop, drag){
+	var id = drag[0].id.replace("draggable", "droppable");
+	if(drop[0].id == id){
+		$(drop[0]).css("background-color","green");
+		$(drag[0]).offset({top:650});
+		
+		
+	} else {
+		$(drop[0]).css("background-color", "red");
+		$(drag[0]).offset({top:650});
+	}
+}
+	
+	</script>
+<link href="jquiz.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<hr color="#666666" width="100%" />
+	<div id="content">
+ <a class="headerText" href="overview.html">Art in the 1920's</a>
+    	<nav>
+           
+        	<a href="surrealism.html">Surrealism</a>
+            <a href="deco.html">Art Deco &amp; de Stijl</a>
+             <a href="construct.html">Suprematism &amp; Constructivism</a>
+<a href="dada.html" style="color:#0099FF;">Dadaism</a></nav>
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'de',
+    layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+  }, 'google_translate_element');
+}
+</script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+			<div class="introText">
+        <h1 id="headerText">Orientation in Dadaism</h1>
+        <div class="accordion">
+        	<h3>Origin</h3><div><p><img src="images/dada.png" alt="Dadaism" />Antiart, shock, protest against WWI, nonsense, rebellion of tradition, seeking of complete freedom, these are the aspects of <a class="zem_slink" title="Dada" rel="wikipedia" href="http://en.wikipedia.org/wiki/Dada">Dadaism</a>. Dadaist artists sought to narrow the gap between art and life, to make it part of the daily routine. Unlike most artistic styles, Dada was more a way of thinking than a specific visual style.<br/><br/>
+       The movement spontaneously developed when young poets, painters and musicians led by poet <a class="zem_slink" title="Hugo Ball" rel="wikipedia" href="http://en.wikipedia.org/wiki/Hugo_Ball">Hugo Ball</a> opened <a class="zem_slink" title="Cabaret Voltaire (Zürich)" rel="wikipedia" href="http://en.wikipedia.org/wiki/Cabaret_Voltaire_%28Z%C3%BCrich%29">Cabaret Voltaire</a> in Zürich, <a class="zem_slink" title="Switzerland" rel="geolocation" href="http://maps.google.com/maps?ll=46.8333333333,8.33333333333&amp;spn=10.0,10.0&amp;q=46.8333333333,8.33333333333%20%28Switzerland%29&amp;t=h">Switzerland</a>. They wanted to take art off its pedestal and make it obtainable for everyone. The Dadaists believed that the first World War was a result of logic and rationality, the destruction they saw was the manifestation of a societal sickness, so they rebelled against conventional thought and sought to bring absurdity into all aspects of their existence. Their cynicism lead them to anarchy in tradition, politics and to inspiration in terms of what art actually is. They reveled in their nihilism and revealed that nihilism to the world as a whole. The poet Tristan Tzara wrote countless manifestos for Dadaism that are, in effect, endless series of random revelations and meaningless statements. The manifestos are rants of nihilism and contempt for logic that had the glorious effect of forcing the reevaluation of the definition of art.
+        </p></div>
+      		
+                <h3>Period</h3>
+                <div><p>1916 to 1922</p></div>
+                
+                 <h3>Aesthetic Characteristics</h3>
+                <div><p>Because Dadaism is an antiart, no definite aesthetic characteristics exist. Some of the artwork from this period is representational, some of it is completely abstracted and some of it is about the artists choices rather than the artwork itself.</p></div>
+                
+                <h3>Influential Artists</h3>
+                	
+              		 <div class="artists">
+                		<h4>Marcel DuChamp</h4>
+                    	<p><a title="By Photoshop (me), original photo GNU from Gtanguy [Public domain, GFDL (&lt;a href=&quot;&quot;http://www.gnu.org/copyleft/fdl.html&quot;&quot; mce_href=&quot;&quot;http://www.gnu.org/copyleft/fdl.html&quot;&quot; class=&quot;external free&quot; rel=&quot;nofollow&quot;&gt;http://www.gnu.org/copyleft/fdl.html&lt;/a&gt;) or CC-BY-SA-3.0 (www.creativecommons.org/licenses/by-sa/3.0/)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File:Fontaine_Duchamp.jpg"><img src="http://upload.wikimedia.org/wikipedia/commons/f/fa/Fontaine_Duchamp.jpg" alt="Fontaine Duchamp" width="192" /></a>DuChamp was a guiding light to Dadaism. While most people are familiar with his 1917 work <a class="zem_slink" title="Fountain (Duchamp)" rel="wikipedia" href="http://en.wikipedia.org/wiki/Fountain_%28Duchamp%29">Fountain</a>, a urinal signed "<a class="zem_slink" title="Marcel Duchamp" rel="wikipedia" href="http://en.wikipedia.org/wiki/Marcel_Duchamp">R. Mutt</a>" and placed in an exhibition, DuChamp experimented with more than just found object art. The Fountain has, over time, stood up to every kind of criticism.</p><p><a href="http://www.beatmuseum.org/duchamp/bride.html"><img style="float: right;" src="http://www.beatmuseum.org/duchamp/images/bride.jpg" alt="" width="192" /></a>Statements like &quot;its just an object&quot;, &quot;its offensive and indecent&quot;, &quot;something already made in mass production in a factory&quot;, &quot;it doesn't take any kind of talent or creativity&quot;, &quot;anyone can do it&quot; were used to explain why the Fountain is not a work of art. It was a functional object, but DuChamp removed the functionality of it. This piece challenges the definition of what art is and that was the intention.</p>
+                        <p>DuChamps point is that art is not primarily retinal, in a conceptual way it is artistic. He challenges the history of art. Nobody else in history had accomplished this. DuChamp believed that anything that put one to sleep is a bad work of art. DuChamp considered his art and his life to be a matter of chance and of choice. He, therefore, spent the majority of his career redefining the role of the artist and their place in society with objects and imagery that created chance associations. </p>
+                        <p>That idea of chance completed DuChamp's The Bride Stripped Bare by Her Bachelors, Even (the Large Glass) when, in 1927, during transport to an exhibition, the glass panes were shattered. DuChamp had begun this piece in 1915 and then abandoned it in 1923. When the piece was shattered, DuChamp didn't replace the glass, instead he meticulously pieced it back together, he then decided the piece was finished. This work's nonsensical imagery was accompanied by notes from DuChamp explaining that the top portion represented “the Bride” who is “basically a motor” fueled by the “love gasoline”. The bottom portion represented each suitor &quot;grind[ing] his own chocolate&quot;, DuChamps wording for masturbation. The piece is representative of DuChamps thoughts on the confusion that is sexuality and desire. </p>
+                        <h4>Kurt Schwitters</h4>
+                    	<p><a href="http://en.wikipedia.org/wiki/File:Merzbau.jpg" target="_blank"><img src="http://upload.wikimedia.org/wikipedia/en/1/1b/Merzbau.jpg" width='192' /></a><a class="zem_slink" title="Kurt Schwitters" rel="wikipedia" href="http://en.wikipedia.org/wiki/Kurt_Schwitters">Kurt Schwitters</a> found that what one might consider junk are actually objects that can become works of art because old objects have an emotional and visual presence. Schwitters showed a sense of nonsense and the anti bourgeois in his works and he created an offshoot of Dadaism called &quot;Merz&quot;. </p><p>Schwitters was inspired by the Dadaists and applied for membership to the movement stating he was &quot;an artist who nails his pictures together&quot;, only to be rejected for being &quot;too bourgeois&quot;.  His 1920 work, Merz 19, uses recycled objects that would be considered trash and elevates those objects into art. </p><p>As the first installation artist, Schwitters turned his home into a work of art, in effect merging art and life. His studio became a sculpture, which in 1924 he titled Merzbau. Although he was never “officially” a member of the Dadaist Movement, art historians place him squarely in Dadaism because of his non sensical imagery, poetry and design and his chance associations and dislocation of the ordinary.</p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <h4>Man Ray</h4>
+                    	<p><a href="http://www.nga.gov/exhibitions/2006/dada/artwork/manray.shtm" target="_blank"><img src="http://www.nga.gov/exhibitions/2006/dada/images/artwork/202-655-m.jpg" /></a>Man Ray, like DuChamp and Schwitters, used chance to redefine <a class="zem_slink" title="Found object" rel="wikipedia" href="http://en.wikipedia.org/wiki/Found_object">found objects</a>, particularly mass-produced objects and technology. He was dedicated to the exploration of perception and created objects that played with the emotional and psychological hang ups of the audience.</p><p> His 1921 work Cadeua (Gift) played with the psyche through it's displacement of purpose. The work was an iron with spikes on it, creating a sense of dread, but also corrupting the idea of the functionality of an iron.</p><p> Man Ray was a photographer who followed the evolution of Dadaism into Surrealism. As such, he was the only American artists admitted into both avant-garde circles. A multimedia artist, Man Ray was the first to experiment with solarization (second exposure) in photography, and he used this technique, along with rayographs (cameraless prints created by moving light beams) in which  to create new interpretations and juxtapositions of common objects.</p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+              		 </div>
+
+                <h3>Results</h3>
+                <div><p>Photomontage, jarring juxtapositions, chance associations and found object art.  Lack of leadership cause dadaism to cease to exist as a cohesive movement in 1922, but the idea that art could push limits and break boundaries in all aspects of life exists still.</p></div>
+                
+                  <h3><span class="nontranslate">Do Dada</span></h3>
+                <div><p>Create a Dadaist Art piece:
+                <ul><strong>Materials</strong>
+                	<li>
+                    	magazines
+                    </li>
+                    <li>
+                    	glue
+                    </li>
+                    <li>
+                    	piece of canvas
+                    </li>
+                </ul>
+              <ol> 
+              	<li>
+                Lay the piece of canvas out on the floor
+                </li>
+                <li>
+                Tear out interesting colors, images and words from the magazines you have collected.
+                </li>
+                <li>
+                Throw the pieces up in the air over the canvas.
+                </li>
+                <li>
+                Glue the pieces to the canvas where they have landed.
+                </li>
+              </ol> 
+                </p></div>
+                
+                <h3>Test Your Dada Knowledge</h3>
+                <div style="background-color:#f7f7f7;"><ol id="jquiz">
+    <li>
+		<p>Dadaism was started as a movement in Paris, France by Marcel DuChamp.</p>
+    <ul>
+        <li>True</li>
+        <li class="correct">False</li>
+    </ul>
+    <div class="explanation hidden correct">
+		<p>Good job! Dadaism started spontaneously when Hugo Ball opened the Caberet Voltaire.</p>
+	</div>
+	<div class="explanation hidden wrong">
+		<p>Oops, you might want to read the Origins again!</p>
+	</div>
+    </li>
+    <li>
+		<p>Which artist was never officially accepted into Dadaism?</p>
+    <ul>
+		<li>Man Ray</li>
+        <li class="correct">Kurt Schwitters</li>
+		<li>Marcel DuChamp</li>
+      </ul>  
+         <div class="explanation hidden correct">
+		<p>Super! Kurt Schwitters applied by saying he was &quot;an artist who nails his pictures together&quot;, but was rejected.</p>
+	</div>
+	<div class="explanation hidden wrong">
+		<p>Oops, you might want to take a look at the Influential Artists section again.</p>
+	</div>
+    </li>
+    <li>
+		<p>Which of these words best describes the aesthetic characteristics of Dadaism?</p>
+    <ul>
+		<li>cheery</li>
+        <li>realistic</li>
+		<li>dreamy</li>
+		<li>colorful</li>
+		<li class="correct">indescribable</li>
+        
+    </ul>
+     <div class="explanation hidden correct">
+		<p>Super! Dada is a state of mind, so there are no overarching aesthetic characteristics.</p>
+	</div>
+	<div class="explanation hidden wrong">
+		<p>Uh oh, that's incorrect. Perhaps you'd like to review the course again?</p>
+	</div>
+    </li>
+
+</ol>
+
+<div id="jquizremarks">
+	<p id="jquiztotal"></p>
+</div>
+</div>
+                <h3>Think you know Art in the 1920's? Take the test!</h3>
+                <div><p>Match the images with the keyword boxes by dropping the image underneath the keywords.</p>
+                <p id="droppable01">anti art, rebellion against conventional thought and sought to bring absurdity into all aspects of existence. DuChamp, Schwitters and Man Ray were influential. Chance associations and found object art.</p>
+					 <p id="droppable02">dream art, interested in dreams as the art of uncovering the unconscious, automatic drawing and chance techniques, representational objects. Paul Klee and Max Ernst were notables. New tools to visualize the unconscious.</p>
+                     <p id="droppable03">political art, geometric abstract art, not about a feeling, but of a sensation,  tectonics, texture, and construction, elemental shapes and color to create form. Malevich, Lissinsky and Rodchencko art defined the movement.</p>
+                     <p id="droppable04">Faith in Machines, designs for cars, trains, ships, planes and buildings, integration of art in life. Georges Vantongerloo, Piet Mondrian and Gerrit Rietveld were important artists. Universal laws of equilibrium and harmony for art, streamlined, geometric shapes. Utopian society created through art.</p>
+                      <p id="draggable02"><img src="images/surreal.png" alt="Surrealism" /></p>
+                      <p id="draggable04"><img src="images/deco.png" alt="Art Deco and de Stijl" /></p>
+                     <p id="draggable01"><img src="images/dada.png" alt="Dadaism" /></p>
+                    
+					
+                     
+					 <p id="draggable03"><img src="images/construct.png" alt="Suprematism and Constructivism" /></p>
+                     
+					
+			</div></div>
+            <a href="construct.html" style="float:right;">Next</a>
+	</div>
+</body>
+</html>

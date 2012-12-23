@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!--
+     ___________________    ___________________
+  .-/|  11   ~~**~~      \ /      ~~**~~   12   |\-.
+  ||||                    :                     ||||
+  ||||  Typography is an  :   pretty.           ||||
+  ||||  artform. On the   :   Make this page    ||||
+  ||||  web, your text    :   your own!         ||||
+  ||||  should be easy    :   Maybe you want to ||||
+  ||||  to read. In this  :   write a profile   ||||
+  ||||  project, you'll   :   for yourself or   ||||
+  ||||  fix the text      :   tell a story? How ||||
+  ||||  formatting and    :   about a poem?     ||||
+  ||||  make this page    :   Get creative!     ||||
+  ||||  both readable &   :                     ||||
+  ||||___________________ : ___________________ ||||
+  ||/====================\:/==================== \||
+  `---------------------~___~-------------------- ''
+
+Typography is an artform. On the web, your text should be easy to read. In this project, you'll fix the text formatting and make this page both readable and pretty. Make this page your own! Maybe you want to write a profile for yourself or tell a story? How about a poem? Get creative!
+
+-->
+<meta charset="utf-8">
+<title>Principles of Design: Typography</title>
+<link rel="stylesheet" href="typography-files/stylesheet.css">
+<!--These two links are for webfonts, find out more about webfonts below!-->
+<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Stint+Ultra+Condensed' rel='stylesheet' type='text/css'>
+<style type="text/css">
+  body {
+	/*Comic Sans is not easy to read. For the body tag, use a font-family that is easy to read, like Helvetica or Arial*/
+    font-family: "Comic Sans MS", cursive;
+    color: black;
+	margin:25px auto;
+  }
+
+  section {
+	    /*Give your text some air by increasing the padding on each section*/
+	padding:0px;
+  }
+.content{
+	padding:20px;
+	width:960px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px; 
+	-webkit-box-shadow: 1px 1px 12px 3px #CCC;
+	-moz-box-shadow: 1px 1px 12px 3px #CCC;
+	box-shadow: 1px 1px 12px 3px #CCC; 
+	margin:5px auto;
+}
+#logo{
+	/*This style uses one of the webfonts we linked to above. Copy and paste this URL to see more webfonts http://www.google.com/webfonts Remember, if you want to use a webfont, you'll need to link to it and call it in the CSS*/
+	font-family:'Oleo Script', cursive;
+	font-size:50px;
+	    color: #7b257b;
+        text-shadow: 1px 1px 3px #ababab;
+        filter: dropshadow(color=#ababab, offx=1, offy=1);
+		margin:0px;
+  }
+ 
+nav{
+width:100%;
+height:70px;
+}
+
+nav a{
+	font-size:16px;
+	text-decoration:underline;
+	/*When padding is used on multiple elements the underlying grid can get messed up. Check your padding attributes if things seem out of alignment.*/
+	padding:5px;
+}
+nav a:hover{
+	color:#F30D00;
+	text-decoration:underline;
+}
+  
+#masthead{
+	font-size:18px;
+}
+
+#breadcrumbs {
+	text-align:left;
+}
+
+#breadcrumbs a{
+	color: blue;
+	text-decoration:underline;
+}
+
+#breadcrumbs a:hover{
+	color:#800080;
+	text-decoration:underline;
+}
+ 
+#headlines h1{
+	/*Papyrus is one of the most overused fonts IN THE WORLD. It's everywhere, and it's not even easy to read. Certainly not on this page. Make the h1 font something that is easier to read. You could try, for example, Verdana.*/
+	font-family:"Papyrus";
+	font-size:32px;
+	margin:0px;
+}
+#headlines h2{
+	/*the h2 tag should be smaller than the h1 tag. Change the font-size and put things back in order*/
+	font-size:38px;
+	margin:0px;
+	/*What happens when you change the line-height to 150%? */
+	line-height:100%;
+
+}
+#intro p{
+line-height:100%;
+/*Shorter lines of text are easier to read. You can set width using a percentage or pixels. Try changing this to 520px*/
+    width: 100%;
+	/*Large blocks of text can be justified for easier reading. Try changing this attribute to use justify instead of center.*/
+	 text-align: center;
+}
+
+#defaultFonts{
+/*Try adjusting these styles to change the columns in the lower section of the page*/ 
+ float: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 540px;
+	/*Adjust the line-height to create more space here.*/
+	line-height:100%;
+}
+#defaultFonts ul{
+	/*increase the numbers and see what happens. The first number represents the top margin/padding, 2nd is right, third is bottom and the 4th is the left margin/padding*/
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+#defaultFonts ul li{
+	margin:0px;
+}
+
+  #webFonts{
+	font-family:'Stint Ultra Condensed', cursive;
+	font-size:35px;
+	margin-top:30px;
+  }
+  #blechFactor p{
+	  /*Basically, the idea with type is to make it easier to read, not harder. Using all capitalized letters make things hard to read, as does centering large blocks of text. */
+	text-transform:uppercase;
+	text-align:center; 
+	/*the clear:both; style removes float properties from sections or divs*/ 
+	clear:both;
+  }
+  .serif{
+	font-family:serif;  
+  }
+    .monospace{
+	font-family:monospace;  
+  }
+    .cursive{
+	font-family:cursive;  
+  }
+  img{
+	float:right;  
+	/*You don't want your text too close to an image. Adjust the padding and give the image more space*/ 
+	padding:0px;
+  }
+  p{
+	   /*Line-height is the space between lines of text. If it's too small, lines start to overlap each other. Try increasing the line-height here.*/
+	line-height:85%;  
+	/*If you've set the text align to justify above, you might want to do the same here.*/
+	text-align:left;
+	
+  }
+</style>
+
+<div class="content">
+<!--Make this a page about a topic YOU choose and design your text with the reader in mind.-->
+  <header id="logo">
+  <!--A logo communicates the overarching goal of a project. Change the CSS and HTML and make this page YOURS.-->
+Sans Comic
+  
+ <nav>
+ <a href="#">Stuck in the 90s</a>
+ <a href="#">Make a Metaphor</a>
+  <a href="#" class="selected">Sans Comic</a>
+  <a href="#">Color Collapse</a>
+ </nav>
+  </header>
+  <section id="attribution">
+  	<!--Attribute your sources! Claim this site as your own, and write your name or handle in.-->
+ Thanks to the <a href="http://en.wikipedia.org/wiki/Typography" target="_blank">Wikipedia articles on Typography</a> for providing some text for this page.</section>
+  <section id="breadcrumbs">
+  <!--Breadcrumbs let your user know where they are in your site. You are currently here:-->
+  <a href="../design_overview.html">Designing for Web</a> > <a href="../index.html"> Make Me Pretty</a> > Typography
+  </section>
+  <section id="headlines">
+  <!-- Headlines and Subheads act as visual cues to guide the user through content. Switch out the text on this page and create a written profile for yourself or write a story or...well the possibilities are endless!-->
+  <h1>The Patron of Papyrus and Count ComicSans are two fairly nasty residents of OpenWebVille</h1>
+  <p>
+    <!--Replace this image with one of your own!-->
+  <img src="typography-files/papyrus.png"/>Best friends for life, Papyrus and and ComicSans decided to play a prank on the residents of OpenWebVille. They've removed all the text formatting from the OpenWebVille newspaper "Sans Comic". They changed the fonts to be Papyrus and Comics Sans to make it even more difficult to read. <strong>They even put an awful picture of themselves on the front page.</strong></p>
+  <!--Leading is the space between lines of text. Shorter lines and leading make reading easier. Want to change the look of this text? Look for "h2" above in the styles. -->
+  <h2>Add spacing and adjust styles to make this page pretty again for the residents of OpenWebVille! Check out the comments in the code for tips!</h2>
+  </section>
+  <section id="intro">
+  <!--Use Columns as control. Try setting a style to make 2 columns for these paragraphs. Or try adjusting the width to make the text easier to read. -->
+  <p>Typography is the art and technique of arranging type in order to make language visible. The arrangement of type involves the selection of typefaces, point size, line length, leading (line spacing), adjusting the spaces between groups of letters (tracking) and adjusting the space between pairs of letters (kerning). Type design is a closely related craft, which some consider distinct and others a part of typography; most typographers do not design typefaces, and some type designers do not consider themselves typographers. In modern times, typography has been put into motion—in film, television and online broadcasts—to add emotion to mass communication.</p>
+
+<p>Typography is performed by typesetters, compositors, typographers, graphic designers, art directors, comic book artists, graffiti artists, clerical workers, and anyone else who arranges type for a product. Until the Digital Age, typography was a specialized occupation. Digitization opened up typography to new generations of visual designers and lay users, and it has been said that "typography is now something everybody does."</p>
+  </section>
+  <section id="defaultFonts">
+  <!-- There are several web safe fonts, fonts that every computer is shipped with. You can find a list by searching for "web safe fonts". To give you control over appearance of fonts on your Web pages even when the specified fonts are not available on the viewers computer, the CSS specification allows the use of several generic font families. -->
+  <ul><li><strong>Sans-serif:</strong> Fonts that do not have decorative markings, or serifs, on their letters. These fonts are often considered easier to read on screens.</li>
+  <li class="serif"><strong>Serif:</strong> Fonts that have decorative markings, or serifs, present on their characters.</li>
+  <li class="monospace"><strong>Monospace:</strong> Fonts in which all characters are equally wide.</li>
+  <li class="cursive"><strong>Cursive:</strong> Fonts that resemble cursive writing. These fonts may have a decorative appearance, but they can be difficult to read at small sizes, so they are generally used sparingly.</li>
+  </ul>
+  <a href="http://en.wikipedia.org/wiki/Web_typography" target="_blank"> Read more about web typography at Wikipedia.</a>
+  </section>
+  <section id="webFonts">
+  <!-- A web font is a typeface installed with a web browser and is usually optimized for screen use. Check out the WebFonts library over at google! Check the #logo style for a URL!  -->
+  With WebFonts, we're no longer constrained by which fonts a user has on his or her computer!
+  </section>
+  <section id="blechFactor"><!--All capital letters and centered text in combination with an ugly font, make text nearly impossible to read. Change the "blechFactor p" style and make this pretty. -->
+   <p>Web-safe fonts are fonts likely to be present on a wide range of computer systems, and used by Web content authors to increase the likelihood that content will be displayed in their chosen font. If a visitor to a Web site does not have the specified font, their browser will attempt to select a similar alternative, based on the author-specified fallback fonts and generic families or it will use font substitution defined in the visitor's operating system.</p>
+  </section>
+</div>
+
